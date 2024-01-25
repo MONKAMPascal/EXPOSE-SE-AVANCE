@@ -1,0 +1,2253 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nequeo.Reflection</name>
+    </assembly>
+    <members>
+        <member name="T:Nequeo.IPropertyChanged">
+            <summary>
+            Property changed
+            </summary>
+        </member>
+        <member name="P:Nequeo.IPropertyChanged.PropertyChanged">
+            <summary>
+            Has the property changed.
+            </summary>
+        </member>
+        <member name="M:Nequeo.IPropertyChanged.GetDetails">
+            <summary>
+            Get the details of the interface.
+            </summary>
+            <returns>The implementation details.</returns>
+        </member>
+        <member name="T:Nequeo.DataType">
+            <summary>
+            Common data type descripter.
+            </summary>
+        </member>
+        <member name="M:Nequeo.DataType.GetSystemType(System.String)">
+            <summary>
+            Gets the system data type.
+            </summary>
+            <param name="systemType">The system string data type.</param>
+            <returns>>The system data type.</returns>
+        </member>
+        <member name="M:Nequeo.DataType.GetFormattedValue(System.Type,System.Object,System.String,System.String)">
+            <summary>
+            Gets the formatted value if any.
+            </summary>
+            <param name="type">The system data type.</param>
+            <param name="value">The value of the type.</param>
+            <param name="format">The new format for the value.</param>
+            <param name="dateTimeFormatControl">The date time format to convert from.</param>
+            <returns>The formatted value string.</returns>
+        </member>
+        <member name="M:Nequeo.DataType.GetFormattedValue(System.String,System.Object,System.String,System.String)">
+            <summary>
+            Gets the formatted value if any.
+            </summary>
+            <param name="type">The system data type.</param>
+            <param name="value">The value of the type.</param>
+            <param name="format">The new format for the value.</param>
+            <param name="dateTimeFormatControl">The date time format to convert from.</param>
+            <returns>The formatted value string.</returns>
+            <exception cref="T:System.ArgumentException">The format type cna not be found.</exception>
+        </member>
+        <member name="M:Nequeo.DataType.ConvertType(System.Object,System.Type)">
+            <summary>
+            Convert from one type to another.
+            </summary>
+            <param name="value">The value containing the data to convert.</param>
+            <param name="type">The type to convert to.</param>
+            <returns>The new type containing the data.</returns>
+        </member>
+        <member name="T:Nequeo.Reflection.TypeConverterExtender">
+            <summary>
+            Type converter.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConverterExtender.GetTypeDataArray``1(System.Object[])">
+            <summary>
+            Convert all the object data into a data array collection
+            of the specified type.
+            </summary>
+            <typeparam name="T">The type of object to return.</typeparam>
+            <param name="dataObject">The object array containing the data.</param>
+            <returns>The array of the type of object.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConverterExtender.GetListTypeData``1(System.Object[])">
+            <summary>
+            Convert all the object data into a list collection
+            of the specified type.
+            </summary>
+            <typeparam name="T">The type of object to return.</typeparam>
+            <param name="dataObject">The object array containing the data.</param>
+            <returns>The list collection of the type of object.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConverterExtender.GetPublicProperties(System.Type)">
+            <summary>
+            Get all public properties within the current type.
+            </summary>
+            <param name="t">The current type to retreive properties within.</param>
+            <returns>The collection of all proerties within the type.</returns>
+        </member>
+        <member name="T:Nequeo.Reflection.AppDomianHost`1">
+            <summary>
+            Application domain host.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianHost`1.#ctor(System.String,System.String)">
+            <summary>
+            Application domain host.
+            </summary>
+            <param name="basePath">The base path to the assemblies.</param>
+            <param name="configurationFile">The configuration file name.</param>
+        </member>
+        <member name="P:Nequeo.Reflection.AppDomianHost`1.Instance">
+            <summary>
+            Gets the new host instance.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.AppDomianHost`1.AppDomain">
+            <summary>
+            Gets the application domain.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianHost`1.Unload">
+            <summary>
+            Unload the application domain.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianHost`1.Initialise(System.String,System.String)">
+            <summary>
+            Initialise the app domain.
+            </summary>
+            <param name="path">The path to the assemblies.</param>
+            <param name="configurationFile">The configuration file name.</param>
+        </member>
+        <member name="T:Nequeo.Reflection.AppDomianHost">
+            <summary>
+            Application domain host.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianHost.#ctor(System.String,System.String)">
+            <summary>
+            Application domain host.
+            </summary>
+            <param name="basePath">The base path to the assemblies.</param>
+            <param name="configurationFile">The configuration file name.</param>
+        </member>
+        <member name="T:Nequeo.Reflection.AppDomainFlag">
+            <summary>
+            App domain include flag.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Reflection.AppDomainFlag.None">
+            <summary>
+            None included.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Reflection.AppDomainFlag.AppDomainSetup">
+            <summary>
+            App Domain Setup included.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Reflection.AppDomainFlag.FullTrustAssemblies">
+            <summary>
+            Full Trust Assemblies included.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Reflection.AppDomainFlag.PermissionSet">
+            <summary>
+            Permission Set included.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Reflection.AppDomainFlag.SecurityInfo">
+            <summary>
+            Security Info included.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Reflection.AppDomainFlag.DomainFriendlyName">
+            <summary>
+            Domain Friendly Name included.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Reflection.AppDomianLoader">
+            <summary>
+            Application domain loader.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianLoader.#ctor">
+            <summary>
+            Application domain load.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianLoader.AppDomainSetup(System.AppDomainSetup)">
+            <summary>
+            Set the app domain setup.
+            </summary>
+            <param name="appDomainSetup">The app domain setup.</param>
+            <returns>The application loader.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianLoader.StrongNames(System.Security.Policy.StrongName[])">
+            <summary>
+            Set the strong names.
+            </summary>
+            <param name="fullTrustAssemblies">The strong names.</param>
+            <returns>The application loader.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianLoader.PermissionSet(System.Security.PermissionSet)">
+            <summary>
+            Set the permission set.
+            </summary>
+            <param name="permissionSet">The permission set.</param>
+            <returns>The application loader.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianLoader.Evidence(System.Security.Policy.Evidence)">
+            <summary>
+            Set the security info.
+            </summary>
+            <param name="securityInfo">The security info.</param>
+            <returns>The application loader.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianLoader.DomainFriendlyName(System.String)">
+            <summary>
+            Set the domain friendly name.
+            </summary>
+            <param name="domainFriendlyName">The domain friendly name.</param>
+            <returns>The application loader.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianLoader.CreateAppDomain">
+            <summary>
+            Create a new application domain from the set paramaters.
+            </summary>
+            <returns>The create application domian; else null;</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianLoader.Load``1(System.AppDomain,System.Object[],System.Object[])">
+            <summary>
+            Load the type 'T'.
+            </summary>
+            <typeparam name="T">The type to load.</typeparam>
+            <param name="appDomain">The application domain to use.</param>
+            <param name="arguments">The arguments used to create the instance.</param>
+            <param name="activationAttributes">The activation attributes.</param>
+            <returns>The instance of the type 'T'.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianLoader.Load(System.AppDomain,System.String,System.String,System.Object[],System.Object[])">
+            <summary>
+            Load the type.
+            </summary>
+            <param name="appDomain">The application domain to use.</param>
+            <param name="fullyQualifiedName">The string representing the fully qualified name and path to this module.</param>
+            <param name="fullName">The fully qualified name of the System.Type, including the namespace of the System.Type but not the assembly.</param>
+            <param name="arguments">The arguments used to create the instance.</param>
+            <param name="activationAttributes">The activation attributes.</param>
+            <returns>The instance of the type 'T'.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianLoader.Unload(System.AppDomain)">
+            <summary>
+            Unload the application domain.
+            </summary>
+            <param name="appDomain">The application domian to unload.</param>
+        </member>
+        <member name="T:Nequeo.Reflection.AppDomianMarshal">
+            <summary>
+            Application domain marshal.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianMarshal.#ctor">
+            <summary>
+            Application domain marshal.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianMarshal.GetType(System.String,System.String)">
+            <summary>
+            Get the type.
+            </summary>
+            <param name="assemblyName">The assembly given the long form of its name.</param>
+            <param name="typeName">The namespace and type.</param>
+            <returns>The type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianMarshal.CreateInstance(System.Type,System.Object[])">
+            <summary>
+            Create a new instance of the type.
+            </summary>
+            <param name="type">The type to create,</param>
+            <param name="constructorParameters">The constructor parameters of the type.</param>
+            <returns>The instance.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianMarshal.CreateInstance(System.String,System.String,System.Object[])">
+            <summary>
+            Create a new instance of the type.
+            </summary>
+            <param name="assemblyName">The assembly given the long form of its name.</param>
+            <param name="typeName">The namespace and type.</param>
+            <param name="constructorParameters">The constructor parameters of the type.</param>
+            <returns>The instance.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianMarshal.ExecuteMethod(System.String,System.String,System.String,System.Object[],System.Object[])">
+            <summary>
+            Execute the code within the host.
+            </summary>
+            <param name="assemblyName">The assembly given the long form of its name.</param>
+            <param name="typeName">The namespace and type.</param>
+            <param name="entryPoint">The member name to execute.</param>
+            <param name="parameters">The parameters of the member.</param>
+            <param name="constructorParameters">The constructor parameters.</param>
+        </member>
+        <member name="M:Nequeo.Reflection.AppDomianMarshal.ExecuteMethod``1(System.String,System.String,System.String,System.Object[],System.Object[])">
+            <summary>
+            Execute the code within the host.
+            </summary>
+            <typeparam name="T">The entry point member return type.</typeparam>
+            <param name="assemblyName">The assembly given the long form of its name.</param>
+            <param name="typeName">The namespace and type.</param>
+            <param name="entryPoint">The member name to execute.</param>
+            <param name="parameters">The parameters of the member.</param>
+            <param name="constructorParameters">The constructor parameters.</param>
+            <returns>The return value.</returns>
+        </member>
+        <member name="T:Nequeo.Reflection.Sandbox">
+            <summary>
+            Sandbox for executing code.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.Sandbox.#ctor(System.String,System.String)">
+            <summary>
+            Sandbox for executing code.
+            </summary>
+            <param name="basePath">The base path to the assemblies.</param>
+            <param name="configurationFile">The configuration file name.</param>
+        </member>
+        <member name="M:Nequeo.Reflection.Sandbox.Initialise(System.String,System.String)">
+            <summary>
+            Initialise the app domain.
+            </summary>
+            <param name="path">The path to the assemblies.</param>
+            <param name="configurationFile">The configuration file name.</param>
+        </member>
+        <member name="T:Nequeo.Reflection.NonAnonymousType">
+            <summary>
+            Non anonymous type container when using LINQ queries
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property1">
+            <summary>
+            Gets sets, the first property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property2">
+            <summary>
+            Gets sets, the second property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property3">
+            <summary>
+            Gets sets, the third property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property4">
+            <summary>
+            Gets sets, the fourth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property5">
+            <summary>
+            Gets sets, the fifth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property6">
+            <summary>
+            Gets sets, the sixth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property7">
+            <summary>
+            Gets sets, the seventh property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property8">
+            <summary>
+            Gets sets, the eighth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property9">
+            <summary>
+            Gets sets, the nineth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property10">
+            <summary>
+            Gets sets, the tenth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property11">
+            <summary>
+            Gets sets, the eleventh property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property12">
+            <summary>
+            Gets sets, the twelfth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property13">
+            <summary>
+            Gets sets, the thirdteenth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property14">
+            <summary>
+            Gets sets, the fourthtenth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property15">
+            <summary>
+            Gets sets, the fifthtenth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property16">
+            <summary>
+            Gets sets, the sixteenth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property17">
+            <summary>
+            Gets sets, the seventeenth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property18">
+            <summary>
+            Gets sets, the eighteenth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property19">
+            <summary>
+            Gets sets, the nineteenth property.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousType.Property20">
+            <summary>
+            Gets sets, the twentieth property.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Reflection.NonAnonymousTypeCollection">
+            <summary>
+            Class that contains anonymous type data.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousTypeCollection.PropertyName">
+            <summary>
+            Gets sets, the property name.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousTypeCollection.PropertyValue">
+            <summary>
+            Gets sets, the property value.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.NonAnonymousTypeCollection.PropertyType">
+            <summary>
+            Gets sets, the property type.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Reflection.AnonymousType">
+            <summary>
+            Class that contains anonymous type data.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.AnonymousType.PropertyName">
+            <summary>
+            Gets sets, the property name.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.AnonymousType.PropertyValue">
+            <summary>
+            Gets sets, the property value.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.AnonymousType.PropertyType">
+            <summary>
+            Gets sets, the property type.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Reflection.TypeConversion">
+            <summary>
+            Class that contains members that control the
+            convertion of object type data to strongly
+            typed objects.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Reflection.TypeConversion.Instance">
+            <summary>
+            Create a new static instance
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.#cctor">
+            <summary>
+            Static constructor
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.#ctor">
+            <summary>
+            Constructor for the current class.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.GetPublicProperties(System.Type)">
+            <summary>
+            Get all public properties within the current type.
+            </summary>
+            <param name="t">The current type to retreive properties within.</param>
+            <returns>The collection of all proerties within the type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.Projector``1(System.Data.DataTable,Nequeo.Threading.FunctionHandler{``0[],System.Data.DataTable})">
+            <summary>
+            Executes to delegate function for data table projection.
+            </summary>
+            <typeparam name="TEntity">The entity type to examine.</typeparam>
+            <param name="table">The table to project.</param>
+            <param name="function">The delegate function to execute.</param>
+            <returns>The array of data entities.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.Mapper``1(System.Data.DataTable)">
+            <summary>
+            Maps a data table to the corresponding data entities.
+            </summary>
+            <typeparam name="TEntity">The ntity type to examine.</typeparam>
+            <param name="table">The table to map.</param>
+            <returns>The array of data entities.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.ListGenericTypeProjector(System.Data.DataTable,System.Type,Nequeo.Threading.FunctionHandler{System.Object,System.Data.DataTable,System.Type})">
+            <summary>
+            Executes to delegate function for data table projection.
+            </summary>
+            <param name="dataTable">The table to project.</param>
+            <param name="conversionType">The type to convert to.</param>
+            <param name="function">The delegate function to execute.</param>
+            <returns>The array of data entities.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.ListGenericTypeMapper(System.Data.DataTable,System.Type)">
+            <summary>
+            Gets the list generic collection of the conversion type from the data table.
+            </summary>
+            <param name="dataTable">The datatable containing the data.</param>
+            <param name="conversionType">The type to convert to.</param>
+            <returns>The list generic conversion type object.</returns>
+            <remarks>The return object is of type 'List[conversionType]'.</remarks>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.Translator``1(System.Data.DataTable)">
+            <summary>
+            Translate a data table to the corresponding data entity.
+            </summary>
+            <typeparam name="TEntity">The entity type to examine.</typeparam>
+            <param name="table">The table to translate.</param>
+            <returns>The array of data entities.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.GetAnonymousTypeData(System.Linq.IQueryable)">
+            <summary>
+            Convert all the object data into a array of
+            anonymous types.
+            </summary>
+            <param name="query">The IQueryable collection of anonymous type objects.</param>
+            <returns>The array of anonymous type data.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.GetDataTable(System.Linq.IQueryable,System.String)">
+            <summary>
+            Convert all the object data into a data table.
+            </summary>
+            <param name="query">The IQueryable collection of anonymous type objects.</param>
+            <param name="tableName">The name of the data table.</param>
+            <returns>The data table with IQueryable anonymous types.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.GetTypeDataArray``1(System.Object[])">
+            <summary>
+            Convert all the object data into a data array collection
+            of the specified type.
+            </summary>
+            <typeparam name="T">The type of object to return.</typeparam>
+            <param name="dataObject">The object array containing the data.</param>
+            <returns>The array of the type of object.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.GetTypeDataArray``1(System.Linq.IQueryable)">
+            <summary>
+            Convert all the object data into a data array collection
+            of the specified type.
+            </summary>
+            <typeparam name="T">The type of object to return.</typeparam>
+            <param name="query">The IQueryable collection of anonymous type objects.</param>
+            <returns>The array of the type of object.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.GetListTypeData``1(System.Object[])">
+            <summary>
+            Convert all the object data into a list collection
+            of the specified type.
+            </summary>
+            <typeparam name="T">The type of object to return.</typeparam>
+            <param name="dataObject">The object array containing the data.</param>
+            <returns>The list collection of the type of object.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.GetListCollection``1(System.Data.DataTable)">
+            <summary>
+            Gets the data collection from the data table.
+            </summary>
+            <typeparam name="T">The type of object to return.</typeparam>
+            <param name="dataTable">The datatable containing the data.</param>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeConversion.ListGenericTypeTranslator(System.Data.DataTable,System.Type)">
+            <summary>
+            Gets the list generic collection of the conversion type from the data table.
+            </summary>
+            <param name="dataTable">The datatable containing the data.</param>
+            <param name="conversionType">The type to convert to.</param>
+            <returns>The list generic conversion type object.</returns>
+            <remarks>The return object is of type 'List[conversionType]'.</remarks>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:Nequeo.Reflection.ITypeConversion">
+            <summary>
+            Class that contains members that control the
+            convertion of object type data to strongly
+            typed objects.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.ITypeConversion.Translator``1(System.Data.DataTable)">
+            <summary>
+            Translate a data table to the corresponding data entity.
+            </summary>
+            <typeparam name="TEntity">The entity type to examine.</typeparam>
+            <param name="table">The table to translate.</param>
+            <returns>The array of data entities.</returns>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="M:Nequeo.Reflection.ITypeConversion.GetAnonymousTypeData(System.Linq.IQueryable)">
+            <summary>
+            Convert all the object data into a array of
+            anonymous types.
+            </summary>
+            <param name="query">The IQueryable collection of anonymous type objects.</param>
+            <returns>The array of anonymous type data.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.ITypeConversion.GetDataTable(System.Linq.IQueryable,System.String)">
+            <summary>
+            Convert all the object data into a data table.
+            </summary>
+            <param name="query">The IQueryable collection of anonymous type objects.</param>
+            <param name="tableName">The name of the data table.</param>
+            <returns>The data table with IQueryable anonymous types.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.ITypeConversion.GetTypeDataArray``1(System.Object[])">
+            <summary>
+            Convert all the object data into a data array collection
+            of the specified type.
+            </summary>
+            <typeparam name="T">The type of object to return.</typeparam>
+            <param name="dataObject">The object array containing the data.</param>
+            <returns>The array of the type of object.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.ITypeConversion.GetTypeDataArray``1(System.Linq.IQueryable)">
+            <summary>
+            Convert all the object data into a data array collection
+            of the specified type.
+            </summary>
+            <typeparam name="T">The type of object to return.</typeparam>
+            <param name="query">The IQueryable collection of anonymous type objects.</param>
+            <returns>The array of the type of object.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.ITypeConversion.GetListTypeData``1(System.Object[])">
+            <summary>
+            Convert all the object data into a list collection
+            of the specified type.
+            </summary>
+            <typeparam name="T">The type of object to return.</typeparam>
+            <param name="dataObject">The object array containing the data.</param>
+            <returns>The list collection of the type of object.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.ITypeConversion.GetListCollection``1(System.Data.DataTable)">
+            <summary>
+            Gets the data collection from the data table.
+            </summary>
+            <typeparam name="T">The type of object to return.</typeparam>
+            <param name="dataTable">The datatable containing the data.</param>
+        </member>
+        <member name="M:Nequeo.Reflection.ITypeConversion.ListGenericTypeTranslator(System.Data.DataTable,System.Type)">
+            <summary>
+            Gets the list generic collection of the conversion type from the data table.
+            </summary>
+            <param name="dataTable">The datatable containing the data.</param>
+            <param name="conversionType">The type to convert to.</param>
+            <returns>The list generic conversion type object.</returns>
+            <remarks>The return object is of type 'List[conversionType]'.</remarks>
+            <exception cref="T:System.ArgumentNullException"></exception>
+        </member>
+        <member name="T:Nequeo.Reflection.IQueryableExtensions">
+            <summary>
+            Class that extends the System.Ling.IQueryable type.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.IQueryableExtensions.Count(System.Linq.IQueryable)">
+            <summary>
+            Gets the count expression by dynamically creates a count query on the specified criteria.
+            </summary>
+            <param name="source">The current IQueryable type.</param>
+            <returns>The query expression from the dynamic creation.</returns>
+        </member>
+        <member name="T:Nequeo.Reflection.TypeDescriptorExtender`1">
+            <summary>
+            Generic type descriptor extender.
+            </summary>
+            <typeparam name="T">The type to examine.</typeparam>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender`1.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender`1.#ctor(`0)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="type">The instance type object.</param>
+        </member>
+        <member name="T:Nequeo.Reflection.TypeDescriptorMockExtender`1">
+            <summary>
+            Generic type interface descriptor extender.
+            </summary>
+            <typeparam name="T">The type to examine.</typeparam>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorMockExtender`1.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Reflection.TypeDescriptorExtender">
+            <summary>
+            Type descriptor extender.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.#ctor(System.Type)">
+            <summary>
+            Component Type constructor.
+            </summary>
+            <param name="componentType">The component type to describle.</param>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.#ctor(System.Object)">
+            <summary>
+            Instance Component constructor.
+            </summary>
+            <param name="component">The component type instance to describle.</param>
+        </member>
+        <member name="P:Nequeo.Reflection.TypeDescriptorExtender.Component">
+            <summary>
+            Gets, the component type instance.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.TypeDescriptorExtender.ComponentType">
+            <summary>
+            Gets, the component type.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetAttributes">
+            <summary>
+            Returns a collection of custom attributes for this instance of a component.
+            </summary>
+            <returns>An System.ComponentModel.AttributeCollection containing the attributes for
+            this object.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetClassName">
+            <summary>
+            Returns the class name of this instance of a component.
+            </summary>
+            <returns>The class name of the object, or null if the class does not have a name.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetComponentName">
+            <summary>
+            Returns the name of this instance of a component.
+            </summary>
+            <returns>The name of the object, or null if the object does not have a name.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetConverter">
+            <summary>
+            Returns a type converter for this instance of a component.
+            </summary>
+            <returns>A System.ComponentModel.TypeConverter that is the converter for this object,
+            or null if there is no System.ComponentModel.TypeConverter for this object.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetDefaultEvent">
+            <summary>
+            Returns the default event for this instance of a component.
+            </summary>
+            <returns>An System.ComponentModel.EventDescriptor that represents the default event
+            for this object, or null if this object does not have events.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetDefaultProperty">
+            <summary>
+            Returns the default property for this instance of a component.
+            </summary>
+            <returns>A System.ComponentModel.PropertyDescriptor that represents the default property
+            for this object, or null if this object does not have properties.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetEditor(System.Type)">
+            <summary>
+            Returns an editor of the specified type for this instance of a component.
+            </summary>
+            <param name="editorBaseType">A System.Type that represents the editor for this object.</param>
+            <returns>An System.Object of the specified type that is the editor for this object,
+            or null if the editor cannot be found.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetEvents(System.Attribute[])">
+            <summary>
+            Returns the events for this instance of a component using the specified attribute
+            array as a filter.
+            </summary>
+            <param name="attributes">An array of type System.Attribute that is used as a filter.</param>
+            <returns>An System.ComponentModel.EventDescriptorCollection that represents the filtered
+            events for this component instance.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetEvents">
+            <summary>
+            Returns the events for this instance of a component.
+            </summary>
+            <returns>An System.ComponentModel.EventDescriptorCollection that represents the events
+            for this component instance.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetProperties(System.Attribute[])">
+            <summary>
+            Returns the properties for this instance of a component using the attribute
+            array as a filter.
+            </summary>
+            <param name="attributes">An array of type System.Attribute that is used as a filter.</param>
+            <returns>A System.ComponentModel.PropertyDescriptorCollection that represents the
+            filtered properties for this component instance.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetProperties">
+            <summary>
+            Returns the properties for this instance of a component.
+            </summary>
+            <returns>A System.ComponentModel.PropertyDescriptorCollection that represents the
+            properties for this component instance.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetInfoMethods">
+            <summary>
+            Get all methods for the type.
+            </summary>
+            <returns>The collection of methods.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetPublicInfoMethods">
+            <summary>
+            Get all public methods for the type.
+            </summary>
+            <returns>The collection of methods.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetInfoProperties">
+            <summary>
+            Get all properties for the type.
+            </summary>
+            <returns>The collection of methods.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeDescriptorExtender.GetPropertyOwner(System.ComponentModel.PropertyDescriptor)">
+            <summary>
+            Returns an object that contains the property described by the specified property
+            descriptor.
+            </summary>
+            <param name="pd">A System.ComponentModel.PropertyDescriptor that represents the property whose
+            owner is to be found.</param>
+            <returns>An System.Object that represents the owner of the specified property.</returns>
+        </member>
+        <member name="T:Nequeo.Reflection.DynamicTypeBuilder">
+            <summary>
+            Creates a new type dynamically.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicTypeBuilder.#ctor(System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="moduleName">The name of the assembly module.</param>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicTypeBuilder.Create(System.String,System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicProperty})">
+            <summary>
+            Create a new instance of the dynamic type.
+            </summary>
+            <param name="typeName">The name of the type.</param>
+            <param name="properties">The collection of properties to create in the type.</param>
+            <returns>The new instance of the type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicTypeBuilder.Create(System.String,System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicProperty},System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicMethod})">
+            <summary>
+            Create a new instance of the dynamic type.
+            </summary>
+            <param name="typeName">The name of the type.</param>
+            <param name="properties">The collection of properties to create in the type.</param>
+            <param name="methods">The collection of methods to create in the type.</param>
+            <returns>The new instance of the type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicTypeBuilder.Create(System.String,System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicPropertyValue})">
+            <summary>
+            Create a new instance of the dynamic type.
+            </summary>
+            <param name="typeName">The name of the type.</param>
+            <param name="properties">The collection of properties to create in the type.</param>
+            <returns>The new instance of the type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicTypeBuilder.Create(System.String,System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicPropertyValue},System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicMethod})">
+            <summary>
+            Create a new instance of the dynamic type.
+            </summary>
+            <param name="typeName">The name of the type.</param>
+            <param name="properties">The collection of properties to create in the type.</param>
+            <param name="methods">The collection of methods to create in the type.</param>
+            <returns>The new instance of the type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicTypeBuilder.CreateEx(System.String,System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicProperty},System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicMethod})">
+            <summary>
+            Create a new instance of the dynamic type.
+            </summary>
+            <param name="typeName">The name of the type.</param>
+            <param name="properties">The collection of properties to create in the type.</param>
+            <param name="methods">The collection of methods to create in the type.</param>
+            <returns>The new instance of the type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicTypeBuilder.GetDynamicClass(System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicProperty},System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicMethod})">
+            <summary>
+            
+            </summary>
+            <param name="properties"></param>
+            <param name="methods"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicTypeBuilder.CreateDynamicClass(Nequeo.Reflection.DynamicProperty[],Nequeo.Reflection.DynamicMethod[])">
+            <summary>
+            
+            </summary>
+            <param name="properties"></param>
+            <param name="methods"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicTypeBuilder.CreateConstructor(System.Reflection.Emit.TypeBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="typeBuilder"></param>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicTypeBuilder.GenerateMethods(System.Reflection.Emit.TypeBuilder,Nequeo.Reflection.DynamicMethod[])">
+            <summary>
+            
+            </summary>
+            <param name="tb"></param>
+            <param name="methods"></param>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicTypeBuilder.GenerateProperties(System.Reflection.Emit.TypeBuilder,Nequeo.Reflection.DynamicProperty[])">
+            <summary>
+            
+            </summary>
+            <param name="tb"></param>
+            <param name="properties"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicTypeBuilder.GenerateEquals(System.Reflection.Emit.TypeBuilder,System.Reflection.FieldInfo[])">
+            <summary>
+            
+            </summary>
+            <param name="tb"></param>
+            <param name="fields"></param>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicTypeBuilder.GenerateGetHashCode(System.Reflection.Emit.TypeBuilder,System.Reflection.FieldInfo[])">
+            <summary>
+            
+            </summary>
+            <param name="tb"></param>
+            <param name="fields"></param>
+        </member>
+        <member name="T:Nequeo.Reflection.DynamicClass">
+            <summary>
+            Dynamic class descriptor
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicClass.ToString">
+            <summary>
+            The to string override.
+            </summary>
+            <returns>The string translation.</returns>
+        </member>
+        <member name="T:Nequeo.Reflection.DynamicMethod">
+            <summary>
+            Dynamic method builder.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicMethod.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Type},System.Type)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="name">The name of the method.</param>
+            <param name="parameters">The collection parameter types.</param>
+            <param name="returnType">The return type.</param>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicMethod.#ctor(System.String,System.Collections.Generic.IEnumerable{System.Type},System.Type,System.Action{System.Reflection.Emit.TypeBuilder})">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="name">The name of the method.</param>
+            <param name="parameters">The collection parameter types.</param>
+            <param name="returnType">The return type.</param>
+            <param name="buildAction">The build action.</param>
+        </member>
+        <member name="P:Nequeo.Reflection.DynamicMethod.Name">
+            <summary>
+            Gets, the method name.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.DynamicMethod.Parameters">
+            <summary>
+            Gets, the collection of parameters
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.DynamicMethod.ReturnType">
+            <summary>
+            Gets, the return type.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.DynamicMethod.BuildAction">
+            <summary>
+            Gets, build action.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Reflection.DynamicProperty">
+            <summary>
+            Dynamic property builder.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicProperty.#ctor(System.String,System.Type)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="name">The name of the property.</param>
+            <param name="type">The type of the property.</param>
+        </member>
+        <member name="P:Nequeo.Reflection.DynamicProperty.Name">
+            <summary>
+            Gets, the property name.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.DynamicProperty.Type">
+            <summary>
+            Gets, the property type.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Reflection.DynamicPropertyValue">
+            <summary>
+            Dynamic property builder, with value assigned.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicPropertyValue.#ctor(System.String,System.Type,System.Object)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="name">The name of the property.</param>
+            <param name="type">The type of the property</param>
+            <param name="value">The value of the property.</param>
+        </member>
+        <member name="P:Nequeo.Reflection.DynamicPropertyValue.Name">
+            <summary>
+            Gets, the property name.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.DynamicPropertyValue.Type">
+            <summary>
+            Gets, the property type.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.DynamicPropertyValue.Value">
+            <summary>
+            Gets, the property value.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Reflection.DynamicClassBuilder">
+            <summary>
+            Dynamic expression class builder.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Reflection.DynamicClassBuilder.Instance">
+            <summary>
+            The static instance of the type.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicClassBuilder.#cctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicClassBuilder.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicClassBuilder.GetDynamicClass(System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicProperty})">
+            <summary>
+            
+            </summary>
+            <param name="properties"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicClassBuilder.CreateDynamicClass(Nequeo.Reflection.DynamicProperty[])">
+            <summary>
+            
+            </summary>
+            <param name="properties"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicClassBuilder.GenerateProperties(System.Reflection.Emit.TypeBuilder,Nequeo.Reflection.DynamicProperty[])">
+            <summary>
+            
+            </summary>
+            <param name="tb"></param>
+            <param name="properties"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicClassBuilder.GenerateEquals(System.Reflection.Emit.TypeBuilder,System.Reflection.FieldInfo[])">
+            <summary>
+            
+            </summary>
+            <param name="tb"></param>
+            <param name="fields"></param>
+        </member>
+        <member name="M:Nequeo.Reflection.DynamicClassBuilder.GenerateGetHashCode(System.Reflection.Emit.TypeBuilder,System.Reflection.FieldInfo[])">
+            <summary>
+            
+            </summary>
+            <param name="tb"></param>
+            <param name="fields"></param>
+        </member>
+        <member name="T:Nequeo.Reflection.SignatureBuilder">
+            <summary>
+            Dynamic class signature.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.SignatureBuilder.#ctor(System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicProperty},System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicMethod})">
+            <summary>
+            
+            </summary>
+            <param name="properties"></param>
+            <param name="methods"></param>
+        </member>
+        <member name="M:Nequeo.Reflection.SignatureBuilder.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Reflection.SignatureBuilder.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Reflection.SignatureBuilder.Equals(Nequeo.Reflection.SignatureBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nequeo.Reflection.Signature">
+            <summary>
+            Dynamic class signature.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.Signature.#ctor(System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicProperty})">
+            <summary>
+            
+            </summary>
+            <param name="properties"></param>
+        </member>
+        <member name="M:Nequeo.Reflection.Signature.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Reflection.Signature.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Reflection.Signature.Equals(Nequeo.Reflection.Signature)">
+            <summary>
+            
+            </summary>
+            <param name="other"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nequeo.Reflection.IDynamicTypeBuilder">
+            <summary>
+            Dynamic type builder interface.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.IDynamicTypeBuilder.Create(System.String,System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicProperty})">
+            <summary>
+            Create a new instance of the dynamic type.
+            </summary>
+            <param name="typeName">The name of the type.</param>
+            <param name="properties">The collection of properties to create in the type.</param>
+            <returns>The new instance of the type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.IDynamicTypeBuilder.Create(System.String,System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicProperty},System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicMethod})">
+            <summary>
+            Create a new instance of the dynamic type.
+            </summary>
+            <param name="typeName">The name of the type.</param>
+            <param name="properties">The collection of properties to create in the type.</param>
+            <param name="methods">The collection of methods to create in the type.</param>
+            <returns>The new instance of the type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.IDynamicTypeBuilder.Create(System.String,System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicPropertyValue})">
+            <summary>
+            Create a new instance of the dynamic type.
+            </summary>
+            <param name="typeName">The name of the type.</param>
+            <param name="properties">The collection of properties to create in the type.</param>
+            <returns>The new instance of the type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.IDynamicTypeBuilder.Create(System.String,System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicPropertyValue},System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicMethod})">
+            <summary>
+            Create a new instance of the dynamic type.
+            </summary>
+            <param name="typeName">The name of the type.</param>
+            <param name="properties">The collection of properties to create in the type.</param>
+            <param name="methods">The collection of methods to create in the type.</param>
+            <returns>The new instance of the type.</returns>
+        </member>
+        <member name="T:Nequeo.Reflection.Mock`1">
+            <summary>
+            Allows for mocking of types from the interface type
+            </summary>
+            <typeparam name="IT">The interface type to mock.</typeparam>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.#ctor">
+            <summary>
+            DEfault constructor.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Reflection.Mock`1.Instance">
+            <summary>
+            Gets the new instance implementation from the interface.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.Setup(System.String)">
+            <summary>
+            Setup the return value for the specified method.
+            </summary>
+            <param name="methodName">The method name in the interface.</param>
+            <returns>The method action implementation.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.CreateInstance">
+            <summary>
+            Create a new instance of the implemtation type.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.GetDynamicClass(System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo},System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})">
+            <summary>
+            Get the interface type details.
+            </summary>
+            <param name="properties">The collection of properties to create.</param>
+            <param name="methods">The collection of methods to create.</param>
+            <returns>The mocking type from the interface.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.CreateDynamicClass(System.Reflection.PropertyInfo[],System.Reflection.MethodInfo[])">
+            <summary>
+            Create the dynamic type from the interface.
+            </summary>
+            <param name="properties">The collection of properties to create.</param>
+            <param name="methods">The collection of methods to create.</param>
+            <returns>The mocking type from the interface.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.GenerateConstructor(System.Reflection.Emit.TypeBuilder)">
+            <summary>
+            Generate the constructor.
+            </summary>
+            <param name="typeBuilder">The type builder</param>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.GenerateMethods(System.Reflection.Emit.TypeBuilder,System.Reflection.MethodInfo[])">
+            <summary>
+            Generate the collection of methods.
+            </summary>
+            <param name="typeBuilder">The type builder</param>
+            <param name="methods">The collection of methods to create.</param>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.GenerateProperties(System.Reflection.Emit.TypeBuilder,System.Reflection.PropertyInfo[])">
+            <summary>
+            Generate the collection of properties.
+            </summary>
+            <param name="typeBuilder">The type builder</param>
+            <param name="properties">The collection of properties</param>
+            <returns>The collection of fields in the type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.GenerateReturnTypeMethodProperties(System.Reflection.Emit.TypeBuilder,System.Type,System.String)">
+            <summary>
+            Generate the property that will contain the return value.
+            </summary>
+            <param name="typeBuilder">The type builder</param>
+            <param name="returnType">The return type.</param>
+            <param name="methodName">The method name for the return type.</param>
+            <returns>The field that will contain the return value.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.GenerateExceptionMethodProperties(System.Reflection.Emit.TypeBuilder,System.String)">
+            <summary>
+            Generate the property that will contain the exception value.
+            </summary>
+            <param name="typeBuilder">The type builder</param>
+            <param name="methodName">The method name for the return type.</param>
+            <returns>The field that will contain the return value.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.GenerateEquals(System.Reflection.Emit.TypeBuilder,System.Reflection.FieldInfo[])">
+            <summary>
+            Generate the equals method for each property and the type.
+            </summary>
+            <param name="typeBuilder">The type builder</param>
+            <param name="fields">The collection of fields.</param>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.GenerateGetHashCode(System.Reflection.Emit.TypeBuilder,System.Reflection.FieldInfo[])">
+            <summary>
+            Generate get hash code for each property and the type.
+            </summary>
+            <param name="typeBuilder">The type builder</param>
+            <param name="fields">The collection of fields.</param>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.CallReturnMethodInfo(System.Reflection.Emit.TypeBuilder)">
+            <summary>
+            Gets the method information for the calling method return value.
+            </summary>
+            <param name="typeBuilder">The type builder</param>
+            <returns>The method information</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.Mock`1.CallExceptionMethodInfo(System.Reflection.Emit.TypeBuilder)">
+            <summary>
+            Gets the method information for the calling method exception.
+            </summary>
+            <param name="typeBuilder">The type builder</param>
+            <returns>The method information</returns>
+        </member>
+        <member name="T:Nequeo.Reflection.MockMethodCall">
+            <summary>
+            Mock return value method.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.MockMethodCall.CallMethodReturn(System.Object)">
+            <summary>
+            The member called to return the value set.
+            </summary>
+            <param name="returnValue">The vaue to return.</param>
+            <returns>The converted type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.MockMethodCall.CallMethodException(System.String)">
+            <summary>
+            The member called to test for an exception instance.
+            </summary>
+            <param name="exception">The exception to throw.</param>
+            <returns>True if an exception instance has been set else false.</returns>
+        </member>
+        <member name="T:Nequeo.Reflection.MockSignatureBuilder">
+            <summary>
+            Mocking dynamic class signature.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.MockSignatureBuilder.#ctor(System.Collections.Generic.IEnumerable{System.Reflection.PropertyInfo},System.Collections.Generic.IEnumerable{System.Reflection.MethodInfo})">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="properties">The collection of properties</param>
+            <param name="methods">The collection of methods</param>
+        </member>
+        <member name="M:Nequeo.Reflection.MockSignatureBuilder.GetHashCode">
+            <summary>
+            Get the class hash code.
+            </summary>
+            <returns>The hashcode.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.MockSignatureBuilder.Equals(System.Object)">
+            <summary>
+            The equality operation
+            </summary>
+            <param name="obj">The object to compare.</param>
+            <returns>True if this object is the same as the comparing object.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.MockSignatureBuilder.Equals(Nequeo.Reflection.MockSignatureBuilder)">
+            <summary>
+            The equality operation
+            </summary>
+            <param name="other">The mocking object to compare.</param>
+            <returns>True if the object is the same as the comparing object.</returns>
+        </member>
+        <member name="T:Nequeo.Reflection.MockMethodAction">
+            <summary>
+            Mock method action.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.MockMethodAction.#ctor(System.Object,System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="instance">The instance of the mock object.</param>
+            <param name="methodName">The method name to assign.</param>
+        </member>
+        <member name="M:Nequeo.Reflection.MockMethodAction.Return(System.Object)">
+            <summary>
+            Set the value that is to be returned when the method is invoked.
+            </summary>
+            <param name="value">The value to return.</param>
+        </member>
+        <member name="T:Nequeo.Reflection.IMock`1">
+            <summary>
+            Allows for mocking of types from the interface type
+            </summary>
+            <typeparam name="IT">The interface type to mock.</typeparam>
+        </member>
+        <member name="P:Nequeo.Reflection.IMock`1.Instance">
+            <summary>
+            Create the new instance type from the interface
+            </summary>
+            <returns>The instance of the new mocked type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.IMock`1.Setup(System.String)">
+            <summary>
+            Setup the return value for the specified method.
+            </summary>
+            <param name="methodName">The method name in the interface.</param>
+            <returns>The method action implementation.</returns>
+        </member>
+        <member name="T:Nequeo.Reflection.IMockMethodAction">
+            <summary>
+            Mock method action.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.IMockMethodAction.Return(System.Object)">
+            <summary>
+            Set the value that is to be returned when the method is invoked.
+            </summary>
+            <param name="value">The value to return.</param>
+        </member>
+        <member name="T:Nequeo.Reflection.TypeAccessor">
+            <summary>
+            Represents type declarations.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.CreateInstance(Nequeo.Reflection.DynamicProperty[])">
+            <summary>
+            Create an instance of the type.
+            </summary>
+            <param name="properties">The dynamic property array.</param>
+            <returns>The instantiated type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.CreateInstance(System.Collections.Generic.IEnumerable{Nequeo.Reflection.DynamicProperty})">
+            <summary>
+            Create an instance of the type.
+            </summary>
+            <param name="properties">The dynamic property array.</param>
+            <returns>The instantiated type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.CreateInstance(System.Type,System.Object[])">
+            <summary>
+            Create an instance of the type.
+            </summary>
+            <param name="type">The type to create an instance of.</param>
+            <param name="parameters">The constructor parameters of the type.</param>
+            <returns>The instantiated type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.CreateInstance(System.String,System.String)">
+            <summary>
+            Create an instance of the type.
+            </summary>
+            <param name="assemblyName">The assembly given the long form of its name.</param>
+            <param name="typeName">The namespace and type.</param>
+            <returns>The instantiated type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.CreateInstanceFrom(System.String,System.String)">
+            <summary>
+            Create an instance of the type.
+            </summary>
+            <param name="fullyQualifiedName">The string representing the fully qualified name and path to this module.</param>
+            <param name="fullName">The fully qualified name of the System.Type, including the namespace of the System.Type but not the assembly.</param>
+            <returns>The instantiated type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.CreateInstance``1">
+            <summary>
+            Create an instance of the type.
+            </summary>
+            <typeparam name="T">The type to create.</typeparam>
+            <returns>The instantiated type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.CreateArrayInstance(System.Type,System.Int32)">
+            <summary>
+            Create a one dimensional array.
+            </summary>
+            <param name="type">The type to create.</param>
+            <param name="length">The length of the array.</param>
+            <returns>The instantiated array type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.CreateArrayInstance(System.Type,System.Int32,System.Int32)">
+            <summary>
+            Create a two dimensional array.
+            </summary>
+            <param name="type">The type to create.</param>
+            <param name="length1">The size of the first dimension of the System.Array to create.</param>
+            <param name="length2">The size of the second dimension of the System.Array to create.</param>
+            <returns>The instantiated array type.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetType(System.String)">
+            <summary>
+            Gets the System.Type with the specified name, performing a case-sensitive search.
+            </summary>
+            <param name="typeName">The assembly-qualified name of the type to get or the type name
+            to search for in all the referenced assemblies for the current calling assembly.</param>
+            <returns>The System.Type with the specified name, if found; otherwise, null.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetType(System.String,System.Boolean)">
+            <summary>
+            Gets the System.Type with the specified name, performing a case-sensitive
+            search and specifying whether to throw an exception if the type is not found.
+            </summary>
+            <param name="typeName">The assembly-qualified name of the type to get or the type name
+            to search for in all the referenced assemblies for the current calling assembly.</param>
+            <param name="throwOnError">true to throw an exception if the type cannot be found; false to return null.</param>
+            <returns>The System.Type with the specified name, if found; otherwise, null.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetType(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Gets the System.Type with the specified name, specifying whether to perform
+            a case-sensitive search and whether to throw an exception if the type is not found.
+            </summary>
+            <param name="typeName">The assembly-qualified name of the type to get or the type name
+            to search for in all the referenced assemblies for the current calling assembly.</param>
+            <param name="throwOnError">true to throw an exception if the type cannot be found; false to return null.</param>
+            <param name="ignoreCase">true to perform a case-insensitive search for typeName, false to perform
+            a case-sensitive search for typeName.</param>
+            <returns>The System.Type with the specified name, if found; otherwise, null.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetTypes(System.Type)">
+            <summary>
+            Get all the types within the current assembly for the type.
+            </summary>
+            <param name="type">The type to return the collection of types within the assembly for.</param>
+            <returns>The collection of types else null.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetTypes(System.String)">
+            <summary>
+            Get all the types within the current assembly for the type, performing a case-sensitive search.
+            </summary>
+            <param name="typeName">The assembly-qualified name of the type to get or the type name
+            to search for in all the referenced assemblies for the current calling assembly.</param>
+            <returns>The collection of types else null.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetTypes(System.String,System.Boolean)">
+            <summary>
+            Get all the types within the current assembly for the type, performing a case-sensitive
+            search and specifying whether to throw an exception if the type is not found.
+            </summary>
+            <param name="typeName">The assembly-qualified name of the type to get or the type name
+            to search for in all the referenced assemblies for the current calling assembly.</param>
+            <param name="throwOnError">true to throw an exception if the type cannot be found; false to return null.</param>
+            <returns>The collection of types else null.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetTypes(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Get all the types within the current assembly for the type, specifying whether to perform
+            a case-sensitive search and whether to throw an exception if the type is not found.
+            </summary>
+            <param name="typeName">The assembly-qualified name of the type to get or the type name
+            to search for in all the referenced assemblies for the current calling assembly.</param>
+            <param name="throwOnError">true to throw an exception if the type cannot be found; false to return null.</param>
+            <param name="ignoreCase">>true to perform a case-insensitive search for typeName, false to perform
+            a case-sensitive search for typeName.</param>
+            <returns>The collection of types else null.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetAttributes(System.Object)">
+            <summary>
+            Get all attributes for the object type.
+            </summary>
+            <param name="type">The object to return the attributes for.</param>
+            <returns>The collection of attributes.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetProperties(System.Object)">
+            <summary>
+            Get all properties for the data entity type.
+            </summary>
+            <param name="type">The object to return the properties for.</param>
+            <returns>The collection of properties.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetProperties``1">
+            <summary>
+            Get all properties for the data entity type.
+            </summary>
+            <typeparam name="T">The type to examine.</typeparam>
+            <returns>The collection of properties.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetMethods(System.Object)">
+            <summary>
+            Get all methods for the data entity type.
+            </summary>
+            <param name="type">The object to return the methods for.</param>
+            <returns>The collection of methods.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetMethods``1">
+            <summary>
+            Get all methods for the data entity type.
+            </summary>
+            <typeparam name="T">The type to examine.</typeparam>
+            <returns>The collection of methods.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetPropertyName``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Get the name of the property within the data model type.
+            </summary>
+            <typeparam name="T">The data model type.</typeparam>
+            <typeparam name="TProperty">The property type.</typeparam>
+            <param name="expression">The property expression.</param>
+            <returns>The name of the property.</returns>
+        </member>
+        <member name="M:Nequeo.Reflection.TypeAccessor.GetPropertyName``1(System.Linq.Expressions.Expression{System.Func{``0}})">
+            <summary>
+            Get the name of the property within the data model type.
+            </summary>
+            <typeparam name="T">The data model type.</typeparam>
+            <param name="expression">The property expression.</param>
+            <returns>The name of the property.</returns>
+        </member>
+        <member name="T:Nequeo.Configuration.ReflectionsProvider">
+            <summary>
+            Class that contains the collection of all host
+            data within the configuration file.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Configuration.ReflectionsProvider.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Configuration.ReflectionsProvider.HostSection">
+            <summary>
+            Gets sets, the host collection type.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Configuration.ReflectionsProvider.DeserializeSection(System.Xml.XmlReader)">
+            <summary>
+            Reads XML from the configuration file.
+            </summary>
+            <param name="reader">The System.Xml.XmlReader object, 
+            which reads from the configuration file.</param>
+        </member>
+        <member name="M:Nequeo.Configuration.ReflectionsProvider.SerializeSection(System.Configuration.ConfigurationElement,System.String,System.Configuration.ConfigurationSaveMode)">
+            <summary>
+            Creates an XML string containing an unmerged view of the 
+            System.Configuration.ConfigurationSection
+            object as a single section to write to a file.
+            </summary>
+            <param name="parentElement">The System.Configuration.ConfigurationElement 
+            instance to use as the parent when performing the un-merge.</param>
+            <param name="name">The name of the section to create.</param>
+            <param name="saveMode">The System.Configuration.ConfigurationSaveMode 
+            instance to use when writing to a string.</param>
+            <returns>An XML string containing an unmerged view of the 
+            System.Configuration.ConfigurationSection object.</returns>
+        </member>
+        <member name="T:Nequeo.Configuration.ReflectionsProviderElement">
+            <summary>
+            Class that contains all the host attributes.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Configuration.ReflectionsProviderElement.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Configuration.ReflectionsProviderElement.#ctor(System.String,System.String)">
+            <summary>
+            Constructor with host attributes
+            </summary>
+            <param name="name">The name attribute.</param>
+            <param name="type">The provider type.</param>
+        </member>
+        <member name="P:Nequeo.Configuration.ReflectionsProviderElement.Name">
+            <summary>
+            Gets sets, the name attribute.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Configuration.ReflectionsProviderElement.ProviderType">
+            <summary>
+            Gets sets, the provider type attribute.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Configuration.ReflectionsProviderCollection">
+            <summary>
+            Class that contains all the host elements
+            found in the configuration file.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Configuration.ReflectionsProviderCollection.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Configuration.ReflectionsProviderCollection.CreateNewElement">
+            <summary>
+            Create a new configuration element.
+            </summary>
+            <returns>A new host element.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.ReflectionsProviderCollection.GetElementKey(System.Configuration.ConfigurationElement)">
+            <summary>
+            Get the current element key.
+            </summary>
+            <param name="element">The current element.</param>
+            <returns>The current host element key.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.ReflectionsProviderCollection.Add(Nequeo.Configuration.ReflectionsProviderElement)">
+            <summary>
+            Add a new host element type to the collection.
+            </summary>
+            <param name="element">The current host element.</param>
+        </member>
+        <member name="P:Nequeo.Configuration.ReflectionsProviderCollection.Item(System.Int32)">
+            <summary>
+            Indexer that gets the specified host element
+            for the specified index.
+            </summary>
+            <param name="index">The index of the host element.</param>
+            <returns>The current host element type.</returns>
+        </member>
+        <member name="P:Nequeo.Configuration.ReflectionsProviderCollection.Item(System.String)">
+            <summary>
+            Indexer that gets the specified host element
+            for the specified key name.
+            </summary>
+            <param name="Name">The key name of the element.</param>
+            <returns>The current host element type.</returns>
+        </member>
+        <member name="T:Nequeo.Configuration.Reader">
+            <summary>
+            Configuration reader
+            </summary>
+        </member>
+        <member name="M:Nequeo.Configuration.Reader.GetReflectionProvider(System.String,System.String)">
+            <summary>
+            Get the reflection provider type.
+            </summary>
+            <param name="name">The name of the host.</param>
+            <param name="section">The config section group and section name.</param>
+            <returns>The reflection provider type; else null.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Reader.CreateReflectionProvider``1(System.String)">
+            <summary>
+            Create an instance of the reflection provider name.
+            </summary>
+            <typeparam name="T">The reflection provider type to create.</typeparam>
+            <param name="reflectionProvider">The reflection provider type name.</param>
+            <returns>The instance of the reflection provider.</returns>
+        </member>
+        <member name="T:Nequeo.Configuration.Manager">
+            <summary>
+            Provides access to configuration files for client applications.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.AssignSectionElements``2(System.String,System.String,System.Int32)">
+            <summary>
+            Assign the configuration element
+            </summary>
+            <typeparam name="T">The configuration section type.</typeparam>
+            <typeparam name="E">The configuration element type.</typeparam>
+            <param name="assemblyFilePath">The assembly file name and path assocciated with the configuration file.</param>
+            <param name="sectionName">The path to the section to be returned.</param>
+            <param name="elementCount">The number of elements in the collection.</param>
+            <returns>The collection of element types.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetSectionElements``2(``1,``0[],System.Func{``0,System.Boolean})">
+            <summary>
+            
+            </summary>
+            <typeparam name="E">The configuration element type.</typeparam>
+            <typeparam name="C">The configuration element collection.</typeparam>
+            <param name="collection">The configuration element collection to copy.</param>
+            <param name="sectionElements">The collection of element types.</param>
+            <param name="collectionAction">The action to perform on the section elements in order to return the final element collection.</param>
+            <returns>The collection of element types.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.Save(System.Configuration.Configuration,System.Configuration.ConfigurationSaveMode)">
+            <summary>
+            Save the changes to the configuration file.
+            </summary>
+            <param name="configuration">The configuration that represents the file.</param>
+            <param name="saveMode">The save mode.</param>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetExecutingAssemblyLocation">
+            <summary>
+            Gets the path or UNC location of the loaded file that contains the manifest, loads the assembly.
+            </summary>
+            <returns>The location of the loaded file that contains the manifest. If the loaded
+            file was shadow-copied, the location is that of the file after being shadow-copied.
+            If the assembly is loaded from a byte array, such as when using the System.Reflection.Assembly.Load(System.Byte[])
+            method overload, the value returned is an empty string ("").</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.Configuration(System.String)">
+            <summary>
+            Get the configuration file instance for the assembly
+            </summary>
+            <param name="assemblyFilePath">The assembly file name and path assocciated with the configuration file.</param>
+            <returns>Represents a configuration file that is applicable to a particular computer,
+            application, or resource. This class cannot be inherited.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.Configuration(System.Configuration.ConfigurationUserLevel)">
+            <summary>
+            Get the configuration file instance for the assembly
+            </summary>
+            <param name="userLevel">The System.Configuration.ConfigurationUserLevel for which you are opening the configuration.</param>
+            <returns>Represents a configuration file that is applicable to a particular computer,
+            application, or resource. This class cannot be inherited.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.OpenMachineConfiguration">
+            <summary>
+            Opens the machine configuration file on the current computer.
+            </summary>
+            <returns>Represents a configuration file that is applicable to a particular computer,
+            application, or resource. This class cannot be inherited.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.RefreshSection(System.String)">
+            <summary>
+            Refreshes the named section so the next time that it is retrieved it will be re-read from disk.
+            </summary>
+            <param name="sectionName">The path to the section to be returned.</param>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetSection``1(System.String)">
+            <summary>
+            Get the specified section type.
+            </summary>
+            <typeparam name="T">The configuration section type.</typeparam>
+            <param name="sectionName">The path to the section to be returned.</param>
+            <returns>The section type</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetSection``1(System.String,System.String)">
+            <summary>
+            Get the specified section type.
+            </summary>
+            <typeparam name="T">The configuration section type.</typeparam>
+            <param name="assemblyFilePath">The assembly file name and path assocciated with the configuration file.</param>
+            <param name="sectionName">The path to the section to be returned.</param>
+            <returns>The section type</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetSectionGroup``1(System.String)">
+            <summary>
+            Get the specified section group type.
+            </summary>
+            <typeparam name="T">The configuration section group type.</typeparam>
+            <param name="sectionGroupName">The path name of the System.Configuration.ConfigurationSectionGroup to return.</param>
+            <returns>The section group type.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetSectionGroup``1(System.String,System.String)">
+            <summary>
+            Get the specified section group type.
+            </summary>
+            <typeparam name="T">The configuration section group type.</typeparam>
+            <param name="assemblyFilePath">The assembly file name and path assocciated with the configuration file.</param>
+            <param name="sectionGroupName">The path name of the System.Configuration.ConfigurationSectionGroup to return.</param>
+            <returns>The section group type.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetAppSettings">
+            <summary>
+            Get the application settings configuration section.
+            </summary>
+            <returns>An System.Configuration.AppSettingsSection object representing the appSettings
+            configuration section that applies to this System.Configuration.Configuration object.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetAppSettingsbyAssembly(System.String)">
+            <summary>
+            Get the application settings configuration section.
+            </summary>
+            <param name="assemblyFilePath">The assembly file name and path assocciated with the configuration file.</param>
+            <returns>An System.Configuration.AppSettingsSection object representing the appSettings
+            configuration section that applies to this System.Configuration.Configuration object.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetAppSettings(System.String)">
+            <summary>
+            Get the application settings configuration section.
+            </summary>
+            <param name="sectionName">The path to the section to be returned.</param>
+            <returns>An System.Configuration.AppSettingsSection object representing the appSettings
+            configuration section that applies to this System.Configuration.Configuration object.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetApplicationSettings(System.String,System.String)">
+            <summary>
+            Get the specified application settings group.
+            </summary>
+            <param name="assemblyFilePath">The assembly file name and path assocciated with the configuration file.</param>
+            <param name="sectionGroupName">The path name of the System.Configuration.ConfigurationSectionGroup to return.</param>
+            <returns>Represents a grouping of related application settings sections within a configuration
+            file. This class cannot be inherited.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetApplicationSettings(System.String)">
+            <summary>
+            Get the specified application settings group.
+            </summary>
+            <param name="sectionGroupName">The path name of the System.Configuration.ConfigurationSectionGroup to return.</param>
+            <returns>Represents a grouping of related application settings sections within a configuration
+            file. This class cannot be inherited.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetClientSettings(System.String,System.String)">
+            <summary>
+            Get the specified client settings section.
+            </summary>
+            <param name="assemblyFilePath">The assembly file name and path assocciated with the configuration file.</param>
+            <param name="sectionName">The path to the section to be returned.</param>
+            <returns>Represents a group of user-scoped application settings in a configuration file.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetClientSettings(System.String)">
+            <summary>
+            Get the specified client settings section.
+            </summary>
+            <param name="sectionName">The path to the section to be returned.</param>
+            <returns>Represents a group of user-scoped application settings in a configuration file.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetConnectionStrings">
+            <summary>
+            Get the connection string configuration section.
+            </summary>
+            <returns>A System.Configuration.ConnectionStringsSection configuration-section object
+            representing the connectionStrings configuration section that applies to
+            this System.Configuration.Configuration object.</returns>
+        </member>
+        <member name="M:Nequeo.Configuration.Manager.GetConnectionStrings(System.String)">
+            <summary>
+            Get the connection string configuration section.
+            </summary>
+            <param name="assemblyFilePath">The assembly file name and path assocciated with the configuration file.</param>
+            <returns>A System.Configuration.ConnectionStringsSection configuration-section object
+            representing the connectionStrings configuration section that applies to
+            this System.Configuration.Configuration object.</returns>
+        </member>
+        <member name="T:Nequeo.Extension.TypeExtensions">
+            <summary>
+            Type extensions.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Extension.TypeExtensions.PredefinedTypes">
+            <summary>
+            Predefined Types.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.IsPredefinedType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.FirstSortableProperty(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.IsNullableType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.GetNonNullableType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.GetTypeName(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.IsNumericType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.IsSignedIntegralType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.IsUnsignedIntegralType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.GetNumericTypeKind(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.GetIndexerPropertyInfo(System.Type,System.Type[])">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="indexerArguments"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.AreArgumentsApplicable(System.Collections.Generic.IEnumerable{System.Type},System.Collections.Generic.IEnumerable{System.Reflection.ParameterInfo})">
+            <summary>
+            
+            </summary>
+            <param name="arguments"></param>
+            <param name="parameters"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.IsEnumType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.IsCompatibleWith(System.Type,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="source"></param>
+            <param name="target"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.FindGenericType(System.Type,System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="genericType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.DefaultValue(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.FindPropertyOrField(System.Type,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="memberName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.FindPropertyOrField(System.Type,System.String,System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <param name="memberName"></param>
+            <param name="staticAccess"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.SelfAndBaseTypes(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.SelfAndBaseClasses(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.AddInterface(System.Collections.Generic.List{System.Type},System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="types"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.IsDataRow(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtensions.ToJavaScriptType(System.Type)">
+            <summary>
+            
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nequeo.Runtime.DisposableBase">
+            <summary>
+            Base disposable object.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Runtime.DisposableBase.Finalize">
+            <summary>
+            Deconstructor.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Runtime.DisposableBase.Dispose">
+            <summary>
+            Dispose of the object.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Runtime.DisposableBase.Dispose(System.Boolean)">
+            <summary>
+            Dispose(bool disposing) executes in two distinct scenarios.
+            If disposing equals true, the method has been called directly
+            or indirectly by a user's code. Managed and unmanaged resources
+            can be disposed.
+            If disposing equals false, the method has been called by the
+            runtime from inside the finalizer and you should not reference
+            other objects. Only unmanaged resources can be disposed.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Runtime.SingletonFactory`1">
+            <summary>
+            Generic singleton factory.
+            </summary>
+            <typeparam name="T">The singleton type.</typeparam>
+        </member>
+        <member name="M:Nequeo.Runtime.SingletonFactory`1.#ctor">
+            <summary>
+            Generic singleton factory.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Runtime.SingletonFactory`1.Instance">
+            <summary>
+            Gets the current instance of the type T.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Runtime.SingletonFactory`1.Dispose">
+            <summary>
+            Implement IDisposable.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Runtime.SingletonFactory`1.Dispose(System.Boolean)">
+            <summary>
+            Dispose(bool disposing) executes in two distinct scenarios.
+            If disposing equals true, the method has been called directly
+            or indirectly by a user's code. Managed and unmanaged resources
+            can be disposed.
+            </summary>
+            <param name="disposing">Is disposing.</param>
+        </member>
+        <member name="M:Nequeo.Runtime.SingletonFactory`1.Finalize">
+            <summary>
+            /// Use C# destructor syntax for finalization code.
+            This destructor will run only if the Dispose method
+            does not get called.
+            It gives your base class the opportunity to finalize.
+            Do not provide destructors in types derived from this class.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Runtime.IServiceLocator">
+            <summary>
+            Service locator interface type.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Runtime.IServiceLocator.Resolve``1">
+            <summary>
+            Resolves this instance.
+            </summary>
+            <typeparam name="TService">The type of the service.</typeparam>
+            <returns>The service type instance.</returns>
+        </member>
+        <member name="M:Nequeo.Runtime.IServiceLocator.Register``1(``0)">
+            <summary>
+            Registers the specified service as singleton.
+            </summary>
+            <typeparam name="TService">The type of the service.</typeparam>
+            <param name="service">The service.</param>
+            <returns>The service instance.</returns>
+        </member>
+        <member name="M:Nequeo.Runtime.IServiceLocator.Register``1(System.Func{Nequeo.Runtime.IServiceLocator,System.Object})">
+            <summary>
+            Registers the specified factory.
+            </summary>
+            <typeparam name="TService">The type of the service.</typeparam>
+            <param name="factory">The factory.</param>
+            <returns>The service instance.</returns>
+        </member>
+        <member name="T:Nequeo.Runtime.ServiceLocator">
+            <summary>
+            Service locator for the current application domain.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Runtime.ServiceLocator.Current">
+            <summary>
+            Get or create the current singleton.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Runtime.ServiceLocator.SetCurrent(System.Func{Nequeo.Runtime.IServiceLocator})">
+            <summary>
+            Set the current signleton service locator.
+            </summary>
+            <param name="factory">Executes the function call on the current service factory locator.</param>
+        </member>
+        <member name="T:Nequeo.Runtime.ServiceLocatorRuntimeTypeHandle">
+            <summary>
+            Default Service locator runtime type handler.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Runtime.ServiceLocatorRuntimeTypeHandle.#ctor">
+            <summary>
+            Initializes a new instance of the class.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Runtime.ServiceLocatorRuntimeTypeHandle.Resolve``1">
+            <summary>
+            Resolves this instance.
+            </summary>
+            <typeparam name="TService">The type of the service.</typeparam>
+            <returns>The service requested.</returns>
+        </member>
+        <member name="M:Nequeo.Runtime.ServiceLocatorRuntimeTypeHandle.Register``1(``0)">
+            <summary>
+            Registers the specified service as singleton.
+            </summary>
+            <typeparam name="TService">The type of the service.</typeparam>
+            <param name="service">The service.</param>
+            <returns>Returns this current service locator.</returns>
+        </member>
+        <member name="M:Nequeo.Runtime.ServiceLocatorRuntimeTypeHandle.Register``1(System.Func{Nequeo.Runtime.IServiceLocator,System.Object})">
+            <summary>
+            Registers the specified factory.
+            </summary>
+            <typeparam name="TService">The type of the service.</typeparam>
+            <param name="factory">The factory.</param>
+            <returns>Returns this current service locator.</returns>
+        </member>
+        <member name="M:Nequeo.Runtime.ServiceLocatorRuntimeTypeHandle.Dispose(System.Boolean)">
+            <summary>
+            Disposes the resources.
+            </summary>
+            <param name="disposing">True to dispose of managed resources.</param>
+        </member>
+        <member name="M:Nequeo.Runtime.ServiceLocatorRuntimeTypeHandle.CreateDefaultFactories">
+            <summary>
+            Create the default runtime types within the factory.
+            </summary>
+            <returns>The collection of runtime types and service instances.</returns>
+        </member>
+    </members>
+</doc>

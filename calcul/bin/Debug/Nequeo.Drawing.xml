@@ -1,0 +1,1004 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nequeo.Drawing</name>
+    </assembly>
+    <members>
+        <member name="T:Nequeo.Drawing.Image">
+            <summary>
+            Image drawing provider.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.#ctor">
+            <summary>
+            Image drawing provider.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.CaptureScreen(System.Drawing.Imaging.PixelFormat)">
+            <summary>
+            Capture the primary screen image.
+            </summary>
+            <param pixelFormat="image">Specifies the format of the color data for each pixel in the image.</param>
+            <returns>The image containing the screen.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.CaptureAllScreens(System.Drawing.Imaging.PixelFormat)">
+            <summary>
+            Capture all screens image.
+            </summary>
+            <param pixelFormat="image">Specifies the format of the color data for each pixel in the image.</param>
+            <returns>The image containing the screen.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.CaptureScreenScaled(System.Int32,System.Int32,System.Boolean,System.Drawing.Imaging.PixelFormat)">
+            <summary>
+            Capture the primary screen image.
+            </summary>
+            <param name="width">The scaled width.</param>
+            <param name="height">The scaled height.</param>
+            <param name="showCursor">Draw the cursor on the image.</param>
+            <param name="pixelFormat">Specifies the format of the color data for each pixel in the image.</param>
+            <returns>The image containing the screen.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.Load(System.String)">
+            <summary>
+            Creates an System.Drawing.Image from the specified file.
+            </summary>
+            <param name="filename">A string that contains the name of the file from which to create the System.Drawing.Image.</param>
+            <returns>The System.Drawing.Image this method creates.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.Load(System.String,System.Boolean)">
+            <summary>
+            Creates an System.Drawing.Image from the specified file.
+            </summary>
+            <param name="filename">A string that contains the name of the file from which to create the System.Drawing.Image.</param>
+            <param name="useEmbeddedColorManagement">Set to true to use color management information embedded in the image file; otherwise, false.</param>
+            <returns>The System.Drawing.Image this method creates.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.Load(System.IO.Stream)">
+            <summary>
+            Creates an System.Drawing.Image from the specified data stream.
+            </summary>
+            <param name="stream">A System.IO.Stream that contains the data for this System.Drawing.Image.</param>
+            <returns>The System.Drawing.Image this method creates.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.Load(System.IO.Stream,System.Boolean)">
+            <summary>
+            Creates an System.Drawing.Image from the specified data stream.
+            </summary>
+            <param name="stream">A System.IO.Stream that contains the data for this System.Drawing.Image.</param>
+            <param name="useEmbeddedColorManagement">True to use color management information embedded in the data stream; otherwise, false.</param>
+            <returns>The System.Drawing.Image this method creates.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.Load(System.IO.Stream,System.Boolean,System.Boolean)">
+            <summary>
+            Creates an System.Drawing.Image from the specified data stream.
+            </summary>
+            <param name="stream">A System.IO.Stream that contains the data for this System.Drawing.Image.</param>
+            <param name="useEmbeddedColorManagement">True to use color management information embedded in the data stream; otherwise, false.</param>
+            <param name="validateImageData">True to validate the image data; otherwise, false.</param>
+            <returns>The System.Drawing.Image this method creates.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.Create(System.String)">
+            <summary>
+            Creates an System.Drawing.Image from the specified file.
+            </summary>
+            <param name="filename">A string that contains the name of the file from which to create the System.Drawing.Image.</param>
+            <returns>The System.Drawing.Image this method creates.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.Create(System.String,System.Boolean)">
+            <summary>
+            Creates an System.Drawing.Image from the specified file.
+            </summary>
+            <param name="filename">A string that contains the name of the file from which to create the System.Drawing.Image.</param>
+            <param name="useEmbeddedColorManagement">Set to true to use color management information embedded in the image file; otherwise, false.</param>
+            <returns>The System.Drawing.Image this method creates.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.Create(System.IO.Stream)">
+            <summary>
+            Creates an System.Drawing.Image from the specified data stream.
+            </summary>
+            <param name="stream">A System.IO.Stream that contains the data for this System.Drawing.Image.</param>
+            <returns>The System.Drawing.Image this method creates.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.Create(System.IO.Stream,System.Boolean)">
+            <summary>
+            Creates an System.Drawing.Image from the specified data stream.
+            </summary>
+            <param name="stream">A System.IO.Stream that contains the data for this System.Drawing.Image.</param>
+            <param name="useEmbeddedColorManagement">True to use color management information embedded in the data stream; otherwise, false.</param>
+            <returns>The System.Drawing.Image this method creates.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.Create(System.IO.Stream,System.Boolean,System.Boolean)">
+            <summary>
+            Creates an System.Drawing.Image from the specified data stream.
+            </summary>
+            <param name="stream">A System.IO.Stream that contains the data for this System.Drawing.Image.</param>
+            <param name="useEmbeddedColorManagement">True to use color management information embedded in the data stream; otherwise, false.</param>
+            <param name="validateImageData">True to validate the image data; otherwise, false.</param>
+            <returns>The System.Drawing.Image this method creates.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.Save(System.Drawing.Bitmap,System.IO.Stream,System.Drawing.Imaging.ImageFormat)">
+            <summary>
+            Save the bitmap image.
+            </summary>
+            <param name="image">The bitmap image to save.</param>
+            <param name="stream">The stream to write the image to.</param>
+            <param name="imageFormat">The image format to create.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.Create(System.Int32,System.Int32,System.IO.Stream)">
+            <summary>
+            Create a new image.
+            </summary>
+            <param name="width">The width of the image.</param>
+            <param name="height">The height of the image.</param>
+            <param name="backgroundImage">The back ground image to add to this image.</param>
+            <returns>The new bitmap image.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.CreateGraphics(System.Drawing.Bitmap@,System.Drawing.Rectangle@,System.Drawing.RectangleF@)">
+            <summary>
+            Create the graphics.
+            </summary>
+            <param name="image">The image to draw graphics on.</param>
+            <param name="rectangle">Stores a set of four integers that represent the location and size of a rectangle.</param>
+            <param name="rectangleF">Stores a set of four floating-point numbers that represent the location and
+            size of a rectangle. For more advanced region functions, use a System.Drawing.Region object.</param>
+            <returns>Encapsulates a GDI+ drawing surface.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.DistortImage(System.Drawing.Bitmap@,System.Double)">
+            <summary>
+            Distort the bitmap image.
+            </summary>
+            <param name="bitmap">The image to distort.</param>
+            <param name="distortion">The distortion factor.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.CreateText(System.Drawing.Graphics@,System.String,System.Single,System.Single,System.Single,System.Single,System.Drawing.StringFormat,System.Drawing.FontFamily)">
+            <summary>
+            Create the text within the graphics path.
+            </summary>
+            <param name="graphics">The image graphic to draw the text on.</param>
+            <param name="text">The text to create.</param>
+            <param name="x">The x-coordinate of the upper-left corner of the rectangle.</param>
+            <param name="y">The y-coordinate of the upper-left corner of the rectangle.</param>
+            <param name="width">The width of the text.</param>
+            <param name="height">The height of the text</param>
+            <param name="stringFormat">Text layout information (such as alignment, orientation and
+            tab stops) display manipulations (such as ellipsis insertion and national
+            digit substitution) and OpenType features</param>
+            <param name="fontFamily">The image graphic font family of the text.</param>
+            <returns>The new graphic path containing the text.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.WarpText(System.Drawing.Drawing2D.GraphicsPath@,System.Drawing.Rectangle)">
+            <summary>
+            Warp the text in the image.
+            </summary>
+            <param name="textPath">The graphic path containg the text.</param>
+            <param name="rectangle">The rectangle that will contain the image.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Image.RandomPoint(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Random point initiator.
+            </summary>
+            <param name="xMin">The minimun x co-ordinate.</param>
+            <param name="xMax">The maximiun x co-ordinate.</param>
+            <param name="yMin">The minimun y co-ordinate.</param>
+            <param name="yMax">The maximun y co-ordinate.</param>
+            <returns>Represents an ordered pair of floating-point x- and y-coordinates that defines
+            a point in a two-dimensional plane.</returns>
+        </member>
+        <member name="T:Nequeo.Drawing.ConversionType">
+            <summary>
+            The file type to convert from.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.ConversionType.Jpeg">
+            <summary>
+            Jpeg
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.ConversionType.Tiff">
+            <summary>
+            Tiff
+            </summary>
+        </member>
+        <member name="T:Nequeo.Drawing.EmbeddedState">
+            <summary>
+            The text embedded state.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.EmbeddedState.Hiding">
+            <summary>
+            Hiding.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.EmbeddedState.Filling_With_Zeros">
+            <summary>
+            Fill with zeros.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Drawing.PdfSaveType">
+            <summary>
+            The type of PDF file to save.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.PdfSaveType.PdfA">
+            <summary>
+            PdfA
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.PdfSaveType.Pdf14">
+            <summary>
+            Pdf14
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.PdfSaveType.Pdf15">
+            <summary>
+            Pdf15
+            </summary>
+        </member>
+        <member name="T:Nequeo.Drawing.Captcha">
+            <summary>
+            Image Captcha provider.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Captcha.#ctor">
+            <summary>
+            Image Captcha provider.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.Captcha.FontFamilies">
+            <summary>
+            The collection of font families.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Captcha.GenerateImage(System.String,System.Int32,System.Int32,System.Drawing.FontFamily,System.IO.Stream)">
+            <summary>
+            Generate the image from the form authentication encrypted method.
+            </summary>
+            <param name="text">The text to create.</param>
+            <param name="width">The width of the image.</param>
+            <param name="height">The height of the image.</param>
+            <param name="fontFamily">The image graphic font family of the text.</param>
+            <param name="backgroundImage">File name and path of a background image (if set then the background image is used.</param>
+            <returns>The bitmap image containg the captcha.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Captcha.CreateImage(System.Int32,System.Int32)">
+            <summary>
+            Create the bitmap size image, with a random backgroud gradient.
+            </summary>
+            <param name="width">The width of the image.</param>
+            <param name="height">The height of the image.</param>
+            <returns>The image created.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Captcha.DistortImage(System.Drawing.Bitmap@,System.Double)">
+            <summary>
+            Distort the bitmap image.
+            </summary>
+            <param name="bitmap">The image to distort.</param>
+            <param name="distortion">The distortion factor.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Captcha.CreateText(System.String,System.Int32,System.Int32,System.Drawing.Graphics,System.Drawing.FontFamily)">
+            <summary>
+            Create the text within the graphics path.
+            </summary>
+            <param name="text">The text to create.</param>
+            <param name="width">The width of the text.</param>
+            <param name="height">The height of the text</param>
+            <param name="graphics">The image graphic to draw the text on.</param>
+            <param name="fontFamily">The image graphic font family of the text.</param>
+            <returns>The new graphic path containing the text.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Captcha.WarpText(System.Drawing.Drawing2D.GraphicsPath@,System.Drawing.Rectangle)">
+            <summary>
+            Warp the text in the image.
+            </summary>
+            <param name="textPath">The graphic path containg the text.</param>
+            <param name="rectangle">The rectangle that will contain the image.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Captcha.RandomPoint(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Random point initiator.
+            </summary>
+            <param name="xMin">The minimun x co-ordinate.</param>
+            <param name="xMax">The maximiun x co-ordinate.</param>
+            <param name="yMin">The minimun y co-ordinate.</param>
+            <param name="yMax">The maximun y co-ordinate.</param>
+            <returns>Represents an ordered pair of floating-point x- and y-coordinates that defines
+            a point in a two-dimensional plane.</returns>
+        </member>
+        <member name="T:Nequeo.Drawing.ScreenCapture">
+            <summary>
+            Continuous screen capture.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.ScreenCapture.#ctor">
+            <summary>
+            Continuous screen capture.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.ScreenCapture.Enabled">
+            <summary>
+            Gets or sets an indicator specifying that capture should be enabled. False to stop capture.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.ScreenCapture.CursorSize">
+            <summary>
+            Gets or sets the cursor size.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.ScreenCapture.Width">
+            <summary>
+            Gets or sets the image scaled width, default is -1, no scaling is applied.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.ScreenCapture.Height">
+            <summary>
+            Gets or sets the image scaled height, default is -1, no scaling is applied.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.ScreenCapture.ShowCursor">
+            <summary>
+            Gets or sets an indicator specifying if the cursor should be drawn on the image.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.ScreenCapture.PixelFormat">
+            <summary>
+            Gets or sets the pixel format.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.ScreenCapture.PrimaryScreen">
+            <summary>
+            Capture primary screen and then yield.
+            </summary>
+            <returns>The captured screen.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.ScreenCapture.Dispose">
+            <summary>
+            Implement IDisposable.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.ScreenCapture.Dispose(System.Boolean)">
+            <summary>
+            Dispose(bool disposing) executes in two distinct scenarios.
+            If disposing equals true, the method has been called directly
+            or indirectly by a user's code. Managed and unmanaged resources
+            can be disposed.
+            If disposing equals false, the method has been called by the
+            runtime from inside the finalizer and you should not reference
+            other objects. Only unmanaged resources can be disposed.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.ScreenCapture.Finalize">
+            <summary>
+            Use C# destructor syntax for finalization code.
+            This destructor will run only if the Dispose method
+            does not get called.
+            It gives your base class the opportunity to finalize.
+            Do not provide destructors in types derived from this class.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Drawing.TextEmbedding">
+            <summary>
+            Text embedding into image implementation.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.TextEmbedding.EmbedText(System.String,System.Drawing.Bitmap)">
+            <summary>
+            Embed the text into the image.
+            </summary>
+            <param name="text">The text to embed.</param>
+            <param name="bmp">The image to embed the text into.</param>
+            <returns>The image containing the embedded text.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.TextEmbedding.ExtractText(System.Drawing.Bitmap)">
+            <summary>
+            Extract the text from the image.
+            </summary>
+            <param name="bmp">The image that contains the text to extract.</param>
+            <returns>The extracted text.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.TextEmbedding.ReverseBits(System.Int32)">
+            <summary>
+            Reverse bits.
+            </summary>
+            <param name="n">The value.</param>
+            <returns>The reverse.</returns>
+        </member>
+        <member name="T:Nequeo.Drawing.Convert.XpsDocument">
+            <summary>
+            Convert XPS documents provider
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Convert.XpsDocument.ToBitmap(System.String,System.String)">
+            <summary>
+            Convert an XPS document to a Bitmap image
+            </summary>
+            <param name="xpsFileName">The path of the XPS document</param>
+            <param name="bitmapFileName">The path of the bitmap image to create</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Convert.XpsDocument.ToTiff(System.String,System.String)">
+            <summary>
+            Convert an XPS document to a TIFF image
+            </summary>
+            <param name="xpsFileName">The path of the XPS document</param>
+            <param name="tiffFileName">The path of the tiff image to create</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Convert.XpsDocument.ToPng(System.String,System.String)">
+            <summary>
+            Convert an XPS document to a PNG image
+            </summary>
+            <param name="xpsFileName">The path of the XPS document</param>
+            <param name="pngFileName">The path of the png image to create</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Convert.XpsDocument.ToJpeg(System.String,System.String)">
+            <summary>
+            Convert an XPS document to a JPEG image
+            </summary>
+            <param name="xpsFileName">The path of the XPS document</param>
+            <param name="jpegFileName">The path of the jpeg image to create</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Convert.XpsDocument.ToGif(System.String,System.String)">
+            <summary>
+            Convert an XPS document to a GIF image
+            </summary>
+            <param name="xpsFileName">The path of the XPS document</param>
+            <param name="gifFileName">The path of the gif image to create</param>
+        </member>
+        <member name="T:Nequeo.Drawing.Printing.PreviewDialog">
+            <summary>
+            Represents a dialog containing a <see cref="T:Nequeo.Drawing.Printing.PreviewControl"/> control
+            used to preview and print <see cref="T:System.Drawing.Printing.PrintDocument"/> objects.
+            </summary>
+            <remarks>
+            This dialog is similar to the standard <see cref="T:System.Windows.Forms.PrintPreviewDialog"/>
+            but provides additional options such printer and page setup buttons,
+            a better UI based on the <see cref="T:System.Windows.Forms.ToolStrip"/> control, and built-in
+            PDF export.
+            </remarks>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewDialog.#ctor">
+            <summary>
+            Initializes a new instance of a <see cref="T:Nequeo.Drawing.Printing.PreviewDialog"/>.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewDialog.#ctor(System.Windows.Forms.Control)">
+            <summary>
+            Initializes a new instance of a <see cref="T:Nequeo.Drawing.Printing.PreviewDialog"/>.
+            </summary>
+            <param name="parentForm">Parent form that defines the initial size for this dialog.</param>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.PreviewDialog.Document">
+            <summary>
+            Gets or sets the <see cref="T:System.Drawing.Printing.PrintDocument"/> to preview.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewDialog.OnShown(System.EventArgs)">
+            <summary>
+            Overridden to assign document to preview control only after the 
+            initial activation.
+            </summary>
+            <param name="e"><see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewDialog.OnFormClosing(System.Windows.Forms.FormClosingEventArgs)">
+            <summary>
+            Overridden to cancel any ongoing previews when closing form.
+            </summary>
+            <param name="e"><see cref="T:System.Windows.Forms.FormClosingEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="F:Nequeo.Drawing.Printing.PreviewDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Drawing.Printing.Document">
+            <summary>
+            Printing document.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Document.#ctor">
+            <summary>
+            Printing document.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Document.#ctor(System.Drawing.Image)">
+            <summary>
+            Printing document.
+            </summary>
+            <param name="image">The image containing the data to print.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Document.#ctor(System.IO.StreamReader,System.Drawing.Font,System.Drawing.Brush)">
+            <summary>
+            Printing document.
+            </summary>
+            <param name="reader">The stream reader containing the data to print.</param>
+            <param name="font">The font to use when printing stream data.</param>
+            <param name="brush">The font colour when printing stream data.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Document.#ctor(System.String[],System.Drawing.Font,System.Drawing.Brush)">
+            <summary>
+            Printing document.
+            </summary>
+            <param name="text">The array of text containing the data to print.</param>
+            <param name="font">The font to use when printing stream data.</param>
+            <param name="brush">The font colour when printing stream data.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Document.ResetTextIndex">
+            <summary>
+            Resets the text index to zero start of document when printing the text array.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Document.OnBeginPrint(System.Drawing.Printing.PrintEventArgs)">
+            <summary>
+            Start printing the document
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Document.OnPrintPage(System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            Render a page into the PrintDocument
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Document.PrintFromStream(System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            Print from the stream.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Document.PrintFromArray(System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            Print from the array.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Document.PrintFromImage(System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            Print from the image.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="T:Nequeo.Drawing.Printing.ZoomMode">
+            <summary>
+            Specifies the zoom mode for the <see cref="T:Nequeo.Drawing.Printing.PreviewControl"/> control.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.Printing.ZoomMode.ActualSize">
+            <summary>
+            Show the preview in actual size.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.Printing.ZoomMode.FullPage">
+            <summary>
+            Show a full page.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.Printing.ZoomMode.PageWidth">
+            <summary>
+            Show a full page width.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.Printing.ZoomMode.TwoPages">
+            <summary>
+            Show two full pages.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.Printing.ZoomMode.Custom">
+            <summary>
+            Use the zoom factor specified by the <see cref="P:Nequeo.Drawing.Printing.PreviewControl.Zoom"/> property.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Drawing.Printing.PageImageList">
+            <summary>
+            This version of the PageImageList is a simple List Image. 
+            It is simple, but caches one image (GDI object) per preview page.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Drawing.Printing.Preview">
+            <summary>
+            Preview document.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Preview.#ctor(Nequeo.Drawing.Printing.PreviewDialog)">
+            <summary>
+            Preview document.
+            </summary>
+            <param name="dialog">The print preview dialog.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Preview.#ctor(System.Windows.Forms.PrintPreviewDialog)">
+            <summary>
+            Preview document.
+            </summary>
+            <param name="dialog">The print preview dialog.</param>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.Preview.Document">
+            <summary>
+            Gets or sets the print document.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Preview.ShowDialog">
+            <summary>
+            Shows the form as a modal dialog box.
+            </summary>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.Preview.ShowDialog(System.Windows.Forms.IWin32Window)">
+            <summary>
+            Shows the form as a modal dialog box.
+            </summary>
+            <param name="owner">Any object that implements System.Windows.Forms.IWin32Window that represents
+            the top-level window that will own the modal dialog box.</param>
+            <returns>One of the System.Windows.Forms.DialogResult values.</returns>
+        </member>
+        <member name="T:Nequeo.Drawing.Printing.PreviewControl">
+            <summary>
+            Preview control.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.#ctor">
+            <summary>
+            Preview control.
+            </summary>
+        </member>
+        <member name="E:Nequeo.Drawing.Printing.PreviewControl.StartPageChanged">
+            <summary>
+            Occurs when the value of the <see cref="P:Nequeo.Drawing.Printing.PreviewControl.StartPage"/> property changes.
+            </summary>
+        </member>
+        <member name="E:Nequeo.Drawing.Printing.PreviewControl.PageCountChanged">
+            <summary>
+            Occurs when the value of the <see cref="P:Nequeo.Drawing.Printing.PreviewControl.PageCount"/> property changes.
+            </summary>
+        </member>
+        <member name="E:Nequeo.Drawing.Printing.PreviewControl.ZoomModeChanged">
+            <summary>
+            Occurs when the value of the <see cref="P:Nequeo.Drawing.Printing.PreviewControl.ZoomMode"/> property changes.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.PreviewControl.Document">
+            <summary>
+            Gets or sets the <see cref="T:System.Drawing.Printing.PrintDocument"/> being previewed.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.RefreshPreview">
+            <summary>
+            Regenerates the preview to reflect changes in the document layout.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.PreviewControl.IsRendering">
+            <summary>
+            Gets a value that indicates whether the <see cref="P:Nequeo.Drawing.Printing.PreviewControl.Document"/> is being rendered.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.PreviewControl.ZoomMode">
+            <summary>
+            Gets or sets how the zoom should be adjusted when the control is resized.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.PreviewControl.Zoom">
+            <summary>
+            Gets or sets a custom zoom factor used when the <see cref="P:Nequeo.Drawing.Printing.PreviewControl.ZoomMode"/> property
+            is set to <b>Custom</b>.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.PreviewControl.StartPage">
+            <summary>
+            Gets or sets the first page being previewed.
+            </summary>
+            <remarks>
+            There may be one or two pages visible depending on the setting of the
+            <see cref="P:Nequeo.Drawing.Printing.PreviewControl.ZoomMode"/> property.
+            </remarks>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.PreviewControl.PageCount">
+            <summary>
+            Gets the number of pages available for preview.
+            </summary>
+            <remarks>
+            This number increases as the document is rendered into the control.
+            </remarks>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.PreviewControl.BackColor">
+            <summary>
+            Gets or sets the control's background color.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.PreviewControl.PageImages">
+            <summary>
+            Gets a list containing the images of the pages in the document.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.Cancel">
+            <summary>
+            Stops rendering the <see cref="P:Nequeo.Drawing.Printing.PreviewControl.Document"/>.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.Print">
+            <summary>
+            Prints the current document honoring the selected page range.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.OnStartPageChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Nequeo.Drawing.Printing.PreviewControl.StartPageChanged"/> event.
+            </summary>
+            <param name="e"><see cref="T:System.EventArgs"/> that provides the event data.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.OnPageCountChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Nequeo.Drawing.Printing.PreviewControl.PageCountChanged"/> event.
+            </summary>
+            <param name="e"><see cref="T:System.EventArgs"/> that provides the event data/</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.OnZoomModeChanged(System.EventArgs)">
+            <summary>
+            Raises the <see cref="E:Nequeo.Drawing.Printing.PreviewControl.ZoomModeChanged"/> event.
+            </summary>
+            <param name="e"><see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            On paint background.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.OnPaint(System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            On paint.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.OnSizeChanged(System.EventArgs)">
+            <summary>
+            On size changed.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.OnMouseDown(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            On mouse down.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.OnMouseUp(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            On mouse up.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.OnMouseMove(System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            On mouse move.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.IsInputKey(System.Windows.Forms.Keys)">
+            <summary>
+            Is keyboard support
+            </summary>
+            <param name="keyData">The keys data.</param>
+            <returns>True if supported; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.OnKeyDown(System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            On key down.
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl._doc_PrintPage(System.Object,System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            Document print page.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl._doc_EndPrint(System.Object,System.Drawing.Printing.PrintEventArgs)">
+            <summary>
+            Document end print.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.SyncPageImages(System.Boolean)">
+            <summary>
+            Sync page images.
+            </summary>
+            <param name="lastPageReady"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.GetImage(System.Int32)">
+            <summary>
+            Get image.
+            </summary>
+            <param name="page"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.GetImageRectangle(System.Drawing.Image)">
+            <summary>
+            Get image rectangle.
+            </summary>
+            <param name="img"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.GetImageSizeInPixels(System.Drawing.Image)">
+            <summary>
+            Get image size in pixels.
+            </summary>
+            <param name="img"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.RenderPage(System.Drawing.Graphics,System.Drawing.Image,System.Drawing.Rectangle)">
+            <summary>
+            Render page.
+            </summary>
+            <param name="g"></param>
+            <param name="img"></param>
+            <param name="rc"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.UpdateScrollBars">
+            <summary>
+            Update scroll bars.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.UpdatePreview">
+            <summary>
+            Update preview.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Drawing.Printing.PreviewControl.DocumentPrinter">
+            <summary>
+            Helper class that prints the selected page range in a PrintDocument.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.Printing.PreviewControl.components">
+            <summary> 
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.Dispose(System.Boolean)">
+            <summary> 
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.PreviewControl.InitializeComponent">
+            <summary> 
+            Required method for Designer support - do not modify 
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Drawing.Printing.RichTextBoxDocument">
+            <summary>
+            Rich text box printable document.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.RichTextBoxDocument.#ctor(System.Windows.Forms.RichTextBox)">
+            <summary>
+            Rich text box printable document.
+            </summary>
+            <param name="richTextBox">The rich text box.</param>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.RichTextBoxDocument.Header">
+            <summary>
+            Gets or sets the page header.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.RichTextBoxDocument.Footer">
+            <summary>
+            Gets or sets the page footer.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.RichTextBoxDocument.HeaderFont">
+            <summary>
+            Gets or sets the page header font.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Printing.RichTextBoxDocument.FooterFont">
+            <summary>
+            Gets or sets the page footer font.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.RichTextBoxDocument.OnBeginPrint(System.Drawing.Printing.PrintEventArgs)">
+            <summary>
+            Start printing the document
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.RichTextBoxDocument.OnPrintPage(System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            Render a page into the PrintDocument
+            </summary>
+            <param name="e"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.RichTextBoxDocument.RenderHeaderFooter(System.Drawing.Printing.PrintPageEventArgs,System.String,System.Drawing.Font,System.Drawing.Rectangle)">
+            <summary>
+            Render a header or a footer on the current page
+            </summary>
+            <param name="e"></param>
+            <param name="text"></param>
+            <param name="font"></param>
+            <param name="rc"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.RichTextBoxDocument.RenderPart(System.Drawing.Printing.PrintPageEventArgs,System.String,System.Drawing.Font,System.Drawing.Rectangle,System.Drawing.StringAlignment)">
+            <summary>
+            Render a part of a header or footer on the page
+            </summary>
+            <param name="e"></param>
+            <param name="text"></param>
+            <param name="font"></param>
+            <param name="rc"></param>
+            <param name="align"></param>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.RichTextBoxDocument.GetFormatRange(System.Drawing.Printing.PrintPageEventArgs,System.Int32)">
+            <summary>
+            build a FORMATRANGE structure with the proper page size and hdc
+            (the hdc must be released after the FORMATRANGE is used)
+            </summary>
+            <param name="e"></param>
+            <param name="firstChar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Printing.RichTextBoxDocument.GetPageCount(System.Drawing.Printing.PrintPageEventArgs)">
+            <summary>
+            Get a page count by using FormatRange to measure the content
+            </summary>
+            <param name="e"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nequeo.Drawing.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Drawing.Text.FontCollection">
+            <summary>
+            Font collection helper.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Text.FontCollection.FontFamilies">
+            <summary>
+            Get the collection of all fonts.
+            </summary>
+            <returns>The font family collection.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Text.FontCollection.FontFamilyNames">
+            <summary>
+            Get the collection of font names.
+            </summary>
+            <returns>The font name collection.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Text.FontCollection.FontFamilies(System.String[])">
+            <summary>
+            Get the collection of all fonts.
+            </summary>
+            <param name="names">The font family names.</param>
+            <returns>The font family collection.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Text.FontCollection.FontFamily(System.String)">
+            <summary>
+            Get the font family for the font name.
+            </summary>
+            <param name="name">The name of the font family.</param>
+            <returns>The font family if found; else null.</returns>
+        </member>
+    </members>
+</doc>

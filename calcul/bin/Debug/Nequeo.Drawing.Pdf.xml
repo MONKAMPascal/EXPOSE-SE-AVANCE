@@ -1,0 +1,264 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nequeo.Drawing.Pdf</name>
+    </assembly>
+    <members>
+        <member name="T:Nequeo.Drawing.Pdf.Image">
+            <summary>
+            Image to PDF conversion.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Drawing.Pdf.Image.Instance">
+            <summary>
+            Create a new static instance
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.#cctor">
+            <summary>
+            Static constructor
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.#ctor">
+            <summary>
+            Constructor for the current class.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Image.ConversionType">
+            <summary>
+            Gets sets, the image convserion type.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Image.PdfSaveType">
+            <summary>
+            Gets sets, the pdf save type.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Image.PdfDocumentQualityFactor">
+            <summary>
+            Gets sets, the pdf document quality factor.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Image.PdfDocumentBitPerPixel">
+            <summary>
+            Gets sets, the pdf document bits per pixel.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Image.DocumentUnlockKey">
+            <summary>
+            Gets sets, the document unlock key.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Image.PdfDocumentPath">
+            <summary>
+            Gets sets, the pdf document path.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Image.ImageDocumentPath">
+            <summary>
+            Gets sets, the image document path.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Image.LeadToolResPath">
+            <summary>
+            Gets sets, the lead tool ressource path.
+            </summary>
+        </member>
+        <member name="E:Nequeo.Drawing.Pdf.Image.OnError">
+            <summary>
+            On save all image event error.
+            </summary>
+        </member>
+        <member name="E:Nequeo.Drawing.Pdf.Image.OnComplete">
+            <summary>
+            On write/read complete.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.ConvertImageToPdf(System.String,System.String)">
+            <summary>
+            Convert a image to a PDF file.
+            </summary>
+            <param name="imageSource">The image source file name and path.</param>
+            <param name="pdfDestination">The PDF destination file name and path.</param>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.ConvertImageToPdf(System.String[],System.String)">
+            <summary>
+            Converts images into a PDF file.
+            </summary>
+            <param name="imageSource">The image source files name and path.</param>
+            <param name="pdfDestination">The PDF destination file name and path.</param>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.ConvertJpegToPdf(System.String,System.String)">
+            <summary>
+            Convert a JPEG image to a PDF file.
+            </summary>
+            <param name="jpegSource">The JPEG source file name and path.</param>
+            <param name="pdfDestination">The PDF destination file name and path.</param>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.ConvertJpegToPdf(System.String[],System.String)">
+            <summary>
+            Converts JPEG images into a PDF file.
+            </summary>
+            <param name="jpegSource">The JPEG source files name and path.</param>
+            <param name="pdfDestination">The PDF destination file name and path.</param>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.ConvertTiffToPdf(System.String,System.String)">
+            <summary>
+            Convert a TIFF image to a PDF file.
+            </summary>
+            <param name="tiffSource">The TIFF source file name and path.</param>
+            <param name="pdfDestination">The PDF destination file name and path.</param>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.ConvertTiffToPdf(System.String[],System.String)">
+            <summary>
+            Converts TIFF images into a PDF file.
+            </summary>
+            <param name="tiffSource">The TIFF source files name and path.</param>
+            <param name="pdfDestination">The PDF destination file name and path.</param>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.Save(System.String,System.String,Nequeo.Drawing.ConversionType)">
+            <summary>
+            Save the image file to a Pdf file.
+            </summary>
+            <param name="sourceFile">The source file name to convert from.</param>
+            <param name="destinationFile">The destination PDF file name.</param>
+            <param name="conversionType">The type of image to convert to PDF</param>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.Save(System.String,System.String)">
+            <summary>
+            Save the image file to a Pdf file.
+            </summary>
+            <param name="sourceFile">The source file name to convert from.</param>
+            <param name="destinationFile">The destination PDF file name.</param>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.Save">
+            <summary>
+            Save the image to PDF, using the configuration data.
+            </summary>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.GetErrors">
+            <summary>
+            Gets the list of errors if any.
+            </summary>
+            <returns>The list of errors; else empty collection.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.ConvertImage">
+            <summary>
+            Convert the current image to a PDF document.
+            </summary>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.ConvertImage(System.String[])">
+            <summary>
+            Converts all the image file into one PDF file.
+            </summary>
+            <param name="imagePath">The collection of image files to combine.</param>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Image.ValidateSetting(System.Object,System.String)">
+            <summary>
+            Validate the input data.
+            </summary>
+            <param name="value">The object value.</param>
+            <param name="memberName">The name of the member.</param>
+            <returns>The object value</returns>
+            <exception cref="T:System.Exception"></exception>
+        </member>
+        <member name="T:Nequeo.Drawing.Pdf.IPdfConvert">
+            <summary>
+            PDF Conversion iterface
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.IPdfConvert.Save(System.String,System.String,Nequeo.Drawing.ConversionType)">
+            <summary>
+            Save the image file to a Pdf file.
+            </summary>
+            <param name="sourceFile">The source file name to convert from.</param>
+            <param name="destinationFile">The destination PDF file name.</param>
+            <param name="conversionType">The type of image to convert to PDF</param>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.IPdfConvert.Save(System.String,System.String)">
+            <summary>
+            Save the image file to a Pdf file.
+            </summary>
+            <param name="sourceFile">The source file name to convert from.</param>
+            <param name="destinationFile">The destination PDF file name.</param>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.IPdfConvert.Save">
+            <summary>
+            Save the image file to a Pdf file.
+            </summary>
+            <returns>True if the conversion was successful; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.IPdfConvert.GetErrors">
+            <summary>
+            Gets the list of errors if any.
+            </summary>
+            <returns>The list of errors; else empty collection.</returns>
+        </member>
+        <member name="T:Nequeo.Drawing.Pdf.Common.ConversionArgs">
+            <summary>
+            Conversion event argument type.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Drawing.Pdf.Common.ConversionArgs.#ctor(System.Int64,System.String)">
+            <summary>
+            Default type constructor.
+            </summary>
+            <param name="index">The current index within the list.</param>
+            <param name="message">The message for the current index.</param>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Common.ConversionArgs.Index">
+            <summary>
+            Gets, the index within the list.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Common.ConversionArgs.Message">
+            <summary>
+            Gets, the message for the conversion.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Drawing.Pdf.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Properties.Resources.NotBoolean">
+            <summary>
+              Looks up a localized string similar to is not a valid boolean..
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Properties.Resources.NotNumber">
+            <summary>
+              Looks up a localized string similar to is not a valid number..
+            </summary>
+        </member>
+        <member name="P:Nequeo.Drawing.Pdf.Properties.Resources.NoValue">
+            <summary>
+              Looks up a localized string similar to dose not contain a value..
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nequeo.Exceptions</name>
+    </assembly>
+    <members>
+        <member name="T:Nequeo.Exceptions.AsyncException">
+            <summary>
+            Asynchronous exception
+            </summary>
+        </member>
+        <member name="M:Nequeo.Exceptions.AsyncException.#ctor(System.String)">
+            <summary>
+            Constructor for message arguments.
+            </summary>
+            <param name="message">The message to display.</param>
+        </member>
+        <member name="M:Nequeo.Exceptions.AsyncException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor for inner exception argument.
+            </summary>
+            <param name="message">The message to display.</param>
+            <param name="innerException">The inner exception object to pass.</param>
+        </member>
+        <member name="P:Nequeo.Exceptions.AsyncException.CustomMessage">
+            <summary>
+            Contains the current exception message.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Exceptions.AsyncException.CustomInnerException">
+            <summary>
+            Contains the current inner exception object.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Exceptions.BerDecodeException">
+            <summary>
+            BerDecodeException exception
+            </summary>
+        </member>
+        <member name="M:Nequeo.Exceptions.BerDecodeException.#ctor(System.String)">
+            <summary>
+            Constructor for message arguments.
+            </summary>
+            <param name="message">The message to display.</param>
+        </member>
+        <member name="M:Nequeo.Exceptions.BerDecodeException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor for inner exception argument.
+            </summary>
+            <param name="message">The message to display.</param>
+            <param name="innerException">The inner exception object to pass.</param>
+        </member>
+        <member name="M:Nequeo.Exceptions.BerDecodeException.#ctor(System.String,System.Int32)">
+            <summary>
+            Constructor for inner exception argument.
+            </summary>
+            <param name="message">The message to display.</param>
+            <param name="position">The position to display.</param>
+        </member>
+        <member name="M:Nequeo.Exceptions.BerDecodeException.#ctor(System.String,System.Int32,System.Exception)">
+            <summary>
+            Constructor for inner exception argument.
+            </summary>
+            <param name="message">The message to display.</param>
+            <param name="position">The position to display.</param>
+            <param name="innerException">The inner exception object to pass.</param>
+        </member>
+        <member name="P:Nequeo.Exceptions.BerDecodeException.CustomMessage">
+            <summary>
+            Contains the current exception message.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Exceptions.BerDecodeException.Position">
+            <summary>
+            Contains the current position.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Exceptions.BerDecodeException.CustomInnerException">
+            <summary>
+            Contains the current inner exception object.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Exceptions.EmptyStringException">
+            <summary>
+            Empty string path exception
+            </summary>
+        </member>
+        <member name="M:Nequeo.Exceptions.EmptyStringException.#ctor(System.String)">
+            <summary>
+            Constructor for message arguments.
+            </summary>
+            <param name="message">The message to display.</param>
+        </member>
+        <member name="M:Nequeo.Exceptions.EmptyStringException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor for inner exception argument.
+            </summary>
+            <param name="message">The message to display.</param>
+            <param name="innerException">The inner exception object to pass.</param>
+        </member>
+        <member name="P:Nequeo.Exceptions.EmptyStringException.CustomMessage">
+            <summary>
+            Contains the current exception message.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Exceptions.EmptyStringException.CustomInnerException">
+            <summary>
+            Contains the current inner exception object.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Exceptions.ErrorCodeException">
+            <summary>
+            Error code exception.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Exceptions.ErrorCodeException.#ctor(System.String)">
+            <summary>
+            Constructor for message arguments.
+            </summary>
+            <param name="message">The message to display.</param>
+        </member>
+        <member name="M:Nequeo.Exceptions.ErrorCodeException.#ctor(System.String,System.Int32)">
+            <summary>
+            Constructor for inner exception argument.
+            </summary>
+            <param name="message">The message to display.</param>
+            <param name="errorCode">The error code.</param>
+        </member>
+        <member name="M:Nequeo.Exceptions.ErrorCodeException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor for inner exception argument.
+            </summary>
+            <param name="message">The message to display.</param>
+            <param name="innerException">The inner exception object to pass.</param>
+        </member>
+        <member name="M:Nequeo.Exceptions.ErrorCodeException.#ctor(System.String,System.Exception,System.Int32)">
+            <summary>
+            Constructor for inner exception argument.
+            </summary>
+            <param name="message">The message to display.</param>
+            <param name="innerException">The inner exception object to pass.</param>
+            <param name="errorCode">The error code.</param>
+        </member>
+        <member name="P:Nequeo.Exceptions.ErrorCodeException.CustomMessage">
+            <summary>
+            Contains the current exception message.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Exceptions.ErrorCodeException.CustomInnerException">
+            <summary>
+            Contains the current inner exception object.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Exceptions.ErrorCodeException.ErrorCode">
+            <summary>
+            Contains the current error code.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Exceptions.InvalidCredentailsException">
+            <summary>
+            Invalid credentails exception.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Exceptions.InvalidCredentailsException.#ctor(System.String)">
+            <summary>
+            Constructor for message arguments.
+            </summary>
+            <param name="message">The message to display.</param>
+        </member>
+        <member name="M:Nequeo.Exceptions.InvalidCredentailsException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor for inner exception argument.
+            </summary>
+            <param name="message">The message to display.</param>
+            <param name="innerException">The inner exception object to pass.</param>
+        </member>
+        <member name="P:Nequeo.Exceptions.InvalidCredentailsException.CustomMessage">
+            <summary>
+            Contains the current exception message.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Exceptions.InvalidCredentailsException.CustomInnerException">
+            <summary>
+            Contains the current inner exception object.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Exceptions.InvalidFileException">
+            <summary>
+            Invalid file exception
+            </summary>
+        </member>
+        <member name="M:Nequeo.Exceptions.InvalidFileException.#ctor(System.String)">
+            <summary>
+            Constructor for message arguments.
+            </summary>
+            <param name="message">The message to display.</param>
+        </member>
+        <member name="M:Nequeo.Exceptions.InvalidFileException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor for inner exception argument.
+            </summary>
+            <param name="message">The message to display.</param>
+            <param name="innerException">The inner exception object to pass.</param>
+        </member>
+        <member name="P:Nequeo.Exceptions.InvalidFileException.CustomMessage">
+            <summary>
+            Contains the current exception message.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Exceptions.InvalidFileException.CustomInnerException">
+            <summary>
+            Contains the current inner exception object.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Exceptions.InvalidLengthException">
+            <summary>
+            Invalid path exception
+            </summary>
+        </member>
+        <member name="M:Nequeo.Exceptions.InvalidLengthException.#ctor(System.String)">
+            <summary>
+            Constructor for message arguments.
+            </summary>
+            <param name="message">The message to display.</param>
+        </member>
+        <member name="M:Nequeo.Exceptions.InvalidLengthException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor for inner exception argument.
+            </summary>
+            <param name="message">The message to display.</param>
+            <param name="innerException">The inner exception object to pass.</param>
+        </member>
+        <member name="P:Nequeo.Exceptions.InvalidLengthException.CustomMessage">
+            <summary>
+            Contains the current exception message.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Exceptions.InvalidLengthException.CustomInnerException">
+            <summary>
+            Contains the current inner exception object.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Exceptions.InvalidPathException">
+            <summary>
+            Invalid path exception
+            </summary>
+        </member>
+        <member name="M:Nequeo.Exceptions.InvalidPathException.#ctor(System.String)">
+            <summary>
+            Constructor for message arguments.
+            </summary>
+            <param name="message">The message to display.</param>
+        </member>
+        <member name="M:Nequeo.Exceptions.InvalidPathException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor for inner exception argument.
+            </summary>
+            <param name="message">The message to display.</param>
+            <param name="innerException">The inner exception object to pass.</param>
+        </member>
+        <member name="P:Nequeo.Exceptions.InvalidPathException.CustomMessage">
+            <summary>
+            Contains the current exception message.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Exceptions.InvalidPathException.CustomInnerException">
+            <summary>
+            Contains the current inner exception object.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Exceptions.PermissionException">
+            <summary>
+            Permission exception
+            </summary>
+        </member>
+        <member name="M:Nequeo.Exceptions.PermissionException.#ctor(System.String)">
+            <summary>
+            Constructor for message arguments.
+            </summary>
+            <param name="message">The message to display.</param>
+        </member>
+        <member name="M:Nequeo.Exceptions.PermissionException.#ctor(System.String,System.Exception)">
+            <summary>
+            Constructor for inner exception argument.
+            </summary>
+            <param name="message">The message to display.</param>
+            <param name="innerException">The inner exception object to pass.</param>
+        </member>
+        <member name="P:Nequeo.Exceptions.PermissionException.CustomMessage">
+            <summary>
+            Contains the current exception message.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Exceptions.PermissionException.CustomInnerException">
+            <summary>
+            Contains the current inner exception object.
+            </summary>
+        </member>
+    </members>
+</doc>

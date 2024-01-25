@@ -1,0 +1,2552 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nequeo.Collections</name>
+    </assembly>
+    <members>
+        <member name="T:Nequeo.Collections.BindingCollection`1">
+            <summary>
+            The generic general binding collection class, collects the general objects.
+            </summary>
+            <typeparam name="T">The generic general type to collect.</typeparam>
+        </member>
+        <member name="M:Nequeo.Collections.BindingCollection`1.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:Nequeo.Collections.NumberCollection">
+            <summary>
+            Number store collection.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.NumberCollection.#ctor">
+            <summary>
+            Number store collection.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.NumberCollection.Add(Nequeo.Convertible.Number)">
+            <summary>
+            Add the number.
+            </summary>
+            <param name="number1">A number.</param>
+        </member>
+        <member name="M:Nequeo.Collections.NumberCollection.Add(Nequeo.Convertible.Number,Nequeo.Convertible.Number)">
+            <summary>
+            Add the number.
+            </summary>
+            <param name="number1">A number.</param>
+            <param name="number2">A number.</param>
+        </member>
+        <member name="M:Nequeo.Collections.NumberCollection.Add(Nequeo.Convertible.Number,Nequeo.Convertible.Number,Nequeo.Convertible.Number)">
+            <summary>
+            Add the number.
+            </summary>
+            <param name="number1">A number.</param>
+            <param name="number2">A number.</param>
+            <param name="number3">A number.</param>
+        </member>
+        <member name="M:Nequeo.Collections.NumberCollection.Add(Nequeo.Convertible.Number,Nequeo.Convertible.Number,Nequeo.Convertible.Number,Nequeo.Convertible.Number)">
+            <summary>
+            Add the number.
+            </summary>
+            <param name="number1">A number.</param>
+            <param name="number2">A number.</param>
+            <param name="number3">A number.</param>
+            <param name="number4">A number.</param>
+        </member>
+        <member name="M:Nequeo.Collections.NumberCollection.Add(Nequeo.Convertible.Number,Nequeo.Convertible.Number,Nequeo.Convertible.Number,Nequeo.Convertible.Number,Nequeo.Convertible.Number)">
+            <summary>
+            Add the number.
+            </summary>
+            <param name="number1">A number.</param>
+            <param name="number2">A number.</param>
+            <param name="number3">A number.</param>
+            <param name="number4">A number.</param>
+            <param name="number5">A number.</param>
+        </member>
+        <member name="M:Nequeo.Collections.NumberCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>An System.Collections.IEnumerator object that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.NumberCollection.ToString">
+            <summary>
+            The list of all numbers separated by '\r\n'.
+            </summary>
+            <returns>Returns a string that represents the current object.</returns>
+        </member>
+        <member name="F:Nequeo.Collections.NumberCollection.disposed">
+            <summary>
+            Track whether Dispose has been called.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.NumberCollection.Dispose">
+            <summary>
+            Implement IDisposable.
+            Do not make this method virtual.
+            A derived class should not be able to override this method.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.NumberCollection.Dispose(System.Boolean)">
+            <summary>
+            Dispose(bool disposing) executes in two distinct scenarios.
+            If disposing equals true, the method has been called directly
+            or indirectly by a user's code. Managed and unmanaged resources
+            can be disposed.
+            If disposing equals false, the method has been called by the
+            runtime from inside the finalizer and you should not reference
+            other objects. Only unmanaged resources can be disposed.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.NumberCollection.Finalize">
+            <summary>
+            Use C# destructor syntax for finalization code.
+            This destructor will run only if the Dispose method
+            does not get called.
+            It gives your base class the opportunity to finalize.
+            Do not provide destructors in types derived from this class.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Collections.StringCollection">
+            <summary>
+            String store collection.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.StringCollection.#ctor">
+            <summary>
+            String store collection.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.StringCollection.Add(System.String)">
+            <summary>
+            Add the string.
+            </summary>
+            <param name="string1">A string.</param>
+        </member>
+        <member name="M:Nequeo.Collections.StringCollection.Add(System.String,System.String)">
+            <summary>
+            Add the string.
+            </summary>
+            <param name="string1">A string.</param>
+            <param name="string2">A string.</param>
+        </member>
+        <member name="M:Nequeo.Collections.StringCollection.Add(System.String,System.String,System.String)">
+            <summary>
+            Add the string.
+            </summary>
+            <param name="string1">A string.</param>
+            <param name="string2">A string.</param>
+            <param name="string3">A string.</param>
+        </member>
+        <member name="M:Nequeo.Collections.StringCollection.Add(System.String,System.String,System.String,System.String)">
+            <summary>
+            Add the string.
+            </summary>
+            <param name="string1">A string.</param>
+            <param name="string2">A string.</param>
+            <param name="string3">A string.</param>
+            <param name="string4">A string.</param>
+        </member>
+        <member name="M:Nequeo.Collections.StringCollection.Add(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Add the string.
+            </summary>
+            <param name="string1">A string.</param>
+            <param name="string2">A string.</param>
+            <param name="string3">A string.</param>
+            <param name="string4">A string.</param>
+            <param name="string5">A string.</param>
+        </member>
+        <member name="M:Nequeo.Collections.StringCollection.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>An System.Collections.IEnumerator object that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.StringCollection.ToString">
+            <summary>
+            The list of all strings separated by ' ' (space).
+            </summary>
+            <returns>Returns a string that represents the current object.</returns>
+        </member>
+        <member name="F:Nequeo.Collections.StringCollection.disposed">
+            <summary>
+            Track whether Dispose has been called.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.StringCollection.Dispose">
+            <summary>
+            Implement IDisposable.
+            Do not make this method virtual.
+            A derived class should not be able to override this method.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.StringCollection.Dispose(System.Boolean)">
+            <summary>
+            Dispose(bool disposing) executes in two distinct scenarios.
+            If disposing equals true, the method has been called directly
+            or indirectly by a user's code. Managed and unmanaged resources
+            can be disposed.
+            If disposing equals false, the method has been called by the
+            runtime from inside the finalizer and you should not reference
+            other objects. Only unmanaged resources can be disposed.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.StringCollection.Finalize">
+            <summary>
+            Use C# destructor syntax for finalization code.
+            This destructor will run only if the Dispose method
+            does not get called.
+            It gives your base class the opportunity to finalize.
+            Do not provide destructors in types derived from this class.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Collections.Cache`2">
+            <summary>
+            Collection cache provider.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.#ctor">
+            <summary>
+            Collection cache provider.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.Cache`2.Values">
+            <summary>
+            Gets all the values within the cache.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.Cache`2.Keys">
+            <summary>
+            Gets all the keys within the cache.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.Cache`2.Count">
+            <summary>
+            Gets the number of items stored in the cache.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.ContainsKey(`0)">
+            <summary>
+            Searches for the current key in the cache.
+            </summary>
+            <param name="cacheKey">The key to search for.</param>
+            <returns>True if the key exists in the cache else false.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.ContainsValue(`1)">
+            <summary>
+            Searches for the current value in the cache.
+            </summary>
+            <param name="value">The value to search for.</param>
+            <returns>True if the value exists in the cache else false.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.GetValueType(`0)">
+            <summary>
+            Gets the type of object in the cache.
+            </summary>
+            <param name="cacheKey">The cache key to get.</param>
+            <returns>The type of object in the cache value.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.Add(`0,`1)">
+            <summary>
+            Add the current child item to the cache.
+            </summary>
+            <param name="cacheKey">The specific item cache key to the model dependancy.</param>
+            <param name="value">The object the cache.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.Get(`0)">
+            <summary>
+            Get the current cached object.
+            </summary>
+            <param name="cacheKey">The specific item cache key to the model dependancy.</param>
+            <returns>The current cached object.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.Set(`0,`1)">
+            <summary>
+            Set the exists cached item with a new value.
+            </summary>
+            <param name="cacheKey">The specific item cache key to the model dependancy.></param>
+            <param name="value">The object the cache.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.GetCacheItem">
+            <summary>
+            Cache enumerator, allows iteration through the cache.
+            </summary>
+            <returns>The current cached item.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.GetValue">
+            <summary>
+            Cache value enumerator, allows iteration through all values.
+            </summary>
+            <returns>The cache value item.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.GetKey">
+            <summary>
+            Cache key enumerator, allows iteration through all keys.
+            </summary>
+            <returns>The cache key item.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.Clear">
+            <summary>
+            Removes all the items stored in the cache.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Collections.Cache`2._disposed">
+            <summary>
+            Track whether Dispose has been called.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.Dispose">
+            <summary>
+            Implement IDisposable.
+            Do not make this method virtual.
+            A derived class should not be able to override this method.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.Dispose(System.Boolean)">
+            <summary>
+            Dispose(bool disposing) executes in two distinct scenarios.
+            If disposing equals true, the method has been called directly
+            or indirectly by a user's code. Managed and unmanaged resources
+            can be disposed.
+            If disposing equals false, the method has been called by the
+            runtime from inside the finalizer and you should not reference
+            other objects. Only unmanaged resources can be disposed.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Cache`2.Finalize">
+            <summary>
+            Use C# destructor syntax for finalization code.
+            This destructor will run only if the Dispose method
+            does not get called.
+            It gives your base class the opportunity to finalize.
+            Do not provide destructors in types derived from this class.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Collections.CircularBuffer`1">
+            <summary>
+            Circular buffer provider that is thread-safe, allows data to be buffered.
+            </summary>
+            <typeparam name="T">The type of buffered data.</typeparam>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.#ctor(System.Int32)">
+            <summary>
+            Circular buffer.
+            </summary>
+            <param name="capacity">The capacity of the buffer; zero indicates dynamic, continuous increase.</param>
+            <exception cref="T:System.IndexOutOfRangeException">Capacity can not be negative.</exception>
+        </member>
+        <member name="P:Nequeo.Collections.CircularBuffer`1.RemoveItemsRead">
+            <summary>
+            Gets or sets an indicator specifying if items read are to be removed from the collection.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CircularBuffer`1.RemoveItemsWritten">
+            <summary>
+            Gets or sets an indicator specifying when the capacity is reached the existing data is overwriiten.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CircularBuffer`1.IndicateCapacityReached">
+            <summary>
+            Gets or sets an indicator specifying when the capacity is reached an exception is thrown.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CircularBuffer`1.UpperCapacityPercentage">
+            <summary>
+            Gets or sets the upper capacity percentage threshold.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CircularBuffer`1.LowerCapacityPercentage">
+            <summary>
+            Gets or sets the lower capacity percentage threshold.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CircularBuffer`1.Capacity">
+            <summary>
+            Gets or sets the capacity of the collection.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CircularBuffer`1.Count">
+            <summary>
+            Gets the number of elements in the collection.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CircularBuffer`1.CapacityPercentage">
+            <summary>
+            Gets the current capacity percentage relative to the total count.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.IsUpperCapacityPercentage">
+            <summary>
+            Has the upper capacity percentage threshold been reached.
+            </summary>
+            <returns>True if threshold has been reached; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.IsLowerCapacityPercentage">
+            <summary>
+            Has the lower capacity percentage threshold been reached.
+            </summary>
+            <returns>True if threshold has been reached; else false.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.Clear">
+            <summary>
+            Clear the collection of all it's elements.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.Write(`0)">
+            <summary>
+            Write a general object to the collection.
+            </summary>
+            <param name="data">The generic object to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.Write(`0[])">
+            <summary>
+            Write a general object array to the collection.
+            </summary>
+            <param name="data">The generic objects to add.</param>
+            <exception cref="T:System.Exception">Can not store the data, no enough capacity.</exception>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.Write(`0[],System.Int32,System.Int32)">
+            <summary>
+            Write a general object array to the collection.
+            </summary>
+            <param name="data">The generic objects to add.</param>
+            <param name="offset">The offet to write from.</param>
+            <param name="count">The number of items to write.</param>
+            <exception cref="T:System.Exception">Can not store the data, no enough capacity.</exception>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.Write(`0[],System.Int32,System.Int32,System.Int64)">
+            <summary>
+            Write a general object array to the collection.
+            </summary>
+            <param name="data">The generic objects to add.</param>
+            <param name="offset">The offet to write from.</param>
+            <param name="count">The number of items to write.</param>
+            <param name="position">The position to start writting at within the buffer collection type.</param>
+            <exception cref="T:System.Exception">Can not store the data, no enough capacity.</exception>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.Peek(System.Int32)">
+            <summary>
+            Returns the object at the beginning of the collection without removing it.
+            </summary>
+            <param name="count">The number of items to read; else reads number available.</param>
+            <returns>The objects in the collection.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.Peek(System.Int32,System.Int32)">
+            <summary>
+            Returns the object at the beginning of the collection without removing it.
+            </summary>
+            <param name="offset">The offet to read from.</param>
+            <param name="count">The number of items to read; else reads number available.</param>
+            <returns>The objects in the collection.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.ReadNext">
+            <summary>
+            Read the next item available. After each read the current item is removed from the collection.
+            </summary>
+            <returns>The object in the collection.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.Read">
+            <summary>
+            Read all items available. After each read the current items are removed from the collection.
+            </summary>
+            <returns>The objects in the collection.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.Read(System.Int32)">
+            <summary>
+            Read the next number of items available. After each read the current items are removed from the collection.
+            </summary>
+            <param name="count">The number of items to read; else reads number available.</param>
+            <returns>The objects in the collection.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.Read(System.Int32,System.Int32)">
+            <summary>
+            Read the next number of items available. After each read the current items are removed from the collection.
+            </summary>
+            <param name="offset">The offet to read from.</param>
+            <param name="count">The number of items to read; else reads number available.</param>
+            <returns>The objects in the collection.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.ReadEx(System.Int32,System.Int32)">
+            <summary>
+            Read the next number of items available.
+            </summary>
+            <param name="offset">The offet to read from.</param>
+            <param name="count">The number of items to read; else reads number available.</param>
+            <returns>The objects in the collection.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.PeekEx(System.Int32,System.Int32)">
+            <summary>
+            Read the next number of items available.
+            </summary>
+            <param name="offset">The offet to read from.</param>
+            <param name="count">The number of items to read; else reads number available.</param>
+            <returns>The objects in the collection.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.ReadCollectionEx(`0[],System.Int32,System.Int32)">
+            <summary>
+            Read the collection of items and remove the previous data.
+            </summary>
+            <param name="readCollection"></param>
+            <param name="index">The index to start at.</param>
+            <param name="count">The number of items to read.</param>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.PeekCollectionEx(`0[],System.Int32,System.Int32)">
+            <summary>
+            Read the collection of items and remove the previous data.
+            </summary>
+            <param name="readCollection"></param>
+            <param name="index">The index to start at.</param>
+            <param name="count">The number of items to read.</param>
+        </member>
+        <member name="F:Nequeo.Collections.CircularBuffer`1.disposed">
+            <summary>
+            Track whether Dispose has been called.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.Dispose">
+            <summary>
+            Implement IDisposable.
+            Do not make this method virtual.
+            A derived class should not be able to override this method.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.Dispose(System.Boolean)">
+            <summary>
+            Dispose(bool disposing) executes in two distinct scenarios.
+            If disposing equals true, the method has been called directly
+            or indirectly by a user's code. Managed and unmanaged resources
+            can be disposed.
+            If disposing equals false, the method has been called by the
+            runtime from inside the finalizer and you should not reference
+            other objects. Only unmanaged resources can be disposed.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.CircularBuffer`1.Finalize">
+            <summary>
+            Use C# destructor syntax for finalization code.
+            This destructor will run only if the Dispose method
+            does not get called.
+            It gives your base class the opportunity to finalize.
+            Do not provide destructors in types derived from this class.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Collections.Collection`1">
+            <summary>
+            The generic general object collection class, collects the general objects.
+            </summary>
+            <typeparam name="T">The generic general type to collect.</typeparam>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.#ctor(System.Collections.Generic.IList{`0})">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="collection">The collection whose elements are copied to the new list</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.#ctor(System.Collections.Generic.ICollection{`0})">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="collection">The collection whose elements are copied to the new list</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="collection">The collection whose elements are copied to the new list</param>
+        </member>
+        <member name="F:Nequeo.Collections.Collection`1._innerArray">
+            <summary>
+            Inner list object contains all items.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Collections.Collection`1._isReadOnly">
+            <summary>
+            Flag for setting collection to read-only mode.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.Collection`1.Item(System.Int32)">
+            <summary>
+            Default accessor for the collection 
+            </summary>
+            <param name="index">The current index to access</param>
+            <returns>The current business object in the collection.</returns>
+        </member>
+        <member name="P:Nequeo.Collections.Collection`1.System#Collections#IList#Item(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Nequeo.Collections.Collection`1.Count">
+            <summary>
+            Number of elements in the collection.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.Collection`1.IsReadOnly">
+            <summary>
+            Flag sets whether or not this collection is read-only.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.Collection`1.IsSynchronized">
+            <summary>
+            Gets a value indicating whether access to the System.Collections.ICollection is synchronized (thread safe).
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.Collection`1.SyncRoot">
+            <summary>
+            Gets an object that can be used to synchronize access to the System.Collections.ICollection.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.Collection`1.IsFixedSize">
+            <summary>
+            Gets a value indicating whether the System.Collections.IList has a fixed size.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Add(`0)">
+            <summary>
+            Add a general object to the collection.
+            </summary>
+            <param name="item">The generic object to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Add(`0,`0)">
+            <summary>
+            Add a general object to the collection.
+            </summary>
+            <param name="item1">The generic object to add.</param>
+            <param name="item2">The generic object to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Add(`0,`0,`0)">
+            <summary>
+            Add a general object to the collection.
+            </summary>
+            <param name="item1">The generic object to add.</param>
+            <param name="item2">The generic object to add.</param>
+            <param name="item3">The generic object to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Add(`0,`0,`0,`0)">
+            <summary>
+            Add a general object to the collection.
+            </summary>
+            <param name="item1">The generic object to add.</param>
+            <param name="item2">The generic object to add.</param>
+            <param name="item3">The generic object to add.</param>
+            <param name="item4">The generic object to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Add(`0,`0,`0,`0,`0)">
+            <summary>
+            Add a general object to the collection.
+            </summary>
+            <param name="item1">The generic object to add.</param>
+            <param name="item2">The generic object to add.</param>
+            <param name="item3">The generic object to add.</param>
+            <param name="item4">The generic object to add.</param>
+            <param name="item5">The generic object to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.AddRange(System.Collections.Generic.IEnumerable{`0})">
+            <summary>
+            Adds the collection of items.
+            </summary>
+            <param name="collection">The collection to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Remove(`0)">
+            <summary>
+            Remove first instance of a generic object from the collection.
+            </summary>
+            <param name="item">The current generic object.</param>
+            <returns>True if the object was removed else false.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Contains(`0)">
+            <summary>
+            Does the current generic object exist in the collection.
+            </summary>
+            <param name="item">The current generic object.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.CopyTo(`0[])">
+            <summary>
+            Copy objects from this collection into another array.
+            </summary>
+            <param name="array">The array of generic objects.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.CopyTo(`0[],System.Int32)">
+            <summary>
+            Copy objects from this collection into another array.
+            </summary>
+            <param name="array">The array of generic objects.</param>
+            <param name="arrayIndex">The index where copy should begin.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.CopyTo(System.Int32,`0[],System.Int32,System.Int32)">
+            <summary>
+            Copies a range of elements from the collection to
+            a compatible one-dimensional array, starting at the specified index of the
+            target array.
+            </summary>
+            <param name="index">The zero-based index in the source collection at
+            which copying begins.</param>
+            <param name="array">The one-dimensional System.Array that is the destination of the elements
+            copied from the collection. The System.Array must have
+            zero-based indexing.</param>
+            <param name="arrayIndex">The zero-based index in array at which copying begins.</param>
+            <param name="count">The number of elements to copy.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.GetItems(System.Int32,System.Int32)">
+            <summary>
+            Get the collection of items.
+            </summary>
+            <param name="start">The index where copy should begin.</param>
+            <param name="end">The index where copy should end.</param>
+            <returns>The collection of items.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">
+            Index can not be greater than the count or then than zero</exception>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.GetItemsType(System.Int32,System.Int32)">
+            <summary>
+            Get the collection of items.
+            </summary>
+            <param name="start">The index where copy should begin.</param>
+            <param name="end">The index where copy should end.</param>
+            <returns>The collection of items.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">
+            Index can not be greater than the count or then than zero</exception>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the elements of the System.Collections.ICollection to an System.Array, starting at a particular System.Array index.
+            </summary>
+            <param name="array">The one-dimensional System.Array that is the destination of the elements
+            copied from System.Collections.ICollection. The System.Array must have zero-based
+            indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Sort">
+            <summary>
+            Sorts the array of list general objects.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Clear">
+            <summary>
+            Clear the collection of all it's elements.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.IndexOf(`0)">
+            <summary>
+            Searches for the specified object and returns the zero-based index of the
+            first occurrence within the entire
+            </summary>
+            <param name="item">The object to locate in the collection. The value
+            can be null for reference types.</param>
+            <returns>The zero-based index of the first occurrence of item within the entire collection,
+            if found; otherwise, –1.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Insert(System.Int32,`0)">
+            <summary>
+            Inserts an element into the collection at the specified
+            index.
+            </summary>
+            <param name="index">The zero-based index at which item should be inserted.</param>
+            <param name="item">The object to insert. The value can be null for reference types.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.RemoveAt(System.Int32)">
+            <summary>
+            Removes the element at the specified index of the collection.
+            </summary>
+            <param name="index">The zero-based index of the element to remove.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.RemoveRange(System.Int32,System.Int32)">
+            <summary>
+            Removes a range of elements from the collection.
+            </summary>
+            <param name="index">The zero-based starting index of the range of elements to remove.</param>
+            <param name="count">The number of elements to remove.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.ToArray">
+            <summary>
+            Convert the collection to the array type.
+            </summary>
+            <returns>The collection type.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Add(System.Object)">
+            <summary>
+            Adds an item to the System.Collections.IList.
+            </summary>
+            <param name="value">The object to add to the System.Collections.IList.</param>
+            <returns>The position into which the new element was inserted, or -1 to indicate that the item was not inserted into the collection,</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Contains(System.Object)">
+            <summary>
+            Determines whether the System.Collections.IList contains a specific value.
+            </summary>
+            <param name="value">The object to locate in the System.Collections.IList.</param>
+            <returns>true if the System.Object is found in the System.Collections.IList; otherwise, false.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.IndexOf(System.Object)">
+            <summary>
+            Determines the index of a specific item in the System.Collections.IList.
+            </summary>
+            <param name="value">The object to locate in the System.Collections.IList.</param>
+            <returns>The index of value if found in the list; otherwise, -1.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Insert(System.Int32,System.Object)">
+            <summary>
+            Inserts an item to the System.Collections.IList at the specified index.
+            </summary>
+            <param name="index">The zero-based index at which value should be inserted.</param>
+            <param name="value">The object to insert into the System.Collections.IList.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Remove(System.Object)">
+            <summary>
+            Removes the first occurrence of a specific object from the System.Collections.IList.
+            </summary>
+            <param name="value">The object to remove from the System.Collections.IList.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.GetEnumerator">
+            <summary>
+            The custom generic enumerator for this CollectionEnumerator.
+            </summary>
+            <returns>The custom generic enumerator general object.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            The non-generic interface implementation for IEnumerable 
+            extended and required by ICollection, implemented by ICollection
+            </summary>
+            <returns>The non-generic enumerator general object.</returns>
+        </member>
+        <member name="T:Nequeo.Collections.Collection`1.CollectionEnumerator`1">
+            <summary>
+            The generic general object enumerator class, enumerates the general
+            object collection.
+            </summary>
+            <typeparam name="TInternal">The generic general type to enumerate.</typeparam>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.CollectionEnumerator`1.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.CollectionEnumerator`1.#ctor(Nequeo.Collections.Collection{`1})">
+            <summary>
+            Constructor which takes the collection 
+            which this enumerator will enumerate.
+            </summary>
+            <param name="collection"></param>
+        </member>
+        <member name="F:Nequeo.Collections.Collection`1.CollectionEnumerator`1._collection">
+            <summary>
+            Enumerated collection.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Collections.Collection`1.CollectionEnumerator`1._index">
+            <summary>
+            The current enumerated index.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Collections.Collection`1.CollectionEnumerator`1._current">
+            <summary>
+            The current enumerated object in the collection
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.Collection`1.CollectionEnumerator`1.Current">
+            <summary>
+            Gets the current enumerated object in the inner collection.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.Collection`1.CollectionEnumerator`1.System#Collections#IEnumerator#Current">
+            <summary>
+            Explicit non-generic interface implementation for IEnumerator 
+            (extended and required by IEnumerator).
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.CollectionEnumerator`1.Dispose">
+            <summary>
+            General object dispose method.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.CollectionEnumerator`1.MoveNext">
+            <summary>
+            Moves to the next element in the inner collection.
+            </summary>
+            <returns>True if the collection exits else false.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.CollectionEnumerator`1.Reset">
+            <summary>
+            Reset the enumerator.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Collections.Collection`1.disposed">
+            <summary>
+            Track whether Dispose has been called.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Dispose">
+            <summary>
+            Implement IDisposable.
+            Do not make this method virtual.
+            A derived class should not be able to override this method.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Dispose(System.Boolean)">
+            <summary>
+            Dispose(bool disposing) executes in two distinct scenarios.
+            If disposing equals true, the method has been called directly
+            or indirectly by a user's code. Managed and unmanaged resources
+            can be disposed.
+            If disposing equals false, the method has been called by the
+            runtime from inside the finalizer and you should not reference
+            other objects. Only unmanaged resources can be disposed.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Collection`1.Finalize">
+            <summary>
+            Use C# destructor syntax for finalization code.
+            This destructor will run only if the Dispose method
+            does not get called.
+            It gives your base class the opportunity to finalize.
+            Do not provide destructors in types derived from this class.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Collections.CustomDictionary`2">
+            <summary>
+            A generic custom dictionary, implememts IDictionary interface.
+            Additional generic dictionary implementations.
+            </summary>
+            <typeparam name="Key">The generic key type.</typeparam>
+            <typeparam name="Value">The generic value type.</typeparam>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.#ctor">
+            <summary>
+            Default constructor.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.#ctor(System.Int32)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="capacity">Collection capacity.</param>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.#ctor(System.Collections.Generic.IDictionary{`0,`1})">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="collection">The IDictionary
+            whose elements are copied to the new Dictionary.</param>
+        </member>
+        <member name="P:Nequeo.Collections.CustomDictionary`2.IsSynchronized">
+            <summary>
+            Gets a value indicating whether access to the System.Collections.ICollection is synchronized (thread safe).
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CustomDictionary`2.SyncRoot">
+            <summary>
+            Gets an object that can be used to synchronize access to the System.Collections.ICollection.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CustomDictionary`2.KeyType">
+            <summary>
+            Gets the generic key type.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CustomDictionary`2.ValueType">
+            <summary>
+            Gets the generic value type.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CustomDictionary`2.Keys">
+            <summary>
+            Gets the collection of all keys.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CustomDictionary`2.Values">
+            <summary>
+            Gets the collection of all values.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CustomDictionary`2.System#Collections#IDictionary#Keys">
+            <summary>
+            Gets the collection of all keys.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CustomDictionary`2.System#Collections#IDictionary#Values">
+            <summary>
+            Gets the collection of all values.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CustomDictionary`2.Count">
+            <summary>
+            Gets the number of entities in the dictionary.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CustomDictionary`2.IsReadOnly">
+            <summary>
+            Is the collection read only.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.CustomDictionary`2.Item(`0)">
+            <summary>
+            Gets sets the value indexer.
+            </summary>
+            <param name="key">The key to get the value of.</param>
+            <returns>The value in the dictionary; else the default of the Value type.</returns>
+        </member>
+        <member name="P:Nequeo.Collections.CustomDictionary`2.Item(System.Object)">
+            <summary>
+            Gets sets the value indexer.
+            </summary>
+            <param name="key">The key to get the value of.</param>
+            <returns>The value in the dictionary; else the default of the Value type.</returns>
+        </member>
+        <member name="P:Nequeo.Collections.CustomDictionary`2.IsFixedSize">
+            <summary>
+            Gets a value indicating whether the System.Collections.IDictionary object has a fixed size.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.Add(`0,`1)">
+            <summary>
+            Add the specified key and value to the dictionary.
+            </summary>
+            <param name="key">The key of the element to add.</param>
+            <param name="value">The value of the element to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.Add(System.Collections.Generic.KeyValuePair{`0,`1})">
+            <summary>
+            Add the specified key and value to the dictionary.
+            </summary>
+            <param name="item">The key value pair to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.Add(System.Object,System.Object)">
+            <summary>
+            Add the specified key and value to the dictionary.
+            </summary>
+            <param name="key">The key of the element to add.</param>
+            <param name="value">The value of the element to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.Contains(System.Object)">
+            <summary>
+            Determines if the dictionary conatins the key.
+            </summary>
+            <param name="key">The key to search for.</param>
+            <returns>True if the key exists else false.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.ContainsKey(`0)">
+            <summary>
+            Determines if the dictionary conatins the key.
+            </summary>
+            <param name="key">The key to search for.</param>
+            <returns>True if the key exists else false.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.ContainsValue(`1)">
+            <summary>
+            Determines if the dictionary conatins the value.
+            </summary>
+            <param name="value">The value to search for.</param>
+            <returns>True if the value exists else false.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.Remove(`0)">
+            <summary>
+            Removes the value from the dictionary for the
+            specified key.
+            </summary>
+            <param name="key">The key to remove.</param>
+            <returns>True if the element was removed.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.Remove(System.Object)">
+            <summary>
+            Removes the value from the dictionary for the
+            specified key.
+            </summary>
+            <param name="key">The key to remove.</param>
+            <returns>True if the element was removed.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.Remove(System.Collections.Generic.KeyValuePair{`0,`1})">
+            <summary>
+            Removes the value from the dictionary for the
+            specified key value pair item.
+            </summary>
+            <param name="item">The key value pair to remove.</param>
+            <returns>True if the element was removed.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.TryGetValue(`0,`1@)">
+            <summary>
+            Get the value associated with the key.
+            </summary>
+            <param name="key">The key of the value to get.</param>
+            <param name="value">The value for the key.</param>
+            <returns>True if the value was found for the key.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.Clear">
+            <summary>
+            Removes all keys and values from the dictionary.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.Contains(System.Collections.Generic.KeyValuePair{`0,`1})">
+            <summary>
+            Determines if the item exists in the dictionary.
+            </summary>
+            <param name="item">The key value pair to search for.</param>
+            <returns>True if the item exists in the dictionary else false.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[])">
+            <summary>
+            Copies the dictionary items to a key value pair array.
+            </summary>
+            <param name="array">The array to copy to.</param>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.CopyTo(System.Array,System.Int32)">
+            <summary>
+            Copies the elements of the System.Collections.ICollection to an System.Array, starting at a particular System.Array index.
+            </summary>
+            <param name="array">The one-dimensional System.Array that is the destination of the elements
+            copied from System.Collections.ICollection. The System.Array must have zero-based
+            indexing.</param>
+            <param name="index">The zero-based index in array at which copying begins.</param>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
+            <summary>
+            Copies the dictionary items to a key value pair array.
+            </summary>
+            <param name="array">The array to copy to.</param>
+            <param name="index">The index where copy should begin.</param>
+            <exception cref="T:System.IndexOutOfRangeException">
+            Index can not be greater than the count</exception>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32,System.Int32)">
+            <summary>
+            Copies the dictionary items to a key value pair array.
+            </summary>
+            <param name="array">The array to copy to.</param>
+            <param name="start">The index where copy should begin.</param>
+            <param name="end">The index where copy should end.</param>
+            <exception cref="T:System.IndexOutOfRangeException">
+            Index can not be greater than the count or then than zero</exception>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.GetKeys">
+            <summary>
+            Get the collection of keys.
+            </summary>
+            <returns>The collection of keys.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">
+            Index can not be greater than the count or then than zero</exception>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.GetKeys(System.Func{System.Collections.Generic.KeyValuePair{`0,`1},System.Boolean})">
+            <summary>
+            Get the collection of keys.
+            </summary>
+            <param name="predicate">The value predicate.</param>
+            <returns>The collection of keys.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">
+            Index can not be greater than the count or then than zero</exception>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.GetKeys(System.Func{System.Collections.Generic.KeyValuePair{`0,`1},System.Boolean},System.Int32)">
+            <summary>
+            Get the collection of keys.
+            </summary>
+            <param name="predicate">The value predicate.</param>
+            <param name="count">The number to return.</param>
+            <returns>The collection of keys.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">
+            Index can not be greater than the count or then than zero</exception>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.GetKeys(System.Int32,System.Int32)">
+            <summary>
+            Get the collection of keys.
+            </summary>
+            <param name="start">The index where copy should begin.</param>
+            <param name="end">The index where copy should end.</param>
+            <returns>The collection of keys.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">
+            Index can not be greater than the count or then than zero</exception>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.GetKeysType(System.Int32,System.Int32)">
+            <summary>
+            Get the collection of keys.
+            </summary>
+            <param name="start">The index where copy should begin.</param>
+            <param name="end">The index where copy should end.</param>
+            <returns>The collection of keys.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">
+            Index can not be greater than the count or then than zero</exception>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.GetValues(System.Int32,System.Int32)">
+            <summary>
+            Get the collection of values.
+            </summary>
+            <param name="start">The index where copy should begin.</param>
+            <param name="end">The index where copy should end.</param>
+            <returns>The collection of values.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">
+            Index can not be greater than the count or then than zero</exception>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.GetValuesType(System.Int32,System.Int32)">
+            <summary>
+            Get the collection of values.
+            </summary>
+            <param name="start">The index where copy should begin.</param>
+            <param name="end">The index where copy should end.</param>
+            <returns>The collection of values.</returns>
+            <exception cref="T:System.IndexOutOfRangeException">
+            Index can not be greater than the count or then than zero</exception>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.GetValueType(`0)">
+            <summary>
+            Gets the type of object in the dictionary
+            for the specified key.
+            </summary>
+            <param name="key">The dictionary key.</param>
+            <returns>The type of object in the dictionary.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through
+            the custom dictionary.
+            </summary>
+            <returns>The dictionary key value pair enumerator.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through
+            the custom dictionary.
+            </summary>
+            <returns>The dictionary enumerator.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.GetValue">
+            <summary>
+            Dictionary value enumerator, allows iteration through all values.
+            </summary>
+            <returns>The dictionary value item.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.GetKey">
+            <summary>
+            Dictionary key enumerator, allows iteration through all keys.
+            </summary>
+            <returns>The dictionary key item.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.System#Collections#IDictionary#GetEnumerator">
+            <summary>
+            Returns an System.Collections.IDictionaryEnumerator object for the System.Collections.IDictionary object.
+            </summary>
+            <returns>An System.Collections.IDictionaryEnumerator object for the System.Collections.IDictionary object.</returns>
+        </member>
+        <member name="F:Nequeo.Collections.CustomDictionary`2.disposed">
+            <summary>
+            Track whether Dispose has been called.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.Dispose">
+            <summary>
+            Implement IDisposable.
+            Do not make this method virtual.
+            A derived class should not be able to override this method.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.Dispose(System.Boolean)">
+            <summary>
+            Dispose(bool disposing) executes in two distinct scenarios.
+            If disposing equals true, the method has been called directly
+            or indirectly by a user's code. Managed and unmanaged resources
+            can be disposed.
+            If disposing equals false, the method has been called by the
+            runtime from inside the finalizer and you should not reference
+            other objects. Only unmanaged resources can be disposed.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.CustomDictionary`2.Finalize">
+            <summary>
+            Use C# destructor syntax for finalization code.
+            This destructor will run only if the Dispose method
+            does not get called.
+            It gives your base class the opportunity to finalize.
+            Do not provide destructors in types derived from this class.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Collections.HeadersList">
+            <summary>
+            Headers list class.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.HeadersList.StoredHeadersSize">
+            <summary>
+            Gets the size of the stored headers in bytes.
+            </summary>
+            <value>
+            The size of the stored headers in bytes.
+            </value>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.#ctor">
+            <summary>
+            Headers list class.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+            <summary>
+            Headers list class.
+            </summary>
+            <param name="list">The list.</param>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.#ctor(System.Collections.Generic.IDictionary{System.String,System.String[]})">
+            <summary>
+            Headers list class.
+            </summary>
+            <param name="headers">The headers.</param>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.#ctor(System.Int32)">
+            <summary>
+            Headers list class.
+            </summary>
+            <param name="capacity">The capacity.</param>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.GetValue(System.String)">
+            <summary>
+            Get the value.
+            </summary>
+            <param name="key">The key.</param>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.AddRange(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+            <summary>
+            Add range.
+            </summary>
+            <param name="headers">The header collection.</param>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.GetEnumerator">
+            <summary>
+            Get the enumerator.
+            </summary>
+            <returns>The enumeration.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Get the enumerator.
+            </summary>
+            <returns>The enumeration.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.Add(System.Collections.Generic.KeyValuePair{System.String,System.String})">
+            <summary>
+            Add the header.
+            </summary>
+            <param name="header">The header.</param>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.Clear">
+            <summary>
+            Clear the list.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.Contains(System.Collections.Generic.KeyValuePair{System.String,System.String})">
+            <summary>
+            Contains header.
+            </summary>
+            <param name="header">The header.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.CopyTo(System.Collections.Generic.KeyValuePair{System.String,System.String}[],System.Int32)">
+            <summary>
+            Copy to.
+            </summary>
+            <param name="array">The array of headers.</param>
+            <param name="arrayIndex">The strat index.</param>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.Remove(System.Collections.Generic.KeyValuePair{System.String,System.String})">
+            <summary>
+            Remove the header.
+            </summary>
+            <param name="header">The header.</param>
+        </member>
+        <member name="P:Nequeo.Collections.HeadersList.Count">
+            <summary>
+            Gets the header count.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.HeadersList.IsReadOnly">
+            <summary>
+            Gets an indicator specifying if the collection is read only.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.FindIndex(System.Predicate{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+            <summary>
+            Find the index.
+            </summary>
+            <param name="predicate">The predicate used to search for the index.</param>
+            <returns>The index.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.IndexOf(System.Collections.Generic.KeyValuePair{System.String,System.String})">
+            <summary>
+            Get the index of.
+            </summary>
+            <param name="header">The header.</param>
+            <returns>The index.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.Insert(System.Int32,System.Collections.Generic.KeyValuePair{System.String,System.String})">
+            <summary>
+            Insert header.
+            </summary>
+            <param name="index">The index to insert at.</param>
+            <param name="header">The header to insert.</param>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.RemoveAt(System.Int32)">
+            <summary>
+            Remove at.
+            </summary>
+            <param name="index">The index to remove.</param>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.RemoveAll(System.Predicate{System.Collections.Generic.KeyValuePair{System.String,System.String}})">
+            <summary>
+            Remove all.
+            </summary>
+            <param name="predicate">The predicate to search on.</param>
+            <returns>The number removed.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.HeadersList.ContainsName(System.String)">
+            <summary>
+            Contains the name.
+            </summary>
+            <param name="name">The name.</param>
+            <returns>True is the name exists.</returns>
+        </member>
+        <member name="P:Nequeo.Collections.HeadersList.Item(System.Int32)">
+            <summary>
+            Header indexer.
+            </summary>
+            <param name="index">The index.</param>
+            <returns>The header.</returns>
+        </member>
+        <member name="T:Nequeo.Collections.Observable`1">
+            <summary>
+            The generic general observable collection class, collects the general objects.
+            </summary>
+            <typeparam name="T">The generic general type to collect.</typeparam>
+        </member>
+        <member name="M:Nequeo.Collections.Observable`1.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Observable`1.AddRange(`0[])">
+            <summary>
+            Add the range of types.
+            </summary>
+            <param name="data">The range of types to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Observable`1.AddRange(System.Collections.Generic.IList{`0})">
+            <summary>
+            Add the range of types.
+            </summary>
+            <param name="data">The range of types to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Observable`1.AddRange(System.Collections.Generic.ICollection{`0})">
+            <summary>
+            Add the range of types.
+            </summary>
+            <param name="data">The range of types to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Observable`1.AddRange(Nequeo.Collections.Collection{`0})">
+            <summary>
+            Add the range of types.
+            </summary>
+            <param name="data">The range of types to add.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Observable`1.AddRange(Nequeo.Collections.BindingCollection{`0})">
+            <summary>
+            Add the range of types.
+            </summary>
+            <param name="data">The range of types to add.</param>
+        </member>
+        <member name="T:Nequeo.Collections.ObservableBase">
+            <summary>
+            Observable base.
+            </summary>
+        </member>
+        <member name="E:Nequeo.Collections.ObservableBase.PropertyChanged">
+            <summary>
+            Property changed event.
+            </summary>
+        </member>
+        <member name="E:Nequeo.Collections.ObservableBase.PropertyChanging">
+            <summary>
+            Property changing event, triggered when a property is changing.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.ObservableBase.PropertyChangedHandler">
+            <summary>
+            Provides access to the PropertyChanged event handler to derived classes.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.ObservableBase.PropertyChangingHandler">
+            <summary>
+            Provides access to the PropertyChanging event handler to derived classes.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.ObservableBase.RaisePropertyChanged(System.String)">
+            <summary>
+            Raise the property changed event.
+            </summary>
+            <param name="propertyName">The name of the property.</param>
+        </member>
+        <member name="M:Nequeo.Collections.ObservableBase.RaisePropertyChanging(System.String)">
+            <summary>
+            Raise the property changing event handle for the attached event.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Collections.StoreBuffer">
+            <summary>
+            Global store buffer.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.StoreBuffer.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Global store buffer.
+            </summary>
+            <param name="readBufferSize">The read buffer size.</param>
+            <param name="writeBufferSize">The write buffer size.</param>
+        </member>
+        <member name="F:Nequeo.Collections.StoreBuffer.READ_BUFFER_SIZE">
+            <summary>
+            The read buffer size.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Collections.StoreBuffer.WRITE_BUFFER_SIZE">
+            <summary>
+            The write buffer size.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Collections.StoreBuffer.ReadBuffer">
+            <summary>
+            The read buffer.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Collections.StoreBuffer.WriteBuffer">
+            <summary>
+            The write buffer.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.StoreBuffer.SyncObject">
+            <summary>
+            Gets the thread lock synchronisation object.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.StoreBuffer.ReadBufferSize">
+            <summary>
+            Gets sets, the read buffer size.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.StoreBuffer.WriteBufferSize">
+            <summary>
+            Gets sets, the write buffer size.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Collections.StoreBuffer._disposed">
+            <summary>
+            Track whether Dispose has been called.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.StoreBuffer.Dispose">
+            <summary>
+            Implement IDisposable.
+            Do not make this method virtual.
+            A derived class should not be able to override this method.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.StoreBuffer.Dispose(System.Boolean)">
+            <summary>
+            Dispose(bool disposing) executes in two distinct scenarios.
+            If disposing equals true, the method has been called directly
+            or indirectly by a user's code. Managed and unmanaged resources
+            can be disposed.
+            If disposing equals false, the method has been called by the
+            runtime from inside the finalizer and you should not reference
+            other objects. Only unmanaged resources can be disposed.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.StoreBuffer.Finalize">
+            <summary>
+            Use C# destructor syntax for finalization code.
+            This destructor will run only if the Dispose method
+            does not get called.
+            It gives your base class the opportunity to finalize.
+            Do not provide destructors in types derived from this class.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Collections.StreamBuffer">
+            <summary>
+            Streamed buffer storage.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.StreamBuffer.#ctor(Nequeo.Collections.CircularBuffer{System.Byte})">
+            <summary>
+            Streamed buffer storage.
+            </summary>
+            <param name="buffer">The buffer storage.</param>
+        </member>
+        <member name="P:Nequeo.Collections.StreamBuffer.Buffer">
+            <summary>
+            Gets the underlying buffer.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.StreamBuffer.CanRead">
+            <summary>
+            Gets a value indicating whether the current stream supports reading.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.StreamBuffer.CanSeek">
+            <summary>
+            Gets a value indicating whether the current stream supports seeking.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.StreamBuffer.CanWrite">
+            <summary>
+            Gets a value indicating whether the current stream supports writing.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.StreamBuffer.Length">
+            <summary>
+            Gets the length in bytes of the stream.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.StreamBuffer.Position">
+            <summary>
+            Gets or sets the position within the current stream.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.StreamBuffer.Flush">
+            <summary>
+            Clears all buffers for this stream and causes any buffered 
+            data to be written to the underlying device.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.StreamBuffer.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Reads a sequence of bytes from the current stream 
+            and advances the position within the stream by the 
+            number of bytes read.
+            </summary>
+            <param name="buffer">An array of bytes. When this method returns, 
+            the buffer contains the specified byte array with the values between 
+            offset and (offset + count - 1) replaced by the bytes read from the 
+            current source.</param>
+            <param name="offset">The zero-based byte offset in buffer at which 
+            to begin storing the data read from the current stream.</param>
+            <param name="count">The maximum number of bytes to be read from 
+            the current stream.</param>
+            <returns>The total number of bytes read into the buffer. This can be 
+            less than the number of bytes requested if that many bytes are not 
+            currently available, or zero (0) if the end of the stream has been 
+            reached.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.StreamBuffer.Seek(System.Int64,System.IO.SeekOrigin)">
+            <summary>
+            Sets the position within the current stream.
+            </summary>
+            <param name="offset">A byte offset relative to the origin parameter.</param>
+            <param name="origin">A value of type System.IO.SeekOrigin indicating the 
+            reference point used to obtain the new position.</param>
+            <returns>The new position within the current stream.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.StreamBuffer.SetLength(System.Int64)">
+            <summary>
+            Sets the length of the current stream.
+            </summary>
+            <param name="value">The desired length of the current stream in bytes.</param>
+        </member>
+        <member name="M:Nequeo.Collections.StreamBuffer.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            Writes a sequence of bytes to the current stream and advances 
+            the current position within this stream by the number of bytes 
+            written.
+            </summary>
+            <param name="buffer">An array of bytes. This method copies 
+            count bytes from buffer to the current stream.</param>
+            <param name="offset">The zero-based byte offset in buffer 
+            at which to begin copying bytes to the current stream.</param>
+            <param name="count">The number of bytes to be written to the current stream.</param>
+        </member>
+        <member name="T:Nequeo.Collections.Common.DelegateBasedObserver`1">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="T:Nequeo.Collections.Common.Operation">
+            <summary>
+            Common operation handler
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Common.Operation.GetFirstValue``2(System.Collections.IList,System.String)">
+            <summary>
+            Get the value of the first item within the collection.
+            </summary>
+            <typeparam name="TItemModel">Item type with the collection.</typeparam>
+            <typeparam name="TResult">The result type to return.</typeparam>
+            <param name="items">The collection of item model types</param>
+            <param name="itemModelPropertyName">The item model property name to match</param>
+            <returns>The first value within the collection.</returns>
+        </member>
+        <member name="T:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2">
+            <summary>Provides a thread-safe priority queue data structure.</summary>
+            <typeparam name="TKey">Specifies the type of keys used to prioritize values.</typeparam>
+            <typeparam name="TValue">Specifies the type of elements in the queue.</typeparam>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.#ctor">
+            <summary>Initializes a new instance of the ConcurrentPriorityQueue class.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.#ctor(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{`0,`1}})">
+            <summary>Initializes a new instance of the ConcurrentPriorityQueue class that contains elements copied from the specified collection.</summary>
+            <param name="collection">The collection whose elements are copied to the new ConcurrentPriorityQueue.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.Enqueue(`0,`1)">
+            <summary>Adds the key/value pair to the priority queue.</summary>
+            <param name="priority">The priority of the item to be added.</param>
+            <param name="value">The item to be added.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.Enqueue(System.Collections.Generic.KeyValuePair{`0,`1})">
+            <summary>Adds the key/value pair to the priority queue.</summary>
+            <param name="item">The key/value pair to be added to the queue.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.TryDequeue(System.Collections.Generic.KeyValuePair{`0,`1}@)">
+            <summary>Attempts to remove and return the next prioritized item in the queue.</summary>
+            <param name="result">
+            When this method returns, if the operation was successful, result contains the object removed. If
+            no object was available to be removed, the value is unspecified.
+            </param>
+            <returns>
+            true if an element was removed and returned from the queue succesfully; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.TryPeek(System.Collections.Generic.KeyValuePair{`0,`1}@)">
+            <summary>Attempts to return the next prioritized item in the queue.</summary>
+            <param name="result">
+            When this method returns, if the operation was successful, result contains the object.
+            The queue was not modified by the operation.
+            </param>
+            <returns>
+            true if an element was returned from the queue succesfully; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.Clear">
+            <summary>Empties the queue.</summary>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.IsEmpty">
+            <summary>Gets whether the queue is empty.</summary>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.Count">
+            <summary>Gets the number of elements contained in the queue.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.CopyTo(System.Collections.Generic.KeyValuePair{`0,`1}[],System.Int32)">
+            <summary>Copies the elements of the collection to an array, starting at a particular array index.</summary>
+            <param name="array">
+            The one-dimensional array that is the destination of the elements copied from the queue.
+            </param>
+            <param name="index">
+            The zero-based index in array at which copying begins.
+            </param>
+            <remarks>The elements will not be copied to the array in any guaranteed order.</remarks>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.ToArray">
+            <summary>Copies the elements stored in the queue to a new array.</summary>
+            <returns>A new array containing a snapshot of elements copied from the queue.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.System#Collections#Concurrent#IProducerConsumerCollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#TryAdd(System.Collections.Generic.KeyValuePair{`0,`1})">
+            <summary>Attempts to add an item in the queue.</summary>
+            <param name="item">The key/value pair to be added.</param>
+            <returns>
+            true if the pair was added; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.System#Collections#Concurrent#IProducerConsumerCollection{System#Collections#Generic#KeyValuePair{TKey,TValue}}#TryTake(System.Collections.Generic.KeyValuePair{`0,`1}@)">
+            <summary>Attempts to remove and return the next prioritized item in the queue.</summary>
+            <param name="item">
+            When this method returns, if the operation was successful, result contains the object removed. If
+            no object was available to be removed, the value is unspecified.
+            </param>
+            <returns>
+            true if an element was removed and returned from the queue succesfully; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.GetEnumerator">
+            <summary>Returns an enumerator that iterates through the collection.</summary>
+            <returns>An enumerator for the contents of the queue.</returns>
+            <remarks>
+            The enumeration represents a moment-in-time snapshot of the contents of the queue. It does not
+            reflect any updates to the collection after GetEnumerator was called. The enumerator is safe to
+            use concurrently with reads from and writes to the queue.
+            </remarks>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.System#Collections#IEnumerable#GetEnumerator">
+            <summary>Returns an enumerator that iterates through a collection.</summary>
+            <returns>An IEnumerator that can be used to iterate through the collection.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.System#Collections#ICollection#CopyTo(System.Array,System.Int32)">
+            <summary>Copies the elements of the collection to an array, starting at a particular array index.</summary>
+            <param name="array">
+            The one-dimensional array that is the destination of the elements copied from the queue.
+            </param>
+            <param name="index">
+            The zero-based index in array at which copying begins.
+            </param>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.System#Collections#ICollection#IsSynchronized">
+            <summary>
+            Gets a value indicating whether access to the ICollection is synchronized with the SyncRoot.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.System#Collections#ICollection#SyncRoot">
+            <summary>
+            Gets an object that can be used to synchronize access to the collection.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.MinBinaryHeap">
+            <summary>Implements a binary heap that prioritizes smaller values.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.MinBinaryHeap.#ctor">
+            <summary>Initializes an empty heap.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.MinBinaryHeap.#ctor(Nequeo.Collections.Concurrent.ConcurrentPriorityQueue{`0,`1}.MinBinaryHeap)">
+            <summary>Initializes a heap as a copy of another heap instance.</summary>
+            <param name="heapToCopy">The heap to copy.</param>
+            <remarks>Key/Value values are not deep cloned.</remarks>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.MinBinaryHeap.Clear">
+            <summary>Empties the heap.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.MinBinaryHeap.Insert(`0,`1)">
+            <summary>Adds an item to the heap.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.MinBinaryHeap.Insert(System.Collections.Generic.KeyValuePair{`0,`1})">
+            <summary>Adds an item to the heap.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.MinBinaryHeap.Peek">
+            <summary>Returns the entry at the top of the heap.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.MinBinaryHeap.Remove">
+            <summary>Removes the entry at the top of the heap.</summary>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.ConcurrentPriorityQueue`2.MinBinaryHeap.Count">
+            <summary>Gets the number of objects stored in the heap.</summary>
+        </member>
+        <member name="T:Nequeo.Collections.Concurrent.ObjectPool`1">
+            <summary>Provides a thread-safe object pool.</summary>
+            <typeparam name="T">Specifies the type of the elements stored in the pool.</typeparam>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObjectPool`1.#ctor(System.Func{`0})">
+            <summary>Initializes an instance of the ObjectPool class.</summary>
+            <param name="generator">The function used to create items when no items exist in the pool.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObjectPool`1.#ctor(System.Func{`0},System.Collections.Concurrent.IProducerConsumerCollection{`0})">
+            <summary>Initializes an instance of the ObjectPool class.</summary>
+            <param name="generator">The function used to create items when no items exist in the pool.</param>
+            <param name="collection">The collection used to store the elements of the pool.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObjectPool`1.PutObject(`0)">
+            <summary>Adds the provided item into the pool.</summary>
+            <param name="item">The item to be added.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObjectPool`1.GetObject">
+            <summary>Gets an item from the pool.</summary>
+            <returns>The removed or created item.</returns>
+            <remarks>If the pool is empty, a new item will be created and returned.</remarks>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObjectPool`1.ToArrayAndClear">
+            <summary>Clears the object pool, returning all of the data that was in the pool.</summary>
+            <returns>An array containing all of the elements in the pool.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObjectPool`1.TryAdd(`0)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObjectPool`1.TryTake(`0@)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nequeo.Collections.Concurrent.ObservableConcurrentCollection`1">
+            <summary>
+            Provides a thread-safe, concurrent collection for use with data binding.
+            </summary>
+            <typeparam name="T">Specifies the type of the elements in this collection.</typeparam>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentCollection`1.#ctor">
+            <summary>
+            Initializes an instance of the ObservableConcurrentCollection class with an underlying
+            queue data structure.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentCollection`1.#ctor(System.Collections.Concurrent.IProducerConsumerCollection{`0})">
+            <summary>
+            Initializes an instance of the ObservableConcurrentCollection class with the specified
+            collection as the underlying data structure.
+            </summary>
+        </member>
+        <member name="E:Nequeo.Collections.Concurrent.ObservableConcurrentCollection`1.CollectionChanged">
+            <summary>Event raised when the collection changes.</summary>
+        </member>
+        <member name="E:Nequeo.Collections.Concurrent.ObservableConcurrentCollection`1.PropertyChanged">
+            <summary>Event raised when a property on the collection changes.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentCollection`1.NotifyObserversOfChange">
+            <summary>
+            Notifies observers of CollectionChanged or PropertyChanged of an update to the dictionary.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentCollection`1.TryAdd(`0)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentCollection`1.TryTake(`0@)">
+            <summary>
+            
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2">
+            <summary>
+            Provides a thread-safe dictionary for use with data binding.
+            </summary>
+            <typeparam name="TKey">Specifies the type of the keys in this collection.</typeparam>
+            <typeparam name="TValue">Specifies the type of the values in this collection.</typeparam>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.#ctor">
+            <summary>
+            Initializes an instance of the ObservableConcurrentDictionary class.
+            </summary>
+        </member>
+        <member name="E:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.CollectionChanged">
+            <summary>Event raised when the collection changes.</summary>
+        </member>
+        <member name="E:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.PropertyChanged">
+            <summary>Event raised when a property on the collection changes.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.NotifyObserversOfChange">
+            <summary>
+            Notifies observers of CollectionChanged or PropertyChanged of an update to the dictionary.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.TryAddWithNotification(System.Collections.Generic.KeyValuePair{`0,`1})">
+            <summary>Attempts to add an item to the dictionary, notifying observers of any changes.</summary>
+            <param name="item">The item to be added.</param>
+            <returns>Whether the add was successful.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.TryAddWithNotification(`0,`1)">
+            <summary>Attempts to add an item to the dictionary, notifying observers of any changes.</summary>
+            <param name="key">The key of the item to be added.</param>
+            <param name="value">The value of the item to be added.</param>
+            <returns>Whether the add was successful.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.TryRemoveWithNotification(`0,`1@)">
+            <summary>Attempts to remove an item from the dictionary, notifying observers of any changes.</summary>
+            <param name="key">The key of the item to be removed.</param>
+            <param name="value">The value of the item removed.</param>
+            <returns>Whether the removal was successful.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.UpdateWithNotification(`0,`1)">
+            <summary>Attempts to add or update an item in the dictionary, notifying observers of any changes.</summary>
+            <param name="key">The key of the item to be updated.</param>
+            <param name="value">The new value to set for the item.</param>
+            <returns>Whether the update was successful.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.Add(`0,`1)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.ContainsKey(`0)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.Keys">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.Remove(`0)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.TryGetValue(`0,`1@)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.Values">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.ObservableConcurrentDictionary`2.Item(`0)">
+            <summary>
+            
+            </summary>
+            <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nequeo.Collections.Concurrent.Partitioners.ChunkPartitioner">
+            <summary>
+            Partitions an enumerable into chunks based on user-supplied criteria.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.ChunkPartitioner.Create``1(System.Collections.Generic.IEnumerable{``0},System.Func{System.Int32,System.Int32})">
+            <summary>Creates a partitioner that chooses the next chunk size based on a user-supplied function.</summary>
+            <typeparam name="TSource">The type of the data being partitioned.</typeparam>
+            <param name="source">The data being partitioned.</param>
+            <param name="nextChunkSizeFunc">A function that determines the next chunk size based on the
+            previous chunk size.</param>
+            <returns>A partitioner.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.ChunkPartitioner.Create``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>Creates a partitioner that always uses a user-specified chunk size.</summary>
+            <typeparam name="TSource">The type of the data being partitioned.</typeparam>
+            <param name="source">The data being partitioned.</param>
+            <param name="chunkSize">The chunk size to be used.</param>
+            <returns>A partitioner.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.ChunkPartitioner.Create``1(System.Collections.Generic.IEnumerable{``0},System.Int32,System.Int32)">
+            <summary>Creates a partitioner that chooses chunk sizes between the user-specified min and max.</summary>
+            <typeparam name="TSource">The type of the data being partitioned.</typeparam>
+            <param name="source">The data being partitioned.</param>
+            <param name="minChunkSize">The minimum chunk size to use.</param>
+            <param name="maxChunkSize">The maximum chunk size to use.</param>
+            <returns>A partitioner.</returns>
+        </member>
+        <member name="T:Nequeo.Collections.Concurrent.Partitioners.ChunkPartitioner`1">
+            <summary>
+            Partitions an enumerable into chunks based on user-supplied criteria.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.ChunkPartitioner`1.GetOrderablePartitions(System.Int32)">
+            <summary>
+            Partitions the underlying collection into the specified number of orderable partitions.
+            </summary>
+            <param name="partitionCount">The number of partitions to create.</param>
+            <returns>An object that can create partitions over the underlying data source.</returns>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.Partitioners.ChunkPartitioner`1.SupportsDynamicPartitions">
+            <summary>Gets whether additional partitions can be created dynamically.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.ChunkPartitioner`1.GetOrderableDynamicPartitions">
+            <summary>
+            Creates an object that can partition the underlying collection into a variable number of
+            partitions.
+            </summary>
+            <returns>
+            An object that can create partitions over the underlying data source.
+            </returns>
+        </member>
+        <member name="T:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner">
+            <summary>Partitions a data source one item at a time.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.Create``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>Creates a partitioner for an enumerable that partitions it one item at a time.</summary>
+            <typeparam name="T">Specifies the type of data contained in the enumerable.</typeparam>
+            <param name="source">The source enumerable to be partitioned.</param>
+            <returns>The partitioner.</returns>
+        </member>
+        <member name="T:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1">
+            <summary>Partitions an enumerable one item at a time.</summary>
+            <typeparam name="T">Specifies the type of data contained in the list.</typeparam>
+        </member>
+        <member name="F:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1._source">
+            <summary>The enumerable to be partitioned.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1.#ctor(System.Collections.Generic.IEnumerable{`0})">
+            <summary>Initializes the partitioner.</summary>
+            <param name="source">The enumerable to be partitioned.</param>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1.SupportsDynamicPartitions">
+            <summary>Gets whether this partitioner supports dynamic partitioning (it does).</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1.GetOrderableDynamicPartitions">
+            <summary>Gets a list of the specified static number of partitions.</summary>
+            <returns>The list of created partitions ready to be iterated.</returns>
+        </member>
+        <member name="T:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1.DynamicGenerator">
+            <summary>Dynamically generates a partitions on a shared enumerator.</summary>
+        </member>
+        <member name="F:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1.DynamicGenerator._sharedEnumerator">
+            <summary>The source enumerator shared amongst all partitions.</summary>
+        </member>
+        <member name="F:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1.DynamicGenerator._nextAvailablePosition">
+            <summary>The next available position to be yielded.</summary>
+        </member>
+        <member name="F:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1.DynamicGenerator._remainingPartitions">
+            <summary>The number of partitions remaining to be disposed, potentially including this dynamic generator.</summary>
+        </member>
+        <member name="F:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1.DynamicGenerator._disposed">
+            <summary>Whether this dynamic partitioner has been disposed.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1.DynamicGenerator.#ctor(System.Collections.Generic.IEnumerator{`0},System.Boolean)">
+            <summary>Initializes the dynamic generator.</summary>
+            <param name="sharedEnumerator">The enumerator shared by all partitions.</param>
+            <param name="requiresDisposal">Whether this generator will be disposed.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1.DynamicGenerator.System#IDisposable#Dispose">
+            <summary>Closes the shared enumerator if all other partitions have completed.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1.DynamicGenerator.GetEnumerator">
+            <summary>Increments the number of partitions in use and returns a new partition.</summary>
+            <returns>The new partition.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemEnumerablePartitioner`1.DynamicGenerator.GetEnumeratorCore">
+            <summary>Creates a partition.</summary>
+            <returns>The new partition.</returns>
+        </member>
+        <member name="T:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemIListPartitioner`1">
+            <summary>Partitions a list one item at a time.</summary>
+            <typeparam name="T">Specifies the type of data contained in the list.</typeparam>
+        </member>
+        <member name="F:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemIListPartitioner`1._source">
+            <summary>The list to be partitioned.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemIListPartitioner`1.#ctor(System.Collections.Generic.IList{`0})">
+            <summary>Initializes the partitioner.</summary>
+            <param name="source">The list to be partitioned.</param>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemIListPartitioner`1.SupportsDynamicPartitions">
+            <summary>Gets whether this partitioner supports dynamic partitioning (it does).</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemIListPartitioner`1.GetOrderablePartitions(System.Int32)">
+            <summary>Gets a list of the specified static number of partitions.</summary>
+            <param name="partitionCount">The static number of partitions to create.</param>
+            <returns>The list of created partitions ready to be iterated.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemIListPartitioner`1.GetOrderableDynamicPartitions">
+            <summary>Creates a dynamic partitioner for creating a dynamic number of partitions.</summary>
+            <returns>The dynamic partitioner.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.Partitioners.SingleItemPartitioner.SingleItemIListPartitioner`1.GetOrderableDynamicPartitionsCore(System.Collections.Generic.IList{`0},System.Runtime.CompilerServices.StrongBox{System.Int32})">
+            <summary>An enumerable that creates individual enumerators that all work together to partition the list.</summary>
+            <param name="source">The list being partitioned.</param>
+            <param name="nextIteration">An integer shared between partitions denoting the next available index in the source.</param>
+            <returns>An enumerable that generates enumerators which participate in partitioning the list.</returns>
+        </member>
+        <member name="T:Nequeo.Collections.Concurrent.IProducerConsumerCollection_DebugView`1">
+            <summary>Debug view for the IProducerConsumerCollection.</summary>
+            <typeparam name="T">Specifies the type of the data being aggregated.</typeparam>
+        </member>
+        <member name="T:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1">
+            <summary>
+            Provides a base implementation for producer-consumer collections that wrap other
+            producer-consumer collections.
+            </summary>
+            <typeparam name="T">Specifies the type of elements in the collection.</typeparam>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.#ctor(System.Collections.Concurrent.IProducerConsumerCollection{`0})">
+            <summary>Initializes the ProducerConsumerCollectionBase instance.</summary>
+            <param name="contained">The collection to be wrapped by this instance.</param>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.ContainedCollection">
+            <summary>Gets the contained collection.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.TryAdd(`0)">
+            <summary>Attempts to add the specified value to the end of the deque.</summary>
+            <param name="item">The item to add.</param>
+            <returns>true if the item could be added; otherwise, false.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.TryTake(`0@)">
+            <summary>Attempts to remove and return an item from the collection.</summary>
+            <param name="item">
+            When this method returns, if the operation was successful, item contains the item removed. If
+            no item was available to be removed, the value is unspecified.
+            </param>
+            <returns>
+            true if an element was removed and returned from the collection; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryAdd(`0)">
+            <summary>Attempts to add the specified value to the end of the deque.</summary>
+            <param name="item">The item to add.</param>
+            <returns>true if the item could be added; otherwise, false.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.System#Collections#Concurrent#IProducerConsumerCollection{T}#TryTake(`0@)">
+            <summary>Attempts to remove and return an item from the collection.</summary>
+            <param name="item">
+            When this method returns, if the operation was successful, item contains the item removed. If
+            no item was available to be removed, the value is unspecified.
+            </param>
+            <returns>
+            true if an element was removed and returned from the collection; otherwise, false.
+            </returns>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.Count">
+            <summary>Gets the number of elements contained in the collection.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.ToArray">
+            <summary>Creates an array containing the contents of the collection.</summary>
+            <returns>The array.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.CopyTo(`0[],System.Int32)">
+            <summary>Copies the contents of the collection to an array.</summary>
+            <param name="array">The array to which the data should be copied.</param>
+            <param name="index">The starting index at which data should be copied.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.System#Collections#ICollection#CopyTo(System.Array,System.Int32)">
+            <summary>Copies the contents of the collection to an array.</summary>
+            <param name="array">The array to which the data should be copied.</param>
+            <param name="index">The starting index at which data should be copied.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.GetEnumerator">
+            <summary>Gets an enumerator for the collection.</summary>
+            <returns>An enumerator.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>Gets an enumerator for the collection.</summary>
+            <returns>An enumerator.</returns>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.System#Collections#ICollection#IsSynchronized">
+            <summary>Gets whether the collection is synchronized.</summary>
+        </member>
+        <member name="P:Nequeo.Collections.Concurrent.ProducerConsumerCollectionBase`1.System#Collections#ICollection#SyncRoot">
+            <summary>Gets the synchronization root object for the collection.</summary>
+        </member>
+        <member name="T:Nequeo.Collections.Extension.BlockingCollectionExtensions">
+            <summary>
+            Extension methods for BlockingCollection.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.BlockingCollectionExtensions.GetConsumingPartitioner``1(System.Collections.Concurrent.BlockingCollection{``0})">
+            <summary>
+            Gets a partitioner for a BlockingCollection that consumes and yields the contents of the BlockingCollection.</summary>
+            <typeparam name="T">Specifies the type of data in the collection.</typeparam>
+            <param name="collection">The collection for which to create a partitioner.</param>
+            <returns>A partitioner that completely consumes and enumerates the contents of the collection.</returns>
+            <remarks>
+            Using this partitioner with a Parallel.ForEach loop or with PLINQ eliminates the need for those
+            constructs to do any additional locking.  The only synchronization in place is that used by the
+            BlockingCollection internally.
+            </remarks>
+        </member>
+        <member name="T:Nequeo.Collections.Extension.BlockingCollectionExtensions.BlockingCollectionPartitioner`1">
+            <summary>Provides a partitioner that consumes a blocking collection and yields its contents.</summary>
+            <typeparam name="T">Specifies the type of data in the collection.</typeparam>
+        </member>
+        <member name="F:Nequeo.Collections.Extension.BlockingCollectionExtensions.BlockingCollectionPartitioner`1._collection">
+            <summary>The target collection.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.BlockingCollectionExtensions.BlockingCollectionPartitioner`1.#ctor(System.Collections.Concurrent.BlockingCollection{`0})">
+            <summary>Initializes the partitioner.</summary>
+            <param name="collection">The collection to be enumerated and consumed.</param>
+        </member>
+        <member name="P:Nequeo.Collections.Extension.BlockingCollectionExtensions.BlockingCollectionPartitioner`1.SupportsDynamicPartitions">
+            <summary>Gets whether additional partitions can be created dynamically.</summary>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.BlockingCollectionExtensions.BlockingCollectionPartitioner`1.GetPartitions(System.Int32)">
+            <summary>Partitions the underlying collection into the given number of partitions.</summary>
+            <param name="partitionCount">The number of partitions to create.</param>
+            <returns>A list containing partitionCount enumerators.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.BlockingCollectionExtensions.BlockingCollectionPartitioner`1.GetDynamicPartitions">
+            <summary>
+            Creates an object that can partition the underlying collection into a variable number of partitions.
+            </summary>
+            <returns>An object that can create partitions over the underlying data source.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.BlockingCollectionExtensions.AddFromEnumerable``1(System.Collections.Concurrent.BlockingCollection{``0},System.Collections.Generic.IEnumerable{``0},System.Boolean)">
+            <summary>Adds the contents of an enumerable to the BlockingCollection.</summary>
+            <typeparam name="T">Specifies the type of the elements in the collection.</typeparam>
+            <param name="target">The target BlockingCollection to be augmented.</param>
+            <param name="source">The source enumerable containing the data to be added.</param>
+            <param name="completeAddingWhenDone">
+            Whether to mark the target BlockingCollection as complete for adding when 
+            all elements of the source enumerable have been transfered.
+            </param>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.BlockingCollectionExtensions.AddFromObservable``1(System.Collections.Concurrent.BlockingCollection{``0},System.IObservable{``0},System.Boolean)">
+            <summary>Adds the contents of an observable to the BlockingCollection.</summary>
+            <typeparam name="T">Specifies the type of the elements in the collection.</typeparam>
+            <param name="target">The target BlockingCollection to be augmented.</param>
+            <param name="source">The source observable containing the data to be added.</param>
+            <param name="completeAddingWhenDone">
+            Whether to mark the target BlockingCollection as complete for adding when 
+            all elements of the source observable have been transfered.
+            </param>
+            <returns>An IDisposable that may be used to cancel the transfer.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.BlockingCollectionExtensions.ToProducerConsumerCollection``1(System.Collections.Concurrent.BlockingCollection{``0})">
+            <summary>Creates an IProducerConsumerCollection-facade for a BlockingCollection instance.</summary>
+            <typeparam name="T">Specifies the type of the elements in the collection.</typeparam>
+            <param name="collection">The BlockingCollection.</param>
+            <returns>
+            An IProducerConsumerCollection that wraps the provided BlockingCollection.
+            </returns>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.BlockingCollectionExtensions.ToProducerConsumerCollection``1(System.Collections.Concurrent.BlockingCollection{``0},System.Int32)">
+            <summary>Creates an IProducerConsumerCollection-facade for a BlockingCollection instance.</summary>
+            <typeparam name="T">Specifies the type of the elements in the collection.</typeparam>
+            <param name="collection">The BlockingCollection.</param>
+            <param name="millisecondsTimeout">-1 for infinite blocking add and take operations. 0 for non-blocking, 1 or greater for blocking with timeout.</param>
+            <returns>An IProducerConsumerCollection that wraps the provided BlockingCollection.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.BlockingCollectionExtensions.ToProducerConsumerCollection``1(System.Collections.Concurrent.BlockingCollection{``0},System.Int32,System.Threading.CancellationToken)">
+            <summary>Creates an IProducerConsumerCollection-facade for a BlockingCollection instance.</summary>
+            <typeparam name="T">Specifies the type of the elements in the collection.</typeparam>
+            <param name="collection">The BlockingCollection.</param>
+            <param name="millisecondsTimeout">-1 for infinite blocking add and take operations. 0 for non-blocking, 1 or greater for blocking with timeout.</param>
+            <param name="cancellationToken">The CancellationToken to use for any blocking operations.</param>
+            <returns>An IProducerConsumerCollection that wraps the provided BlockingCollection.</returns>
+        </member>
+        <member name="T:Nequeo.Collections.Extension.BlockingCollectionExtensions.ProducerConsumerWrapper`1">
+            <summary>Provides a producer-consumer collection facade for a BlockingCollection.</summary>
+            <typeparam name="T">Specifies the type of the elements in the collection.</typeparam>
+        </member>
+        <member name="T:Nequeo.Collections.Extension.ICollectionExtensions">
+            <summary>
+            ICollection interface extensions
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.ICollectionExtensions.IsNullOrEmpty``1(System.Collections.Generic.ICollection{``0})">
+            <summary>
+            Determines whether the specified collection instance is null or empty.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="instance">The instance to check.</param>
+            <returns>
+            <c>true</c> if the specified instance is null or empty; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.ICollectionExtensions.IsEmpty``1(System.Collections.Generic.ICollection{``0})">
+            <summary>
+            Determines whether the specified collection is empty.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="instance">The instance.</param>
+            <returns>
+            <c>true</c> if the specified instance is empty; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.ICollectionExtensions.AddRange``1(System.Collections.Generic.ICollection{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Adds the specified elements to the end of the System.Collections.Generic.ICollection&lt;T&gt;.
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="instance">The instance to add.</param>
+            <param name="collection"> The collection whose elements should be added to the end of the ICollection&lt;T&gt;. 
+            The collection itself cannot be null, but it can contain elements that are null, if type T is a reference type.</param>
+        </member>
+        <member name="T:Nequeo.Collections.Extension.ICustomAttributeProviderExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.ICustomAttributeProviderExtensions.GetDisplayName(System.Reflection.ICustomAttributeProvider)">
+            <summary>
+            
+            </summary>
+            <param name="member"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.ICustomAttributeProviderExtensions.GetFormat(System.Reflection.ICustomAttributeProvider)">
+            <summary>
+            
+            </summary>
+            <param name="member"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nequeo.Collections.Extension.IDictionaryExtensions">
+            <summary>
+            Contains extension methods of IDictionary&lt;string, objectT&gt;.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IDictionaryExtensions.Merge(System.Collections.Generic.IDictionary{System.String,System.Object},System.String,System.Object,System.Boolean)">
+            <summary>
+            Merges the specified instance.
+            </summary>
+            <param name="instance">The instance.</param>
+            <param name="key">The key.</param>
+            <param name="value">The value.</param>
+            <param name="replaceExisting">if set to <c>true</c> [replace existing].</param>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IDictionaryExtensions.AppendInValue(System.Collections.Generic.IDictionary{System.String,System.Object},System.String,System.String,System.Object)">
+            <summary>
+            Appends the in value.
+            </summary>
+            <param name="instance">The instance.</param>
+            <param name="key">The key.</param>
+            <param name="separator">The separator.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IDictionaryExtensions.AddStyleAttribute(System.Collections.Generic.IDictionary{System.String,System.Object},System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="instance"></param>
+            <param name="key"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IDictionaryExtensions.PrependInValue(System.Collections.Generic.IDictionary{System.String,System.Object},System.String,System.String,System.Object)">
+            <summary>
+            Appends the specified value at the beginning of the existing value
+            </summary>
+            <param name="instance"></param>
+            <param name="key"></param>
+            <param name="separator"></param>
+            <param name="value"></param>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IDictionaryExtensions.Merge(System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object},System.Boolean)">
+            <summary>
+            Merges the specified instance.
+            </summary>
+            <param name="instance">The instance.</param>
+            <param name="from">From.</param>
+            <param name="replaceExisting">if set to <c>true</c> [replace existing].</param>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IDictionaryExtensions.Merge(System.Collections.Generic.IDictionary{System.String,System.Object},System.Collections.Generic.IDictionary{System.String,System.Object})">
+            <summary>
+            Merges the specified instance.
+            </summary>
+            <param name="instance">The instance.</param>
+            <param name="from">From.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IDictionaryExtensions.Merge(System.Collections.Generic.IDictionary{System.String,System.Object},System.Object,System.Boolean)">
+            <summary>
+            Merges the specified instance.
+            </summary>
+            <param name="instance">The instance.</param>
+            <param name="values">The values.</param>
+            <param name="replaceExisting">if set to <c>true</c> [replace existing].</param>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IDictionaryExtensions.Merge(System.Collections.Generic.IDictionary{System.String,System.Object},System.Object)">
+            <summary>
+            Merges the specified instance.
+            </summary>
+            <param name="instance">The instance.</param>
+            <param name="values">The values.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IDictionaryExtensions.AddDataIfNotEmpty(System.Collections.Generic.Dictionary{System.String,System.String},System.Xml.Linq.XDocument,System.String)">
+            <summary>
+            Adds the value from an XDocument with the specified element name if it's not empty.
+            </summary>
+            <param name="dictionary">
+            The dictionary. 
+            </param>
+            <param name="document">
+            The document. 
+            </param>
+            <param name="elementName">
+            Name of the element. 
+            </param>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IDictionaryExtensions.AddItemIfNotEmpty(System.Collections.Generic.IDictionary{System.String,System.String},System.String,System.String)">
+            <summary>
+            Adds a key/value pair to the specified dictionary if the value is not null or empty.
+            </summary>
+            <param name="dictionary">
+            The dictionary. 
+            </param>
+            <param name="key">
+            The key. 
+            </param>
+            <param name="value">
+            The value. 
+            </param>
+        </member>
+        <member name="T:Nequeo.Collections.Extension.IListExtensions">
+            <summary>
+            Class that extends the System.Collections.IList type.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IListExtensions.FirstValue``2(System.Collections.IList,System.String)">
+            <summary>
+            Get the value of the first item within the collection.
+            </summary>
+            <typeparam name="TItemModel">Item type with the collection.</typeparam>
+            <typeparam name="TResult">The result type to return.</typeparam>
+            <param name="source">The collection of item model types</param>
+            <param name="itemModelPropertyName">The item model property name to match</param>
+            <returns>The first value within the collection.</returns>
+        </member>
+        <member name="T:Nequeo.Collections.Extension.IProducerConsumerCollectionExtensions">
+            <summary>
+            Extension methods for IProducerConsumerCollection.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IProducerConsumerCollectionExtensions.Clear``1(System.Collections.Concurrent.IProducerConsumerCollection{``0})">
+            <summary>Clears the collection by repeatedly taking elements until it's empty.</summary>
+            <typeparam name="T">Specifies the type of the elements in the collection.</typeparam>
+            <param name="collection">The collection to be cleared.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IProducerConsumerCollectionExtensions.GetConsumingEnumerable``1(System.Collections.Concurrent.IProducerConsumerCollection{``0})">
+            <summary>Creates an enumerable which will consume and return elements from the collection.</summary>
+            <typeparam name="T">Specifies the type of the elements in the collection.</typeparam>
+            <param name="collection">The collection to be consumed.</param>
+            <returns>An enumerable that consumes elements from the collection and returns them.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IProducerConsumerCollectionExtensions.AddFromEnumerable``1(System.Collections.Concurrent.IProducerConsumerCollection{``0},System.Collections.Generic.IEnumerable{``0})">
+            <summary>Adds the contents of an enumerable to the collection.</summary>
+            <typeparam name="T">Specifies the type of the elements in the collection.</typeparam>
+            <param name="target">The target collection to be augmented.</param>
+            <param name="source">The source enumerable containing the data to be added.</param>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IProducerConsumerCollectionExtensions.AddFromObservable``1(System.Collections.Concurrent.IProducerConsumerCollection{``0},System.IObservable{``0})">
+            <summary>Adds the contents of an observable to the collection.</summary>
+            <typeparam name="T">Specifies the type of the elements in the collection.</typeparam>
+            <param name="target">The target collection to be augmented.</param>
+            <param name="source">The source observable containing the data to be added.</param>
+            <returns>An IDisposable that may be used to cancel the transfer.</returns>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IProducerConsumerCollectionExtensions.ToProducerOnlyCollection``1(System.Collections.Concurrent.IProducerConsumerCollection{``0})">
+            <summary>Creates an add-only facade for the collection.</summary>
+            <typeparam name="T">Specifies the type of the elements in the collection.</typeparam>
+            <param name="collection">The collection to be wrapped.</param>
+            <returns>
+            An IProducerConsumerCollection that wraps the target collection and supports only add
+            functionality, not take.
+            </returns>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.IProducerConsumerCollectionExtensions.ToConsumerOnlyCollection``1(System.Collections.Concurrent.IProducerConsumerCollection{``0})">
+            <summary>Creates a take-only facade for the collection.</summary>
+            <typeparam name="T">Specifies the type of the elements in the collection.</typeparam>
+            <param name="collection">The collection to be wrapped.</param>
+            <returns>
+            An IProducerConsumerCollection that wraps the target collection and supports only take
+            functionality, not add.
+            </returns>
+        </member>
+        <member name="T:Nequeo.Collections.Extension.ObservableExtensions">
+            <summary>
+            Observable extensions.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.ObservableExtensions.RaisePropertyChanged``2(``0,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Rase property changed. Derive the name of the property from the expression.
+            </summary>
+            <typeparam name="T">The current type.</typeparam>
+            <typeparam name="TProperty">The property type.</typeparam>
+            <param name="observableBase">The observable type base.</param>
+            <param name="expression">The property expression</param>
+        </member>
+        <member name="M:Nequeo.Collections.Extension.ObservableExtensions.RaisePropertyChanging``2(``0,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Rase property changing. Derive the name of the property from the expression.
+            </summary>
+            <typeparam name="T">The current type.</typeparam>
+            <typeparam name="TProperty">The property type.</typeparam>
+            <param name="observableBase">The observable type base.</param>
+            <param name="expression">The property expression</param>
+        </member>
+    </members>
+</doc>

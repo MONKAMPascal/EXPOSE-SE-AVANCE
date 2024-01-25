@@ -1,0 +1,1930 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nequeo</name>
+    </assembly>
+    <members>
+        <member name="T:Nequeo.EnvironmentEx">
+            <summary>
+            Environment helper.
+            </summary>
+        </member>
+        <member name="M:Nequeo.EnvironmentEx.GetEnvironmentVariables">
+            <summary>
+            Gets the collection of environment variables
+            </summary>
+            <returns>A dictionary containing the collection of environment variables</returns>
+        </member>
+        <member name="M:Nequeo.EnvironmentEx.GetEnvironmentVariable(System.Object)">
+            <summary>
+            Get the specified environment variable
+            </summary>
+            <param name="key">The key of the environment variable.</param>
+            <returns>The value of the environment variable.</returns>
+        </member>
+        <member name="M:Nequeo.EnvironmentEx.SetEnvironmentVariable(System.Object,System.Object)">
+            <summary>
+            Set the environment variable value fro the key.
+            </summary>
+            <param name="key">The environment variable key.</param>
+            <param name="value">The environment variable value.</param>
+        </member>
+        <member name="M:Nequeo.EnvironmentEx.AddEnvironmentVariable(System.Object,System.Object)">
+            <summary>
+            Add the environment variable to the collection.
+            </summary>
+            <param name="key">The environment variable key.</param>
+            <param name="value">The environment variable value.</param>
+        </member>
+        <member name="M:Nequeo.EnvironmentEx.GetApplicationConfigurationFile">
+            <summary>
+            Method to locate application configuration file.
+            </summary>
+            <returns>The full path of the logging file, else empty string.</returns>
+        </member>
+        <member name="M:Nequeo.EnvironmentEx.GetApplicationConfigurationFile(System.String)">
+            <summary>
+            Method to locate application configuration file.
+            </summary>
+            <param name="specificPath">The specific path of the config file, used for web applications</param>
+            <returns>The application configuration istance else null</returns>
+        </member>
+        <member name="T:Nequeo.Convertible.Complex">
+            <summary>
+            Complex value.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.#ctor(System.Double,System.Double)">
+            <summary>
+            Complex value.
+            </summary>
+            <param name="x">The x value.</param>
+            <param name="y">The y value.</param>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.GetDoubleValue">
+            <summary>
+            Calculate the complex value.
+            </summary>
+            <returns>The calculated value.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.GetTypeCode">
+            <summary>
+            System.TypeCode for this instance.
+            </summary>
+            <returns>The enumerated constant that is the System.TypeCode of 
+            the class or value type that implements this interface.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToBoolean(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent Boolean value using
+            the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>A Boolean value equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToByte(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 8-bit unsigned integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 8-bit unsigned integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToChar(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent Unicode character using
+            the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>A Unicode character equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToDateTime(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent System.DateTime using
+            the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>A System.DateTime instance equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToDecimal(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent System.Decimal number
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>A System.Decimal number equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToDouble(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent double-precision floating-point
+            number using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation that 
+            supplies culture-specific formatting information.</param>
+            <returns>A double-precision floating-point number equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToInt16(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 16-bit signed integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 16-bit signed integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToInt32(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 32-bit signed integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 32-bit signed integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToInt64(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 64-bit signed integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 64-bit signed integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToSByte(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 8-bit signed integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 8-bit signed integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToSingle(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent single-precision floating-point
+            number using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>A single-precision floating-point number equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToString(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent System.String using 
+            the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>A System.String instance equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToType(System.Type,System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an System.Object of the specified
+            System.Type that has an equivalent value, using the specified culture-specific
+            formatting information.
+            </summary>
+            <param name="conversionType">The System.Type to which the value of this instance is converted.</param>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An System.Object instance of type conversionType whose value is 
+            equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToUInt16(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 16-bit unsigned integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 16-bit unsigned integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToUInt32(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 32-bit unsigned integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 32-bit unsigned integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Complex.ToUInt64(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 64-bit unsigned integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 64-bit unsigned integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="T:Nequeo.Convertible.ExBoolean">
+            <summary>
+            Represents a boolean value.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Convertible.ExBoolean.#ctor(System.Boolean)">
+            <summary>
+            Initializes a new instance of the ExBoolean class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="F:Nequeo.Convertible.ExBoolean.FalseString">
+            <summary>
+            False string.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Convertible.ExBoolean.TrueString">
+            <summary>
+            True string.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Convertible.ExBoolean.Value">
+            <summary>
+            Gets the value of this ExBoolean.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Convertible.ExBoolean.op_Implicit(System.Boolean)~Nequeo.Convertible.ExBoolean">
+            <summary>
+            Converts a bool to a ExBoolean.
+            </summary>
+            <param name="value">A bool.</param>
+            <returns>A ExBoolean.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.ExBoolean.op_Implicit(Nequeo.Convertible.ExBoolean)~System.Boolean">
+            <summary>
+            Converts a ExBoolean to a bool.
+            </summary>
+            <param name="value">A ExBoolean.</param>
+            <returns>A bool.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.ExBoolean.op_Inequality(Nequeo.Convertible.ExBoolean,Nequeo.Convertible.ExBoolean)">
+            <summary>
+            Compares two ExBoolean values.
+            </summary>
+            <param name="left">The first ExBoolean.</param>
+            <param name="right">The other ExBoolean.</param>
+            <returns>True if the two BsonBoolean values are not equal according to !=.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.ExBoolean.op_Equality(Nequeo.Convertible.ExBoolean,Nequeo.Convertible.ExBoolean)">
+            <summary>
+            Compares two ExBoolean values.
+            </summary>
+            <param name="left">The first ExBoolean.</param>
+            <param name="right">The other ExBoolean.</param>
+            <returns>True if the two BsonBoolean values are equal according to ==.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.ExBoolean.CompareTo(Nequeo.Convertible.ExBoolean)">
+            <summary>
+            Compares this ExBoolean to another ExBoolean.
+            </summary>
+            <param name="other">The other ExBoolean.</param>
+            <returns>A 32-bit signed integer that indicates whether this 
+            ExBoolean is less than, equal to, or greather than the other.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.ExBoolean.Equals(Nequeo.Convertible.ExBoolean)">
+            <summary>
+            Compares this ExBoolean to another BsonBoolean.
+            </summary>
+            <param name="other">The other ExBoolean.</param>
+            <returns>True if the two ExBoolean values are equal.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.ExBoolean.Equals(System.Object)">
+            <summary>
+            Compares this ExBoolean to another object.
+            </summary>
+            <param name="obj">The other object.</param>
+            <returns>True if the other object is a ExBoolean and equal to this one.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.ExBoolean.GetHashCode">
+            <summary>
+            Gets the hash code.
+            </summary>
+            <returns>The hash code.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.ExBoolean.ToString">
+            <summary>
+            Returns a string representation of the value.
+            </summary>
+            <returns>A string representation of the value.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.ExBoolean.ToString(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent System.String using 
+            the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>A System.String instance equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.ExBoolean.GetTypeCode">
+            <summary>
+            System.TypeCode for this instance.
+            </summary>
+            <returns>The enumerated constant that is the System.TypeCode of 
+            the class or value type that implements this interface.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.ExBoolean.ToBoolean(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent Boolean value using
+            the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>A Boolean value equivalent to the value of this instance.</returns>
+        </member>
+        <member name="T:Nequeo.Convertible.Number">
+            <summary>
+            Represents a number value.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.#ctor(System.Int16)">
+            <summary>
+            Initializes a new instance of the Number class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.#ctor(System.Int32)">
+            <summary>
+            Initializes a new instance of the Number class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.#ctor(System.Int64)">
+            <summary>
+            Initializes a new instance of the Number class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.#ctor(System.Decimal)">
+            <summary>
+            Initializes a new instance of the Number class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.#ctor(System.Double)">
+            <summary>
+            Initializes a new instance of the Number class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.#ctor(System.Single)">
+            <summary>
+            Initializes a new instance of the Number class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.#ctor(System.UInt16)">
+            <summary>
+            Initializes a new instance of the Number class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.#ctor(System.UInt32)">
+            <summary>
+            Initializes a new instance of the Number class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.#ctor(System.UInt64)">
+            <summary>
+            Initializes a new instance of the Number class.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="P:Nequeo.Convertible.Number.Value">
+            <summary>
+            Gets the value of this Number.
+            </summary>
+        </member>
+        <member name="P:Nequeo.Convertible.Number.NumberType">
+            <summary>
+            Gets the number type.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(System.Int16)~Nequeo.Convertible.Number">
+            <summary>
+            Converts a short to a Number.
+            </summary>
+            <param name="value">A short.</param>
+            <returns>A Number.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(Nequeo.Convertible.Number)~System.Int16">
+            <summary>
+            Converts a Number to a short.
+            </summary>
+            <param name="value">A Number.</param>
+            <returns>A short.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(System.Int32)~Nequeo.Convertible.Number">
+            <summary>
+            Converts a int to a Number.
+            </summary>
+            <param name="value">A int.</param>
+            <returns>A Number.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(Nequeo.Convertible.Number)~System.Int32">
+            <summary>
+            Converts a Number to a int.
+            </summary>
+            <param name="value">A Number.</param>
+            <returns>A int.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(System.Int64)~Nequeo.Convertible.Number">
+            <summary>
+            Converts a long to a Number.
+            </summary>
+            <param name="value">A long.</param>
+            <returns>A Number.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(Nequeo.Convertible.Number)~System.Int64">
+            <summary>
+            Converts a Number to a long.
+            </summary>
+            <param name="value">A Number.</param>
+            <returns>A long.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(System.Decimal)~Nequeo.Convertible.Number">
+            <summary>
+            Converts a decimal to a Number.
+            </summary>
+            <param name="value">A decimal.</param>
+            <returns>A Number.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(Nequeo.Convertible.Number)~System.Decimal">
+            <summary>
+            Converts a Number to a decimal.
+            </summary>
+            <param name="value">A Number.</param>
+            <returns>A decimal.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(System.Double)~Nequeo.Convertible.Number">
+            <summary>
+            Converts a double to a Number.
+            </summary>
+            <param name="value">A double.</param>
+            <returns>A Number.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(Nequeo.Convertible.Number)~System.Double">
+            <summary>
+            Converts a Number to a double.
+            </summary>
+            <param name="value">A Number.</param>
+            <returns>A double.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(System.Single)~Nequeo.Convertible.Number">
+            <summary>
+            Converts a float to a Number.
+            </summary>
+            <param name="value">A float.</param>
+            <returns>A Number.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(Nequeo.Convertible.Number)~System.Single">
+            <summary>
+            Converts a Number to a float.
+            </summary>
+            <param name="value">A Number.</param>
+            <returns>A float.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(System.UInt16)~Nequeo.Convertible.Number">
+            <summary>
+            Converts a ushort to a Number.
+            </summary>
+            <param name="value">A ushort.</param>
+            <returns>A Number.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(Nequeo.Convertible.Number)~System.UInt16">
+            <summary>
+            Converts a Number to a ushort.
+            </summary>
+            <param name="value">A Number.</param>
+            <returns>A ushort.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(System.UInt32)~Nequeo.Convertible.Number">
+            <summary>
+            Converts a uint to a Number.
+            </summary>
+            <param name="value">A uint.</param>
+            <returns>A Number.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(Nequeo.Convertible.Number)~System.UInt32">
+            <summary>
+            Converts a Number to a uint.
+            </summary>
+            <param name="value">A Number.</param>
+            <returns>A uint.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(System.UInt64)~Nequeo.Convertible.Number">
+            <summary>
+            Converts a ulong to a Number.
+            </summary>
+            <param name="value">A ulong.</param>
+            <returns>A Number.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Implicit(Nequeo.Convertible.Number)~System.UInt64">
+            <summary>
+            Converts a Number to a ulong.
+            </summary>
+            <param name="value">A Number.</param>
+            <returns>A ulong.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Inequality(Nequeo.Convertible.Number,Nequeo.Convertible.Number)">
+            <summary>
+            Compares two Number values.
+            </summary>
+            <param name="left">The first Number.</param>
+            <param name="right">The other Number.</param>
+            <returns>True if the two Number values are not equal according to !=.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_Equality(Nequeo.Convertible.Number,Nequeo.Convertible.Number)">
+            <summary>
+            Compares two Number values.
+            </summary>
+            <param name="left">The first Number.</param>
+            <param name="right">The other Number.</param>
+            <returns>True if the two Number values are equal according to ==.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_LessThan(Nequeo.Convertible.Number,Nequeo.Convertible.Number)">
+            <summary>
+            Indicates whether a specified Number value is
+            less than another specified Number value.
+            </summary>
+            <param name="left">The first Number.</param>
+            <param name="right">The other Number.</param>
+            <returns>True if left is less than right; otherwise, false.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_GreaterThan(Nequeo.Convertible.Number,Nequeo.Convertible.Number)">
+            <summary>
+            Indicates whether a specified Number value is
+            greater than another specified Number value.
+            </summary>
+            <param name="left">The first Number.</param>
+            <param name="right">The other Number.</param>
+            <returns>True if left is greater than right; otherwise, false.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_LessThanOrEqual(Nequeo.Convertible.Number,Nequeo.Convertible.Number)">
+            <summary>
+            Indicates whether a specified Number value is
+            less than or equal to another specified Number value.
+            </summary>
+            <param name="left">The first Number.</param>
+            <param name="right">The other Number.</param>
+            <returns>True if left is less than or equal to right; otherwise, false.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.op_GreaterThanOrEqual(Nequeo.Convertible.Number,Nequeo.Convertible.Number)">
+            <summary>
+            Indicates whether a specified Number value is
+            greater than or equal to another specified Number value.
+            </summary>
+            <param name="left">The first Number.</param>
+            <param name="right">The other Number.</param>
+            <returns>True if left is greater than or equal to right; otherwise, false.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.CompareTo(Nequeo.Convertible.Number)">
+            <summary>
+            Compares this Number to another Number.
+            </summary>
+            <param name="other">The other Number.</param>
+            <returns>A 32-bit signed integer that indicates whether this 
+            Number is less than, equal to, or greather than the other.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.Equals(Nequeo.Convertible.Number)">
+            <summary>
+            Compares this Number to another Number.
+            </summary>
+            <param name="other">The other Number.</param>
+            <returns>True if the two Number values are equal.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.Equals(System.Object)">
+            <summary>
+            Compares this Number to another object.
+            </summary>
+            <param name="obj">The other object.</param>
+            <returns>True if the other object is a Number and equal to this one.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.GetHashCode">
+            <summary>
+            Gets the hash code.
+            </summary>
+            <returns>The hash code.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.ToString">
+            <summary>
+            Returns a string representation of the value.
+            </summary>
+            <returns>A string representation of the value.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.ToString(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent System.String using 
+            the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>A System.String instance equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.GetTypeCode">
+            <summary>
+            System.TypeCode for this instance.
+            </summary>
+            <returns>The enumerated constant that is the System.TypeCode of 
+            the class or value type that implements this interface.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.ToDecimal(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent System.Decimal number
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>A System.Decimal number equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.ToDouble(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent double-precision floating-point
+            number using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation that 
+            supplies culture-specific formatting information.</param>
+            <returns>A double-precision floating-point number equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.ToInt16(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 16-bit signed integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 16-bit signed integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.ToInt32(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 32-bit signed integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 32-bit signed integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.ToInt64(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 64-bit signed integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 64-bit signed integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.ToSingle(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent single-precision floating-point
+            number using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>A single-precision floating-point number equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.ToType(System.Type,System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an System.Object of the specified
+            System.Type that has an equivalent value, using the specified culture-specific
+            formatting information.
+            </summary>
+            <param name="conversionType">The System.Type to which the value of this instance is converted.</param>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An System.Object instance of type conversionType whose value is 
+            equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.ToUInt16(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 16-bit unsigned integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 16-bit unsigned integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.ToUInt32(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 32-bit unsigned integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 32-bit unsigned integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="M:Nequeo.Convertible.Number.ToUInt64(System.IFormatProvider)">
+            <summary>
+            Converts the value of this instance to an equivalent 64-bit unsigned integer
+            using the specified culture-specific formatting information.
+            </summary>
+            <param name="provider">An System.IFormatProvider interface implementation 
+            that supplies culture-specific formatting information.</param>
+            <returns>An 64-bit unsigned integer equivalent to the value of this instance.</returns>
+        </member>
+        <member name="T:Nequeo.Custom.ByteOrder">
+            <summary>
+            Contains the values that indicate whether the byte order is a Little-endian or Big-endian.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Custom.ByteOrder.Little">
+            <summary>
+            Indicates a Little-endian.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Custom.ByteOrder.Big">
+            <summary>
+            Indicates a Big-endian.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Custom.CustomExtensions">
+            <summary>
+            Custom extensions
+            </summary>
+        </member>
+        <member name="M:Nequeo.Custom.CustomExtensions.IsHostOrder(Nequeo.Custom.ByteOrder)">
+            <summary>
+            Determines whether the specified <see cref="T:Nequeo.Custom.ByteOrder"/> is host (this computer
+            architecture) byte order.
+            </summary>
+            <returns>
+            <c>true</c> if <paramref name="order"/> is host byte order; otherwise, <c>false</c>.
+            </returns>
+            <param name="order">
+            One of the <see cref="T:Nequeo.Custom.ByteOrder"/> enum values, to test.
+            </param>
+        </member>
+        <member name="T:Nequeo.Custom.Platform">
+            <summary>
+            Platform helper.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Custom.Platform.#ctor">
+            <summary>
+            Platform helper.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Custom.Platform.NewLine">
+            <summary>
+            Get new line.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Custom.Platform.GetNewLine">
+            <summary>
+            Get new line.
+            </summary>
+            <returns>The new line string.</returns>
+        </member>
+        <member name="M:Nequeo.Custom.Platform.CompareIgnoreCase(System.String,System.String)">
+            <summary>
+            Compare string.
+            </summary>
+            <param name="a">String a.</param>
+            <param name="b">String b.</param>
+            <returns>The result.</returns>
+        </member>
+        <member name="M:Nequeo.Custom.Platform.GetEnvironmentVariable(System.String)">
+            <summary>
+            Get environment variable.
+            </summary>
+            <param name="variable">The variable name.</param>
+            <returns>The value.</returns>
+        </member>
+        <member name="M:Nequeo.Custom.Platform.CreateNotImplementedException(System.String)">
+            <summary>
+            Create a not implemented exception.
+            </summary>
+            <param name="message">The message to add.</param>
+            <returns>NotImplementedException</returns>
+        </member>
+        <member name="M:Nequeo.Custom.Platform.CreateArrayList">
+            <summary>
+            Create an array list.
+            </summary>
+            <returns>The array list.</returns>
+        </member>
+        <member name="M:Nequeo.Custom.Platform.CreateArrayList(System.Int32)">
+            <summary>
+            Create an array list.
+            </summary>
+            <param name="capacity">The capacity.</param>
+            <returns>The array list.</returns>
+        </member>
+        <member name="M:Nequeo.Custom.Platform.CreateArrayList(System.Collections.ICollection)">
+            <summary>
+            Create an array list.
+            </summary>
+            <param name="collection">The collection.</param>
+            <returns>The array list.</returns>
+        </member>
+        <member name="M:Nequeo.Custom.Platform.CreateArrayList(System.Collections.IEnumerable)">
+            <summary>
+            Create an array list.
+            </summary>
+            <param name="collection">The collection.</param>
+            <returns>The array list.</returns>
+        </member>
+        <member name="M:Nequeo.Custom.Platform.CreateHashtable">
+            <summary>
+            Create a hash table.
+            </summary>
+            <returns>The hash table.</returns>
+        </member>
+        <member name="M:Nequeo.Custom.Platform.CreateHashtable(System.Int32)">
+            <summary>
+            Create a hash table.
+            </summary>
+            <param name="capacity">The list capacity.</param>
+            <returns>The hash table.</returns>
+        </member>
+        <member name="M:Nequeo.Custom.Platform.CreateHashtable(System.Collections.IDictionary)">
+            <summary>
+            Create a hash table.
+            </summary>
+            <param name="dictionary">The dictionay.</param>
+            <returns>The hash table.</returns>
+        </member>
+        <member name="T:Nequeo.Custom.StringValue">
+            <summary>
+            Defines a simple schema.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Custom.StringValue.#ctor">
+            <summary>
+            Defines a simple xml schema.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Custom.StringValue.#ctor(System.String)">
+            <summary>
+            Defines a simple xml schema.
+            </summary>
+            <param name="value">The value.</param>
+        </member>
+        <member name="M:Nequeo.Custom.StringValue.#ctor(Nequeo.Custom.StringValue)">
+            <summary>
+            Defines a simple xml schema.
+            </summary>
+            <param name="source">A new string value xml to place on top of the existing one.</param>
+        </member>
+        <member name="P:Nequeo.Custom.StringValue.Value">
+            <summary>
+            Gets or sets the current value.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Custom.StringValue.op_Implicit(System.String)~Nequeo.Custom.StringValue">
+            <summary>
+            Implicitly convert the string value to a StringValue type.
+            </summary>
+            <param name="value">The string value.</param>
+            <returns>The StringValue type.</returns>
+        </member>
+        <member name="M:Nequeo.Custom.StringValue.op_Implicit(Nequeo.Custom.StringValue)~System.String">
+            <summary>
+            Implicitly convert the StringValue type to a string.
+            </summary>
+            <param name="xml">The String Value type.</param>
+            <returns>The string equivalent.</returns>
+        </member>
+        <member name="M:Nequeo.Custom.StringValue.ToString">
+            <summary>
+            Override the ToString method to convert to a string
+            </summary>
+            <returns>The string equivalent.</returns>
+        </member>
+        <member name="M:Nequeo.Custom.StringValue.SetXml(System.String)">
+            <summary>
+            Set the current value.
+            </summary>
+            <param name="value">The value.</param>
+            <returns>The value.</returns>
+        </member>
+        <member name="T:Nequeo.Extension.TypeExtenderExtensions">
+            <summary>
+            Type extensions.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtenderExtensions.GetPropertyName``2(``0,System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Get the name of the property from the expression.
+            </summary>
+            <typeparam name="T">The current type.</typeparam>
+            <typeparam name="TProperty">The property type.</typeparam>
+            <param name="owner">The current type.</param>
+            <param name="expression">The property expression.</param>
+            <returns>The name of the property.</returns>
+        </member>
+        <member name="M:Nequeo.Extension.TypeExtenderExtensions.GetPropertyName``1(``0,System.Linq.Expressions.Expression{System.Func{``0}})">
+            <summary>
+            Get the name of the property from the expression.
+            </summary>
+            <typeparam name="T">The current type.</typeparam>
+            <param name="owner">The current type.</param>
+            <param name="expression">The property expression.</param>
+            <returns>The name of the property.</returns>
+        </member>
+        <member name="T:Nequeo.IO.Directory">
+            <summary>
+            Directory helper class.
+            </summary>
+        </member>
+        <member name="M:Nequeo.IO.Directory.GetDirectories(System.String,System.String,System.IO.SearchOption)">
+            <summary>
+            Get all directories in the source folder.
+            </summary>
+            <param name="sourceFolder">The source folder to search in.</param>
+            <param name="searchPattern">The search pattern filter.</param>
+            <param name="searchOption">The search option.</param>
+            <returns>The list of all directories including sub-folders.</returns>
+        </member>
+        <member name="M:Nequeo.IO.Directory.GetFiles(System.String,System.String,System.IO.SearchOption)">
+            <summary>
+            Get all files in the source folder.
+            </summary>
+            <param name="sourceFolder">The source folder to search in.</param>
+            <param name="searchPattern">The search pattern filter.</param>
+            <param name="searchOption">The search option.</param>
+            <returns>The list of all files including sub-folders.</returns>
+        </member>
+        <member name="T:Nequeo.IO.SHFILEOPSTRUCT">
+            <summary>
+            Struct which contains information that the SHFileOperation function uses to perform file operations.
+            </summary>
+        </member>
+        <member name="F:Nequeo.IO.SHFILEOPSTRUCT.hwnd">
+            <summary>
+            Handler.
+            </summary>
+        </member>
+        <member name="F:Nequeo.IO.SHFILEOPSTRUCT.wFunc">
+            <summary>
+            The window function.
+            </summary>
+        </member>
+        <member name="F:Nequeo.IO.SHFILEOPSTRUCT.pFrom">
+            <summary>
+            The from path.
+            </summary>
+        </member>
+        <member name="F:Nequeo.IO.SHFILEOPSTRUCT.pTo">
+            <summary>
+            The to path.
+            </summary>
+        </member>
+        <member name="F:Nequeo.IO.SHFILEOPSTRUCT.fFlags">
+            <summary>
+            The operation flags.
+            </summary>
+        </member>
+        <member name="F:Nequeo.IO.SHFILEOPSTRUCT.fAnyOperationsAborted">
+            <summary>
+            The abort operation.
+            </summary>
+        </member>
+        <member name="F:Nequeo.IO.SHFILEOPSTRUCT.hNameMappings">
+            <summary>
+            The name mapping.
+            </summary>
+        </member>
+        <member name="F:Nequeo.IO.SHFILEOPSTRUCT.lpszProgressTitle">
+            <summary>
+            The progress title.
+            </summary>
+        </member>
+        <member name="T:Nequeo.IO.RecycleBin">
+            <summary>
+            Recycle bin helper.
+            </summary>
+        </member>
+        <member name="M:Nequeo.IO.RecycleBin.SHFileOperation(Nequeo.IO.SHFILEOPSTRUCT@)">
+            <summary>
+            The shell operation to execute.
+            </summary>
+            <param name="FileOp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.IO.RecycleBin.DeleteFileOrFolder(System.String)">
+            <summary>
+            Send the file or folder to the recycle bin.
+            </summary>
+            <param name="path">The path of the file or folder.</param>
+        </member>
+        <member name="T:Nequeo.IO.SpecialFolders">
+            <summary>
+            Special folders.
+            </summary>
+        </member>
+        <member name="M:Nequeo.IO.SpecialFolders.GetFolderPath(System.Environment.SpecialFolder)">
+            <summary>
+            Gets the path to the system special folder that is identified by the specified enumeration.
+            </summary>
+            <param name="folder">An enumerated constant that identifies a system special folder.</param>
+            <returns>The path to the specified system special folder, if that folder physically
+            exists on your computer; otherwise, an empty string ("").A folder will not
+            physically exist if the operating system did not create it, the existing
+            folder was deleted, or the folder is a virtual directory, such as My Computer,
+            which does not correspond to a physical path.</returns>
+        </member>
+        <member name="M:Nequeo.IO.SpecialFolders.GetFolderPath(System.Environment.SpecialFolder,System.Environment.SpecialFolderOption)">
+            <summary>
+            Gets the path to the system special folder that is identified by the specified enumeration.
+            </summary>
+            <param name="folder">An enumerated constant that identifies a system special folder.</param>
+            <param name="option">Specifies options to use for accessing a special folder.</param>
+            <returns>The path to the specified system special folder, if that folder physically
+            exists on your computer; otherwise, an empty string ("").A folder will not
+            physically exist if the operating system did not create it, the existing
+            folder was deleted, or the folder is a virtual directory, such as My Computer,
+            which does not correspond to a physical path.</returns>
+        </member>
+        <member name="T:Nequeo.IO.StreamWrapper">
+            <summary>
+            Stream to IStream wrapper.
+            </summary>
+        </member>
+        <member name="M:Nequeo.IO.StreamWrapper.#ctor(System.IO.Stream)">
+            <summary>
+            Stream to IStream wrapper.
+            </summary>
+            <param name="stream">The stream to wrap.</param>
+        </member>
+        <member name="M:Nequeo.IO.StreamWrapper.Clone(System.Runtime.InteropServices.ComTypes.IStream@)">
+            <summary>
+            Creates a new stream object with its own seek pointer that references the
+            same bytes as the original stream.
+            </summary>
+            <param name="ppstm">When this method returns, contains the new stream object. This parameter
+            is passed uninitialized.</param>
+        </member>
+        <member name="M:Nequeo.IO.StreamWrapper.Commit(System.Int32)">
+            <summary>
+            Ensures that any changes made to a stream object that is open in transacted
+            mode are reflected in the parent storage.
+            </summary>
+            <param name="grfCommitFlags">A value that controls how the changes for the stream object are committed.</param>
+        </member>
+        <member name="M:Nequeo.IO.StreamWrapper.CopyTo(System.Runtime.InteropServices.ComTypes.IStream,System.Int64,System.IntPtr,System.IntPtr)">
+            <summary>
+            Copies a specified number of bytes from the current seek pointer in the stream
+            to the current seek pointer in another stream.
+            </summary>
+            <param name="pstm">A reference to the destination stream.</param>
+            <param name="cb">The number of bytes to copy from the source stream.</param>
+            <param name="pcbRead">On successful return, contains the actual number of bytes read from the source.</param>
+            <param name="pcbWritten">On successful return, contains the actual number of bytes written to the
+            destination.</param>
+        </member>
+        <member name="M:Nequeo.IO.StreamWrapper.LockRegion(System.Int64,System.Int64,System.Int32)">
+            <summary>
+            Restricts access to a specified range of bytes in the stream.
+            </summary>
+            <param name="libOffset">The byte offset for the beginning of the range.</param>
+            <param name="cb">The length of the range, in bytes, to restrict.</param>
+            <param name="dwLockType">The requested restrictions on accessing the range.</param>
+        </member>
+        <member name="M:Nequeo.IO.StreamWrapper.Read(System.Byte[],System.Int32,System.IntPtr)">
+            <summary>
+            Reads a specified number of bytes from the stream object into memory starting
+            at the current seek pointer.
+            </summary>
+            <param name="pv">When this method returns, contains the data read from the stream. This parameter
+            is passed uninitialized.</param>
+            <param name="cb">The number of bytes to read from the stream object.</param>
+            <param name="pcbRead">A pointer to a ULONG variable that receives the actual number of bytes read
+            from the stream object.</param>
+        </member>
+        <member name="M:Nequeo.IO.StreamWrapper.Revert">
+            <summary>
+            Discards all changes that have been made to a transacted stream since the
+            last System.Runtime.InteropServices.ComTypes.IStream.Commit(System.Int32) call.
+            </summary>
+        </member>
+        <member name="M:Nequeo.IO.StreamWrapper.Seek(System.Int64,System.Int32,System.IntPtr)">
+            <summary>
+            Changes the seek pointer to a new location relative to the beginning of the
+            stream, to the end of the stream, or to the current seek pointer.
+            </summary>
+            <param name="dlibMove">The displacement to add to dwOrigin.</param>
+            <param name="dwOrigin">The origin of the seek. The origin can be the beginning of the file, the
+            current seek pointer, or the end of the file.</param>
+            <param name="plibNewPosition">On successful return, contains the offset of the seek pointer from the beginning
+            of the stream.</param>
+        </member>
+        <member name="M:Nequeo.IO.StreamWrapper.SetSize(System.Int64)">
+            <summary>
+            Changes the size of the stream object.
+            </summary>
+            <param name="libNewSize">The new size of the stream as a number of bytes.</param>
+        </member>
+        <member name="M:Nequeo.IO.StreamWrapper.Stat(System.Runtime.InteropServices.ComTypes.STATSTG@,System.Int32)">
+            <summary>
+            Retrieves the System.Runtime.InteropServices.STATSTG structure for this stream.
+            </summary>
+            <param name="pstatstg">When this method returns, contains a STATSTG structure that describes this
+            stream object. This parameter is passed uninitialized.</param>
+            <param name="grfStatFlag">Members in the STATSTG structure that this method does not return, thus saving
+            some memory allocation operations.</param>
+        </member>
+        <member name="M:Nequeo.IO.StreamWrapper.UnlockRegion(System.Int64,System.Int64,System.Int32)">
+            <summary>
+            Removes the access restriction on a range of bytes previously restricted
+            with the System.Runtime.InteropServices.ComTypes.IStream.LockRegion(System.Int64,System.Int64,System.Int32)
+            method.
+            </summary>
+            <param name="libOffset">The byte offset for the beginning of the range.</param>
+            <param name="cb">The length, in bytes, of the range to restrict.</param>
+            <param name="dwLockType">The access restrictions previously placed on the range.</param>
+        </member>
+        <member name="M:Nequeo.IO.StreamWrapper.Write(System.Byte[],System.Int32,System.IntPtr)">
+            <summary>
+            Writes a specified number of bytes into the stream object starting at the
+            current seek pointer.
+            </summary>
+            <param name="pv">The buffer to write this stream to.</param>
+            <param name="cb">The number of bytes to write to the stream.</param>
+            <param name="pcbWritten">On successful return, contains the actual number of bytes written to the
+            stream object. If the caller sets this pointer to System.IntPtr.Zero, this
+            method does not provide the actual number of bytes written.</param>
+        </member>
+        <member name="T:Nequeo.IO.IStreamWrapper">
+            <summary>
+            IStream to Stream wrapper.
+            </summary>
+        </member>
+        <member name="M:Nequeo.IO.IStreamWrapper.#ctor(System.Runtime.InteropServices.ComTypes.IStream)">
+            <summary>
+            IStream to Stream wrapper.
+            </summary>
+            <param name="stream">The stream object.</param>
+        </member>
+        <member name="M:Nequeo.IO.IStreamWrapper.Finalize">
+            <summary>
+            Deconstructor.
+            </summary>
+        </member>
+        <member name="M:Nequeo.IO.IStreamWrapper.Read(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            When overridden in a derived class, reads a sequence of bytes from the current
+            stream and advances the position within the stream by the number of bytes read.
+            </summary>
+            <param name="buffer">An array of bytes. When this method returns, the buffer contains the specified
+            byte array with the values between offset and (offset + count - 1) replaced
+            by the bytes read from the current source.</param>
+            <param name="offset">The zero-based byte offset in buffer at which to begin storing the data read
+            from the current stream.</param>
+            <param name="count">The maximum number of bytes to be read from the current stream.</param>
+            <returns>The total number of bytes read into the buffer. This can be less than the
+            number of bytes requested if that many bytes are not currently available,
+            or zero (0) if the end of the stream has been reached.</returns>
+        </member>
+        <member name="M:Nequeo.IO.IStreamWrapper.Write(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            When overridden in a derived class, writes a sequence of bytes to the current
+            stream and advances the current position within this stream by the number
+            of bytes written.
+            </summary>
+            <param name="buffer">An array of bytes. This method copies count bytes from buffer to the current
+            stream.</param>
+            <param name="offset">The zero-based byte offset in buffer at which to begin copying bytes to the
+            current stream.</param>
+            <param name="count">The number of bytes to be written to the current stream.</param>
+        </member>
+        <member name="M:Nequeo.IO.IStreamWrapper.Seek(System.Int64,System.IO.SeekOrigin)">
+            <summary>
+            When overridden in a derived class, sets the position within the current stream.
+            </summary>
+            <param name="offset">A byte offset relative to the origin parameter.</param>
+            <param name="origin">A value of type System.IO.SeekOrigin indicating the reference point used
+            to obtain the new position.</param>
+            <returns>The new position within the current stream.</returns>
+        </member>
+        <member name="P:Nequeo.IO.IStreamWrapper.Length">
+            <summary>
+            When overridden in a derived class, gets the length in bytes of the stream.
+            </summary>
+        </member>
+        <member name="P:Nequeo.IO.IStreamWrapper.Position">
+            <summary>
+            When overridden in a derived class, gets or sets the position within the
+            current stream.
+            </summary>
+        </member>
+        <member name="M:Nequeo.IO.IStreamWrapper.SetLength(System.Int64)">
+            <summary>
+            When overridden in a derived class, sets the length of the current stream.
+            </summary>
+            <param name="value">The desired length of the current stream in bytes.</param>
+        </member>
+        <member name="M:Nequeo.IO.IStreamWrapper.Close">
+            <summary>
+            Closes the current stream and releases any resources (such as sockets and
+            file handles) associated with the current stream. Instead of calling this
+            method, ensure that the stream is properly disposed.
+            </summary>
+        </member>
+        <member name="M:Nequeo.IO.IStreamWrapper.Flush">
+            <summary>
+            When overridden in a derived class, clears all buffers for this stream and
+            causes any buffered data to be written to the underlying device.
+            </summary>
+        </member>
+        <member name="P:Nequeo.IO.IStreamWrapper.CanRead">
+            <summary>
+            When overridden in a derived class, gets a value indicating whether the current
+            stream supports reading.
+            </summary>
+        </member>
+        <member name="P:Nequeo.IO.IStreamWrapper.CanWrite">
+            <summary>
+            When overridden in a derived class, gets a value indicating whether the current
+            stream supports writing.
+            </summary>
+        </member>
+        <member name="P:Nequeo.IO.IStreamWrapper.CanSeek">
+            <summary>
+            When overridden in a derived class, gets a value indicating whether the current
+            stream supports seeking.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Math.BigInteger">
+            <summary>
+            Big Integer provider.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.BigInteger.Zero">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.BigInteger.One">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.BigInteger.Two">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.BigInteger.Three">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.BigInteger.Ten">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.#cctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.#ctor(System.String,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="str"></param>
+            <param name="radix"></param>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.#ctor(System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="bytes"></param>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.#ctor(System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="bytes"></param>
+            <param name="offset"></param>
+            <param name="length"></param>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.#ctor(System.Int32,System.Byte[])">
+            <summary>
+            
+            </summary>
+            <param name="sign"></param>
+            <param name="bytes"></param>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.#ctor(System.Int32,System.Byte[],System.Int32,System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="sign"></param>
+            <param name="bytes"></param>
+            <param name="offset"></param>
+            <param name="length"></param>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.#ctor(System.Int32,System.Random)">
+            <summary>
+            
+            </summary>
+            <param name="sizeInBits"></param>
+            <param name="random"></param>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.#ctor(System.Int32,System.Int32,System.Random)">
+            <summary>
+            
+            </summary>
+            <param name="bitLength"></param>
+            <param name="certainty"></param>
+            <param name="random"></param>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Abs">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.AddMagnitudes(System.Int32[],System.Int32[])">
+            return a = a + b - b preserved.
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Add(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.And(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.AndNot(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Nequeo.Math.BigInteger.BitCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Nequeo.Math.BigInteger.BitLength">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.CompareTo(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.CompareTo(System.Int32,System.Int32[],System.Int32,System.Int32[])">
+            unsigned comparison on two arrays - note the arrays may
+            start with leading zeros.
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.CompareTo(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Divide(System.Int32[],System.Int32[])">
+            return z = x / y - done in place (z value preserved, x contains the
+            remainder)
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Divide(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.DivideAndRemainder(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Equals(System.Object)">
+            <summary>
+            
+            </summary>
+            <param name="obj"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Gcd(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.GetHashCode">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Nequeo.Math.BigInteger.IntValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.IsProbablePrime(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="certainty"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.RabinMillerTest(System.Int32,System.Random)">
+            <summary>
+            
+            </summary>
+            <param name="certainty"></param>
+            <param name="random"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Nequeo.Math.BigInteger.LongValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Max(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Min(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Mod(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ModInverse(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ExtEuclid(Nequeo.Math.BigInteger,Nequeo.Math.BigInteger,Nequeo.Math.BigInteger,Nequeo.Math.BigInteger)">
+             Calculate the numbers u1, u2, and u3 such that:
+            
+             u1 * a + u2 * b = u3
+            
+             where u3 is the greatest common divider of a and b.
+             a and b using the extended Euclid algorithm (refer p. 323
+             of The Art of Computer Programming vol 2, 2nd ed).
+             This also seems to have the side effect of calculating
+             some form of multiplicative inverse.
+            
+             @param a    First number to calculate gcd for
+             @param b    Second number to calculate gcd for
+             @param u1Out      the return object for the u1 value
+             @param u2Out      the return object for the u2 value
+             @return     The greatest common divisor of a and b
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ModPow(Nequeo.Math.BigInteger,Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="exponent"></param>
+            <param name="m"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Square(System.Int32[],System.Int32[])">
+            return w with w = x * x - w is assumed to have enough space.
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Multiply(System.Int32[],System.Int32[],System.Int32[])">
+            return x with x = y * z - x is assumed to have enough space.
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.GetMQuote">
+            Calculate mQuote = -m^(-1) mod b with b = 2^32 (32 = word size)
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.MultiplyMonty(System.Int32[],System.Int32[],System.Int32[],System.Int32[],System.Int64)">
+            Montgomery multiplication: a = x * y * R^(-1) mod m
+            <br/>
+            Based algorithm 14.36 of Handbook of Applied Cryptography.
+            <br/>
+            <li> m, x, y should have length n </li>
+            <li> a should have length (n + 1) </li>
+            <li> b = 2^32, R = b^n </li>
+            <br/>
+            The result is put in x
+            <br/>
+            NOTE: the indices of x, y, m, a different in HAC and in Java
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Multiply(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="val"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Negate">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.NextProbablePrime">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Not">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Pow(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="exp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ProbablePrime(System.Int32,System.Random)">
+            <summary>
+            
+            </summary>
+            <param name="bitLength"></param>
+            <param name="random"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Remainder(System.Int32[],System.Int32[])">
+            return x = x % y - done in place (y value preserved)
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Remainder(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="n"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ShiftLeft(System.Int32[],System.Int32)">
+            do a left shift - this returns a new array.
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ShiftLeft(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="n"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ShiftRightInPlace(System.Int32,System.Int32[],System.Int32)">
+            do a right shift - this does it in place.
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ShiftRightOneInPlace(System.Int32,System.Int32[])">
+            do a right shift by one - this does it in place.
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ShiftRight(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="n"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Nequeo.Math.BigInteger.SignValue">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Subtract(System.Int32,System.Int32[],System.Int32,System.Int32[])">
+            returns x = x - y - we assume x is >= y
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Subtract(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="n"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ToByteArray">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ToByteArrayUnsigned">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ToString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ToString(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="radix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ValueOf(System.Int64)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.GetLowestSetBit">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.TestBit(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="n"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Or(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.Xor(Nequeo.Math.BigInteger)">
+            <summary>
+            
+            </summary>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.SetBit(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="n"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.ClearBit(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="n"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Nequeo.Math.BigInteger.FlipBit(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="n"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Nequeo.Math.CrcPolynomial_16">
+            <summary>
+            Cyclic redundancy check polynomial (reversed).
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.CrcPolynomial_16.CRC_5_USB">
+            <summary>
+            USB token packets.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.CrcPolynomial_16.CRC_8">
+            <summary>
+            CRC_8.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.CrcPolynomial_16.CRC_8_CCITT">
+            <summary>
+            I.432.1; ATM HEC, ISDN HEC and cell delineation.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.CrcPolynomial_16.CRC_8_SAE_J1850">
+            <summary>
+             AES3.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.CrcPolynomial_16.CRC_8_WCDMA">
+            <summary>
+            Mobile networks.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.CrcPolynomial_16.CRC_16_Modbus">
+            <summary>
+            CRC-16, CRC-16-ANSI, Modbus.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.CrcPolynomial_16.CRC_16_CCITT">
+            <summary>
+            XMODEM, Bluetooth, PACTOR, SD.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.CrcPolynomial_16.CRC_16_CDMA2000">
+            <summary>
+            Mobile networks.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.CrcPolynomial_16.CRC_16_DNP">
+            <summary>
+             NP, IEC 870, M-Bus.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Math.CrcPolynomial_32">
+            <summary>
+            Cyclic redundancy check polynomial (reversed).
+            </summary>
+        </member>
+        <member name="F:Nequeo.Math.CrcPolynomial_32.CRC_32">
+            <summary>
+             HDLC, ANSI X3.66, ITU-T V.42, Ethernet, Serial ATA, MPEG-2, PKZIP, Gzip, Bzip2, PNG.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Math.CyclicRedundancyCheck">
+            <summary>
+            Cyclic redundancy check provider.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Math.CyclicRedundancyCheck.#ctor">
+            <summary>
+            Cyclic redundancy check provider.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Math.CyclicRedundancyCheck.Calculate(System.String,System.Int32,System.Boolean)">
+            <summary>
+            Calculate the checksum.
+            </summary>
+            <param name="input">The data to check.</param>
+            <param name="crcPolynomial">Cyclic redundancy check polynomial (reversed).</param>
+            <param name="isInputHexData">Is the input data in hex format.</param>
+            <returns>The checksum (remainder).</returns>
+        </member>
+        <member name="M:Nequeo.Math.CyclicRedundancyCheck.Calculate(System.Byte[],System.Int32)">
+            <summary>
+            Calculate the checksum.
+            </summary>
+            <param name="input">The data to check.</param>
+            <param name="crcPolynomial">Cyclic redundancy check polynomial (reversed).</param>
+            <returns>The checksum (remainder).</returns>
+        </member>
+        <member name="M:Nequeo.Math.CyclicRedundancyCheck.Calculate(System.Int32[],System.Int32)">
+            <summary>
+            Calculate the checksum.
+            </summary>
+            <param name="input">The data to check.</param>
+            <param name="crcPolynomial">Cyclic redundancy check polynomial (reversed).</param>
+            <returns>The checksum (remainder).</returns>
+        </member>
+        <member name="M:Nequeo.Math.CyclicRedundancyCheck.Calculate(System.String,System.Int64,System.Boolean)">
+            <summary>
+            Calculate the checksum.
+            </summary>
+            <param name="input">The data to check.</param>
+            <param name="crcPolynomial">Cyclic redundancy check polynomial (reversed).</param>
+            <param name="isInputHexData">Is the input data in hex format.</param>
+            <returns>The checksum (remainder).</returns>
+        </member>
+        <member name="M:Nequeo.Math.CyclicRedundancyCheck.Calculate(System.Byte[],System.Int64)">
+            <summary>
+            Calculate the checksum.
+            </summary>
+            <param name="input">The data to check.</param>
+            <param name="crcPolynomial">Cyclic redundancy check polynomial (reversed).</param>
+            <returns>The checksum (remainder).</returns>
+        </member>
+        <member name="M:Nequeo.Math.CyclicRedundancyCheck.Calculate(System.Int64[],System.Int64)">
+            <summary>
+            Calculate the checksum.
+            </summary>
+            <param name="input">The data to check.</param>
+            <param name="crcPolynomial">Cyclic redundancy check polynomial (reversed).</param>
+            <returns>The checksum (remainder).</returns>
+        </member>
+        <member name="T:Nequeo.Text.EncodingType">
+            <summary>
+            Encoding Type.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Text.EncodingType.Default">
+            <summary>
+            Cncoding for the operating system's.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Text.EncodingType.ASCII">
+            <summary>
+            Encoding for the ASCII (7-bit) character set.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Text.EncodingType.BigEndianUnicode">
+            <summary>
+            Encoding for the UTF-16 format that uses the big endian byte order.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Text.EncodingType.Unicode">
+            <summary>
+            Encoding for the UTF-16 format using the little endian byte order.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Text.EncodingType.UTF32">
+            <summary>
+            Encoding for the UTF-32 format using the little endian byte order.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Text.EncodingType.UTF7">
+            <summary>
+            Encoding for the UTF-7 format.
+            </summary>
+        </member>
+        <member name="F:Nequeo.Text.EncodingType.UTF8">
+            <summary>
+            Encoding for the UTF-8 format.
+            </summary>
+        </member>
+        <member name="T:Nequeo.Text.Encoding">
+            <summary>
+            Represents a character encoding.
+            </summary>
+        </member>
+        <member name="M:Nequeo.Text.Encoding.GetEncoder(Nequeo.Text.EncodingType)">
+            <summary>
+            Get the encoding from the type.
+            </summary>
+            <param name="encodingType">The encoding type.</param>
+            <returns>The text encoding.</returns>
+        </member>
+        <member name="M:Nequeo.Text.Encoding.DetectEncoding(System.IO.StreamReader)">
+            <summary>
+            Detects the encoding of text provided on a StringReader.
+            </summary>
+            <param name="reader">The StringReader containing the text.</param>
+            <returns>The encoding type.</returns>
+        </member>
+        <member name="M:Nequeo.Text.Encoding.Convert(System.Byte[],Nequeo.Text.EncodingType,Nequeo.Text.EncodingType)">
+            <summary>
+            Converts an entire byte array from one encoding to another.
+            </summary>
+            <param name="data">The byte array to convert.</param>
+            <param name="to">The encoding to convert to.</param>
+            <param name="from">The encoding to convert from.</param>
+            <returns>The converted encoding byte array.</returns>
+        </member>
+        <member name="M:Nequeo.Text.Encoding.Convert(System.String,Nequeo.Text.EncodingType,Nequeo.Text.EncodingType)">
+            <summary>
+            Converts an entire string from one encoding to another.
+            </summary>
+            <param name="data">The byte array to convert.</param>
+            <param name="to">The encoding to convert to.</param>
+            <param name="from">The encoding to convert from.</param>
+            <returns>The converted encoding string.</returns>
+        </member>
+        <member name="M:Nequeo.Text.Encoding.ConvertGetBytes(System.String,Nequeo.Text.EncodingType,Nequeo.Text.EncodingType)">
+            <summary>
+            Converts an entire string from one encoding to another.
+            </summary>
+            <param name="data">The byte array to convert.</param>
+            <param name="to">The encoding to convert to.</param>
+            <param name="from">The encoding to convert from.</param>
+            <returns>The converted encoding string.</returns>
+        </member>
+        <member name="M:Nequeo.Text.Encoding.ConvertGetString(System.Byte[],Nequeo.Text.EncodingType,Nequeo.Text.EncodingType)">
+            <summary>
+            Converts an entire byte array from one encoding to another.
+            </summary>
+            <param name="data">The byte array to convert.</param>
+            <param name="to">The encoding to convert to.</param>
+            <param name="from">The encoding to convert from.</param>
+            <returns>The converted encoding string.</returns>
+        </member>
+        <member name="T:Nequeo.Setting.Configuration">
+            <summary>
+            Global configuration provider.
+            </summary>
+        </member>
+    </members>
+</doc>

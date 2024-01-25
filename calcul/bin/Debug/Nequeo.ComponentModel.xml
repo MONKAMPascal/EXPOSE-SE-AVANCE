@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Nequeo.ComponentModel</name>
+    </assembly>
+    <members>
+        <member name="T:Nequeo.ComponentModel.WebControlEditor">
+            <summary>
+            Data object editor.
+            </summary>
+        </member>
+        <member name="M:Nequeo.ComponentModel.WebControlEditor.#ctor(System.Type)">
+            <summary>
+            Defualt constructor
+            </summary>
+            <param name="typeOfControlToDisplay">The type of control to display in the list.</param>
+        </member>
+        <member name="M:Nequeo.ComponentModel.WebControlEditor.GetEditStyle(System.ComponentModel.ITypeDescriptorContext)">
+            <summary>
+            Get the editoring type style.
+            </summary>
+            <param name="context">The current type context.</param>
+            <returns>The type editor display style.</returns>
+        </member>
+        <member name="M:Nequeo.ComponentModel.WebControlEditor.EditValue(System.ComponentModel.ITypeDescriptorContext,System.IServiceProvider,System.Object)">
+            <summary>
+            Apply value type settings.
+            </summary>
+            <param name="context">The current type context.</param>
+            <param name="provider">The current service provider.</param>
+            <param name="value">The value sent by the client</param>
+            <returns>The value returned by the service.</returns>
+        </member>
+        <member name="M:Nequeo.ComponentModel.WebControlEditor.listBox_SelectedIndexChanged(System.Object,System.EventArgs)">
+            <summary>
+            Close the dropdowncontrol when the user has selected a value
+            </summary>
+        </member>
+        <member name="F:Nequeo.ComponentModel.WebControlEditor.disposed">
+            <summary>
+            Track whether Dispose has been called.
+            </summary>
+        </member>
+        <member name="M:Nequeo.ComponentModel.WebControlEditor.Dispose">
+            <summary>
+            Implement IDisposable.
+            Do not make this method virtual.
+            A derived class should not be able to override this method.
+            </summary>
+        </member>
+        <member name="M:Nequeo.ComponentModel.WebControlEditor.Dispose(System.Boolean)">
+            <summary>
+            Dispose(bool disposing) executes in two distinct scenarios.
+            If disposing equals true, the method has been called directly
+            or indirectly by a user's code. Managed and unmanaged resources
+            can be disposed.
+            If disposing equals false, the method has been called by the
+            runtime from inside the finalizer and you should not reference
+            other objects. Only unmanaged resources can be disposed.
+            </summary>
+        </member>
+        <member name="M:Nequeo.ComponentModel.WebControlEditor.Finalize">
+            <summary>
+            Use C# destructor syntax for finalization code.
+            This destructor will run only if the Dispose method
+            does not get called.
+            It gives your base class the opportunity to finalize.
+            Do not provide destructors in types derived from this class.
+            </summary>
+        </member>
+        <member name="T:Nequeo.ComponentModel.AllWebControlsEditor">
+            <summary>
+            Editor for selecting all Asp.Net controls
+            </summary>
+        </member>
+        <member name="M:Nequeo.ComponentModel.AllWebControlsEditor.#ctor">
+            <summary>
+            Invoke base constructor
+            </summary>
+        </member>
+        <member name="T:Nequeo.ComponentModel.TextBoxWebControlsEditor">
+            <summary>
+            Editor for selecting textbox Asp.Net controls
+            </summary>
+        </member>
+        <member name="M:Nequeo.ComponentModel.TextBoxWebControlsEditor.#ctor">
+            <summary>
+            Invoke base constructor
+            </summary>
+        </member>
+        <member name="T:Nequeo.ComponentModel.Composition.ContentMetadataAttribute">
+            <summary>
+            Content base meta-data attribute
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.ContentMetadataAttribute.Name">
+            <summary>
+            The name of the export.
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.ContentMetadataAttribute.Description">
+            <summary>
+            The description of the export.
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.ContentMetadataAttribute.Index">
+            <summary>
+            The index of the export.
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.ContentMetadataAttribute.Hidden">
+            <summary>
+            Is the export hidden.
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.ContentMetadataAttribute.Value">
+            <summary>
+            The value of the export.
+            </summary>
+        </member>
+        <member name="M:Nequeo.ComponentModel.Composition.ContentMetadataAttribute.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:Nequeo.ComponentModel.Composition.IContentMetadata">
+            <summary>
+            Content base meta-data interface
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.IContentMetadata.Name">
+            <summary>
+            The name of the export.
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.IContentMetadata.Description">
+            <summary>
+            The description of the export.
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.IContentMetadata.Index">
+            <summary>
+            The index of the export.
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.IContentMetadata.Hidden">
+            <summary>
+            Is the export hidden.
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.IContentMetadata.Value">
+            <summary>
+            The value of the export.
+            </summary>
+        </member>
+        <member name="T:Nequeo.ComponentModel.Composition.NameMetadataAttribute">
+            <summary>
+            Name base meta-data attribute
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.NameMetadataAttribute.Name">
+            <summary>
+            The name of the export.
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.NameMetadataAttribute.Description">
+            <summary>
+            The description of the export.
+            </summary>
+        </member>
+        <member name="M:Nequeo.ComponentModel.Composition.NameMetadataAttribute.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="T:Nequeo.ComponentModel.Composition.INameMetadata">
+            <summary>
+            Name base meta-data interface
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.INameMetadata.Name">
+            <summary>
+            The name of the export.
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.Composition.INameMetadata.Description">
+            <summary>
+            The description of the export.
+            </summary>
+        </member>
+        <member name="T:Nequeo.ComponentModel.DataAnnotations.PropertiesMustMatchAttribute">
+            <summary>
+            Properties must match attribute
+            </summary>
+        </member>
+        <member name="M:Nequeo.ComponentModel.DataAnnotations.PropertiesMustMatchAttribute.#ctor(System.String,System.String)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="originalProperty">The original property name.</param>
+            <param name="confirmProperty">THe confirmation property name.</param>
+        </member>
+        <member name="P:Nequeo.ComponentModel.DataAnnotations.PropertiesMustMatchAttribute.ConfirmProperty">
+            <summary>
+            Gets, the confirmation property name.
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.DataAnnotations.PropertiesMustMatchAttribute.OriginalProperty">
+            <summary>
+            Gets, the original property name.
+            </summary>
+        </member>
+        <member name="P:Nequeo.ComponentModel.DataAnnotations.PropertiesMustMatchAttribute.TypeId">
+            <summary>
+            Gets, the validation type id.
+            </summary>
+        </member>
+        <member name="M:Nequeo.ComponentModel.DataAnnotations.PropertiesMustMatchAttribute.FormatErrorMessage(System.String)">
+            <summary>
+            Applies formatting to an error message, based on the data field where the error occurred.
+            </summary>
+            <param name="name">The name to include in the formatted message.</param>
+            <returns>An instance of the formatted error message.</returns>
+        </member>
+        <member name="M:Nequeo.ComponentModel.DataAnnotations.PropertiesMustMatchAttribute.IsValid(System.Object)">
+            <summary>
+            Determines whether the specified value of the object is valid.
+            </summary>
+            <param name="value">The value of the object to validate.</param>
+            <returns>True if valid else false.</returns>
+        </member>
+        <member name="T:Nequeo.ComponentModel.DataAnnotations.ValidateSelectionIndexAttribute">
+            <summary>
+            Validate the selection index attribute
+            </summary>
+        </member>
+        <member name="M:Nequeo.ComponentModel.DataAnnotations.ValidateSelectionIndexAttribute.#ctor(System.Int64)">
+            <summary>
+            Default constructor.
+            </summary>
+            <param name="minimumIndex">The minimum index value to validate.</param>
+        </member>
+        <member name="P:Nequeo.ComponentModel.DataAnnotations.ValidateSelectionIndexAttribute.MinimumIndex">
+            <summary>
+            Gets, the minimum index name.
+            </summary>
+        </member>
+        <member name="M:Nequeo.ComponentModel.DataAnnotations.ValidateSelectionIndexAttribute.FormatErrorMessage(System.String)">
+            <summary>
+            Applies formatting to an error message, based on the data field where the error occurred.
+            </summary>
+            <param name="name">The name to include in the formatted message.</param>
+            <returns>An instance of the formatted error message.</returns>
+        </member>
+        <member name="M:Nequeo.ComponentModel.DataAnnotations.ValidateSelectionIndexAttribute.IsValid(System.Object)">
+            <summary>
+            Determines whether the specified value of the object is valid.
+            </summary>
+            <param name="value">The value of the object to validate.</param>
+            <returns>True if valid else false.</returns>
+        </member>
+    </members>
+</doc>
